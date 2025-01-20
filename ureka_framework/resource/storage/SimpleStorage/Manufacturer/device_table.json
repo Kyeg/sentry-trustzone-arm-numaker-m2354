@@ -1,0 +1,22 @@
+{
+    "FW4UwhflzNwwo/DzCIj+hhz7Rga6dX/ThZ+0QpBwN2s=-2MOJ7HB9JWJW+QuEvPIrVkWQWVLyLBvJhUWB98EnGIU=": {
+        "device_access_end_r_ticket_for_others": null,
+        "device_access_u_ticket_for_others": null,
+        "device_id": "FW4UwhflzNwwo/DzCIj+hhz7Rga6dX/ThZ+0QpBwN2s=-2MOJ7HB9JWJW+QuEvPIrVkWQWVLyLBvJhUWB98EnGIU=",
+        "device_ownership_r_ticket_for_others": null,
+        "device_ownership_u_ticket_for_others": "{\"protocol_version\":\"UREKA-1.0\",\"u_ticket_id\":\"wV4J8uT1MdsjWR7qq90lmG97Lx9hywd86qDSqidsS5U=\",\"u_ticket_type\":\"OWNERSHIP\",\"device_id\":\"FW4UwhflzNwwo/DzCIj+hhz7Rga6dX/ThZ+0QpBwN2s=-2MOJ7HB9JWJW+QuEvPIrVkWQWVLyLBvJhUWB98EnGIU=\",\"ticket_order\":1,\"holder_id\":\"3pPQj+o++kjKu6zcaQQbMbNklrcanphXcQp2bP3An7E=-MtBTFYIelMJsj317QhTb8arVr+wUaNeEcsU6pOhjKOo=\",\"issuer_signature\":\"1B+Kvos3Uk94sfiaxhX/ZEnWRGhARKEQf2otMqq3VA4=-Zw6FzRFlzsDnDJ+L175KWeZO5bynx8MFEzQdfVyT7yE=\"}",
+        "device_r_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"r_ticket_id\":\"6xvgTFmqu5RP/c3JDapRPQdkvPvT1JoMRW9JZfmNqiQ=\",\"r_ticket_type\":\"INITIALIZATION\",\"device_id\":\"FW4UwhflzNwwo/DzCIj+hhz7Rga6dX/ThZ+0QpBwN2s=-2MOJ7HB9JWJW+QuEvPIrVkWQWVLyLBvJhUWB98EnGIU=\",\"result\":\" -> SUCCESS: VERIFY_UT_CAN_EXECUTE\",\"ticket_order\":1,\"audit_start\":\"AbEOKc3zXnUgd9m/c0RAIlVmVt/JY4eMFq2Bvb10WvA=\",\"device_signature\":\"iczbWzZ3T+socrGqz5he7hR/7JbihOdfplVu84ZpJdE=-MNIoEQA4oGyZnQK16T1/rpjsP3T9gae0KmeIKUl+Tho=\"}",
+        "device_u_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"u_ticket_id\":\"AbEOKc3zXnUgd9m/c0RAIlVmVt/JY4eMFq2Bvb10WvA=\",\"u_ticket_type\":\"INITIALIZATION\",\"device_id\":\"no_id\",\"ticket_order\":0,\"holder_id\":\"2kN9FoOw9yH/8nu40IP4xEnIRNr1ip8DVlRO60hR5H8=-XmfYoSaP+VzZGR1MAmiZPc7RIMHSBlnNsV/91JaRLq4=\"}",
+        "ticket_order": 1
+    },
+    "no_id": {
+        "device_access_end_r_ticket_for_others": null,
+        "device_access_u_ticket_for_others": null,
+        "device_id": "no_id",
+        "device_ownership_r_ticket_for_others": null,
+        "device_ownership_u_ticket_for_others": null,
+        "device_r_ticket_for_owner": null,
+        "device_u_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"u_ticket_id\":\"AbEOKc3zXnUgd9m/c0RAIlVmVt/JY4eMFq2Bvb10WvA=\",\"u_ticket_type\":\"INITIALIZATION\",\"device_id\":\"no_id\",\"ticket_order\":0,\"holder_id\":\"2kN9FoOw9yH/8nu40IP4xEnIRNr1ip8DVlRO60hR5H8=-XmfYoSaP+VzZGR1MAmiZPc7RIMHSBlnNsV/91JaRLq4=\"}",
+        "ticket_order": 0
+    }
+}

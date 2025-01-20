@@ -1,0 +1,25 @@
+543 ms init ticket
+
+739 ms ownership ticket
+
+606 ms selfaccess ticket
+913 ms CRKE 2 ticket
+603 ms TOKEN Config CC
+720 ms TOKEN Config Add Candidate
+717 ms TOKEN Config Add Candidate
+823 ms * 2 TOKEN Config Add Voter
+698 ms Access end C
+
+801 ms ACCESS ticket 
+913 ms CRKE 2 ticket
+712 ms TOKEN ask candidate
+725 ms TOKEN vote
+698 ms Access end V
+
+607 ms selfaccess ticket
+914 ms CRKE 2 ticket
+719 ms TOKEN Tally 
+708 ms * 3 TOKEN Tally voter
+699 ms Access end T
+
+210 ms permisionless ticket
