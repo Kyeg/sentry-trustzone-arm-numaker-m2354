@@ -1,1 +1,12 @@
-{}
+{
+    "06VRr9ijlNiYtdpcOGhl+KNozT6L0MPpItHfctFTzOQ=-d4/FYVpxL9DN7LmPz47fN7zs4I4tcsLGWgN/YVIqfjs=": {
+        "device_access_end_r_ticket_for_others": null,
+        "device_access_u_ticket_for_others": null,
+        "device_id": "06VRr9ijlNiYtdpcOGhl+KNozT6L0MPpItHfctFTzOQ=-d4/FYVpxL9DN7LmPz47fN7zs4I4tcsLGWgN/YVIqfjs=",
+        "device_ownership_r_ticket_for_others": null,
+        "device_ownership_u_ticket_for_others": null,
+        "device_r_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"r_ticket_id\":\"tGhaKdV93l7IrZC/UMrOzAMc+C2h/306fV6W4WzVmcQ=\",\"r_ticket_type\":\"ACCESS_END\",\"device_id\":\"06VRr9ijlNiYtdpcOGhl+KNozT6L0MPpItHfctFTzOQ=-d4/FYVpxL9DN7LmPz47fN7zs4I4tcsLGWgN/YVIqfjs=\",\"result\":\"-> SUCCESS: VERIFY_UT_CAN_EXECUT\",\"ticket_order\":4,\"audit_start\":\"WY/EOwqPNE8z9GKvnmOHXzQgyYhi42cWwHS7HEuQ3YY=\",\"audit_end\":\"ACCESS_END\",\"device_signature\":\"wQSAPttcJ0NGRX2IKprJtWapxQzIEGeKmaLp4VTkA4U=-56maCVz7g2slqW8X7brmSsO3N1Nn5tUJSEGHz1uuM0U=\"}",
+        "device_u_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"u_ticket_id\":\"WY/EOwqPNE8z9GKvnmOHXzQgyYhi42cWwHS7HEuQ3YY=\",\"u_ticket_type\":\"ACCESS\",\"device_id\":\"06VRr9ijlNiYtdpcOGhl+KNozT6L0MPpItHfctFTzOQ=-d4/FYVpxL9DN7LmPz47fN7zs4I4tcsLGWgN/YVIqfjs=\",\"ticket_order\":3,\"holder_id\":\"nJV6FoinzTB21etNAJs31zXEB6/mZNoo24lYIjc0TlE=-ozQNbOyuDH2XAHKY6P6meAVnoT+UUR03awwYPEljua0=\",\"task_scope\":\"{\\\"ALL\\\": \\\"allow\\\"}\",\"issuer_signature\":\"CnxgLeMGtFDSxCRGlwk8rYGUCR3vrc76v3hMIUa/Upo=-aQ0998bJ+fxkFYM7AAqld2Eu3W106N1cPl0PnSMhenc=\"}",
+        "ticket_order": 4
+    }
+}

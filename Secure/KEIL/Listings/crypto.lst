@@ -18,12 +18,12 @@
 	.eabi_attribute	26, 2	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"crypto.c"
-	.file	1 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/StdDriver/src/crypto.c"
-	.file	2 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/StdDriver/inc\\crypto.h"
-	.file	3 "C:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
-	.file	4 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/StdDriver/inc\\keystore.h"
-	.file	5 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include/crpt_reg.h"
-	.file	6 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include/sys_reg.h"
+	.file	1 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/StdDriver/src/crypto.c"
+	.file	2 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/StdDriver/inc\\crypto.h"
+	.file	3 "C:\\Users\\LogoslabMiniPC" "AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h"
+	.file	4 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/StdDriver/inc\\keystore.h"
+	.file	5 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include\\crpt_reg.h"
+	.file	6 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include\\sys_reg.h"
 	.section	.text.PRNG_Open,"ax",%progbits
 	.hidden	PRNG_Open                       @ -- Begin function PRNG_Open
 	.globl	PRNG_Open
@@ -78,7 +78,7 @@ PRNG_Open:
 	ldr	r1, [sp, #12]
 	.loc	1 89 20                         @ ../../../../../Library/StdDriver/src/crypto.c:89:20
 	str	r0, [r1, #8]
-	.loc	1 91 1 is_stmt 1                @ ../../../../../Library/StdDriver/src/crypto.c:91:1
+	.loc	1 91 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:91:1
 	add	sp, #16
 	bx	lr
 .Ltmp4:
@@ -173,12 +173,13 @@ PRNG_Start:
 .LBB1_6:
 	.loc	1 116 1                         @ ../../../../../Library/StdDriver/src/crypto.c:116:1
 	ldr	r0, [sp, #8]
+	.loc	1 116 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:116:1
 	add	sp, #12
 	bx	lr
 .Ltmp10:
 	.p2align	2
 @ %bb.7:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.1_0:
 	.long	SystemCoreClock
 .Lcpi_end0:
@@ -317,12 +318,13 @@ PRNG_Read:
 	.loc	1 139 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:139:1
 	b	.LBB2_8
 .LBB2_8:
+	.loc	1 139 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:139:1
 	add	sp, #44
 	pop	{r4, r5, r7, pc}
 .Ltmp22:
 	.p2align	2
 @ %bb.9:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.2_0:
 	.long	.L__const.PRNG_Read.au32WcntTbl
 .Lcpi_end1:
@@ -388,7 +390,7 @@ AES_Open:
 	movw	r2, #256
 	.loc	1 175 19 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:175:19
 	str	r0, [r1, r2]
-	.loc	1 180 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:180:1
+	.loc	1 180 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:180:1
 	add	sp, #16
 	pop	{r4, pc}
 .Ltmp24:
@@ -433,7 +435,7 @@ AES_Start:
 	.loc	1 196 19                        @ ../../../../../Library/StdDriver/src/crypto.c:196:19
 	orrs	r0, r3
 	str	r0, [r1, r2]
-	.loc	1 197 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:197:1
+	.loc	1 197 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:197:1
 	add	sp, #12
 	bx	lr
 .Ltmp26:
@@ -521,7 +523,7 @@ AES_SetKey:
 	b	.LBB5_1
 .Ltmp33:
 .LBB5_4:
-	.loc	1 224 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:224:1
+	.loc	1 224 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:224:1
 	add	sp, #28
 	bx	lr
 .Ltmp34:
@@ -567,7 +569,7 @@ AES_SetKey_KS:
 	movw	r2, #3856
 	.loc	1 241 21 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:241:21
 	str	r0, [r1, r2]
-	.loc	1 245 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:245:1
+	.loc	1 245 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:245:1
 	add	sp, #12
 	bx	lr
 .Ltmp36:
@@ -644,7 +646,7 @@ AES_SetInitVect:
 	b	.LBB7_1
 .Ltmp43:
 .LBB7_4:
-	.loc	1 268 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:268:1
+	.loc	1 268 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:268:1
 	add	sp, #20
 	bx	lr
 .Ltmp44:
@@ -702,7 +704,7 @@ AES_SetDMATransfer:
 	movw	r2, #328
 	.loc	1 286 21                        @ ../../../../../Library/StdDriver/src/crypto.c:286:21
 	str	r0, [r1, r2]
-	.loc	1 288 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:288:1
+	.loc	1 288 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:288:1
 	add	sp, #16
 	pop	{r4, pc}
 .Ltmp46:
@@ -768,7 +770,7 @@ SHA_Open:
 	b	.LBB9_2
 .Ltmp51:
 .LBB9_2:
-	.loc	1 314 1                         @ ../../../../../Library/StdDriver/src/crypto.c:314:1
+	.loc	1 314 1 epilogue_begin          @ ../../../../../Library/StdDriver/src/crypto.c:314:1
 	add	sp, #16
 	bx	lr
 .Ltmp52:
@@ -819,7 +821,7 @@ SHA_Start:
 	.loc	1 328 20                        @ ../../../../../Library/StdDriver/src/crypto.c:328:20
 	orrs	r0, r3
 	str	r0, [r1, r2]
-	.loc	1 329 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:329:1
+	.loc	1 329 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:329:1
 	add	sp, #8
 	bx	lr
 .Ltmp54:
@@ -863,7 +865,7 @@ SHA_SetDMATransfer:
 	movw	r2, #848
 	.loc	1 341 23                        @ ../../../../../Library/StdDriver/src/crypto.c:341:23
 	str	r0, [r1, r2]
-	.loc	1 342 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:342:1
+	.loc	1 342 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:342:1
 	add	sp, #12
 	bx	lr
 .Ltmp56:
@@ -1040,7 +1042,7 @@ SHA_Read:
 	b	.LBB12_13
 .Ltmp78:
 .LBB12_16:
-	.loc	1 384 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:384:1
+	.loc	1 384 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:384:1
 	add	sp, #20
 	bx	lr
 .Ltmp79:
@@ -1118,7 +1120,7 @@ ECC_DriverISR:
 	b	.LBB13_4
 .Ltmp86:
 .LBB13_4:
-	.loc	1 860 1                         @ ../../../../../Library/StdDriver/src/crypto.c:860:1
+	.loc	1 860 1 epilogue_begin          @ ../../../../../Library/StdDriver/src/crypto.c:860:1
 	add	sp, #4
 	bx	lr
 .Ltmp87:
@@ -1172,7 +1174,7 @@ CRPT_Reg2Hex:
 	ldr	r2, [sp, #4]
 	.loc	1 990 5                         @ ../../../../../Library/StdDriver/src/crypto.c:990:5
 	bl	Reg2Hex
-	.loc	1 991 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:991:1
+	.loc	1 991 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:991:1
 	add	sp, #16
 	pop	{r7, pc}
 .Ltmp89:
@@ -1325,7 +1327,7 @@ Reg2Hex:
 	b	.LBB15_1
 .Ltmp101:
 .LBB15_12:
-	.loc	1 980 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:980:1
+	.loc	1 980 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:980:1
 	add	sp, #40
 	pop	{r7, pc}
 .Ltmp102:
@@ -1364,7 +1366,7 @@ CRPT_Hex2Reg:
 	ldr	r1, [sp]
 	.loc	1 1000 5                        @ ../../../../../Library/StdDriver/src/crypto.c:1000:5
 	bl	Hex2Reg
-	.loc	1 1001 1 is_stmt 1              @ ../../../../../Library/StdDriver/src/crypto.c:1001:1
+	.loc	1 1001 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:1001:1
 	add	sp, #8
 	pop	{r7, pc}
 .Ltmp104:
@@ -1523,7 +1525,7 @@ Hex2Reg:
 	.loc	1 908 5 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:908:5
 	b	.LBB17_1
 .LBB17_11:
-	.loc	1 919 1                         @ ../../../../../Library/StdDriver/src/crypto.c:919:1
+	.loc	1 919 1 epilogue_begin          @ ../../../../../Library/StdDriver/src/crypto.c:919:1
 	add	sp, #40
 	pop	{r7, pc}
 .Ltmp114:
@@ -1620,6 +1622,7 @@ is_zero:
 .LBB18_7:
 	.loc	1 1020 1                        @ ../../../../../Library/StdDriver/src/crypto.c:1020:1
 	ldr	r0, [sp, #12]
+	.loc	1 1020 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1020:1
 	add	sp, #16
 	pop	{r7, pc}
 .Ltmp125:
@@ -1638,7 +1641,7 @@ is_zero:
 	.thumb_func
 ECC_IsPrivateKeyValid:
 .Lfunc_begin19:
-	.loc	1 1123 0                        @ ../../../../../Library/StdDriver/src/crypto.c:1123:0
+	.loc	1 1123 0 is_stmt 1              @ ../../../../../Library/StdDriver/src/crypto.c:1123:0
 	.fnstart
 	.cfi_startproc
 @ %bb.0:
@@ -1856,12 +1859,13 @@ ECC_IsPrivateKeyValid:
 .LBB19_15:
 	.loc	1 1156 1                        @ ../../../../../Library/StdDriver/src/crypto.c:1156:1
 	ldr	r0, [sp, #36]
+	.loc	1 1156 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1156:1
 	add	sp, #40
 	pop	{r7, pc}
 .Ltmp149:
 	.p2align	2
 @ %bb.16:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.19_0:
 	.long	pCurve
 .Lcpi_end4:
@@ -1973,7 +1977,7 @@ get_curve:
 .LBB20_8:
 	.loc	1 2583 12 is_stmt 1             @ ../../../../../Library/StdDriver/src/crypto.c:2583:12
 	ldr	r0, [sp, #4]
-	.loc	1 2583 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:2583:5
+	.loc	1 2583 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:2583:5
 	add	sp, #16
 	pop	{r7, pc}
 .Ltmp163:
@@ -2136,6 +2140,7 @@ get_nibble_value:
 .LBB21_10:
 	.loc	1 1110 1                        @ ../../../../../Library/StdDriver/src/crypto.c:1110:1
 	ldr	r0, [sp, #8]
+	.loc	1 1110 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1110:1
 	add	sp, #12
 	bx	lr
 .Ltmp176:
@@ -2154,7 +2159,7 @@ get_nibble_value:
 	.thumb_func
 ECC_GeneratePublicKey:
 .Lfunc_begin22:
-	.loc	1 1171 0                        @ ../../../../../Library/StdDriver/src/crypto.c:1171:0
+	.loc	1 1171 0 is_stmt 1              @ ../../../../../Library/StdDriver/src/crypto.c:1171:0
 	.fnstart
 	.cfi_startproc
 @ %bb.0:
@@ -2380,7 +2385,7 @@ ECC_GeneratePublicKey:
 .LBB22_15:
 	.loc	1 1217 12                       @ ../../../../../Library/StdDriver/src/crypto.c:1217:12
 	ldr	r0, [sp, #12]
-	.loc	1 1217 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:1217:5
+	.loc	1 1217 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1217:5
 	add	sp, #32
 	pop	{r4, pc}
 .Ltmp197:
@@ -2832,7 +2837,7 @@ ecc_init_curve:
 	bl	dump_ecc_reg
 	.loc	1 1084 12 is_stmt 1             @ ../../../../../Library/StdDriver/src/crypto.c:1084:12
 	ldr	r0, [sp, #16]
-	.loc	1 1084 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:1084:5
+	.loc	1 1084 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1084:5
 	add	sp, #32
 	pop	{r4, r5, r6, pc}
 .Ltmp220:
@@ -2933,7 +2938,7 @@ clean_reg:
 	b	.LBB24_1
 .Ltmp226:
 .LBB24_4:
-	.loc	1 1034 1 is_stmt 1              @ ../../../../../Library/StdDriver/src/crypto.c:1034:1
+	.loc	1 1034 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:1034:1
 	add	sp, #8
 	bx	lr
 .Ltmp227:
@@ -3178,7 +3183,7 @@ ECC_GeneratePublicKey_KS:
 .LBB25_15:
 	.loc	1 1285 12                       @ ../../../../../Library/StdDriver/src/crypto.c:1285:12
 	ldr	r0, [sp, #12]
-	.loc	1 1285 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:1285:5
+	.loc	1 1285 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1285:5
 	add	sp, #32
 	pop	{r4, pc}
 .Ltmp248:
@@ -3576,7 +3581,7 @@ ECC_Mutiply:
 .LBB26_23:
 	.loc	1 1369 12                       @ ../../../../../Library/StdDriver/src/crypto.c:1369:12
 	ldr	r0, [sp, #8]
-	.loc	1 1369 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:1369:5
+	.loc	1 1369 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1369:5
 	add	sp, #32
 	pop	{r4, pc}
 .Ltmp282:
@@ -4012,7 +4017,7 @@ ECC_GenerateSecretZ:
 .LBB27_33:
 	.loc	1 1450 12                       @ ../../../../../Library/StdDriver/src/crypto.c:1450:12
 	ldr	r0, [sp, #8]
-	.loc	1 1450 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:1450:5
+	.loc	1 1450 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1450:5
 	add	sp, #32
 	pop	{r4, pc}
 .Ltmp315:
@@ -4238,7 +4243,7 @@ Hex2RegEx:
 	b	.LBB28_13
 .Ltmp328:
 .LBB28_13:
-	.loc	1 948 1                         @ ../../../../../Library/StdDriver/src/crypto.c:948:1
+	.loc	1 948 1 epilogue_begin          @ ../../../../../Library/StdDriver/src/crypto.c:948:1
 	add	sp, #48
 	pop	{r7, pc}
 .Ltmp329:
@@ -4512,12 +4517,13 @@ ECC_GenerateSecretZ_KS:
 .LBB29_16:
 	.loc	1 1515 1 is_stmt 1              @ ../../../../../Library/StdDriver/src/crypto.c:1515:1
 	ldr	r0, [sp, #28]
+	.loc	1 1515 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1515:1
 	add	sp, #32
 	pop	{r4, pc}
 .Ltmp349:
 	.p2align	2
 @ %bb.17:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.29_0:
 	.long	2113568                         @ 0x204020
 .Lcpi_end39:
@@ -5104,7 +5110,7 @@ ECC_GenerateSignature:
 .LBB30_24:
 	.loc	1 1777 12                       @ ../../../../../Library/StdDriver/src/crypto.c:1777:12
 	ldr	r0, [sp, #48]
-	.loc	1 1777 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:1777:5
+	.loc	1 1777 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1777:5
 	add	sp, #216
 	pop	{r4, pc}
 .Ltmp388:
@@ -5374,12 +5380,13 @@ run_ecc_codec:
 .LBB31_20:
 	.loc	1 1576 1                        @ ../../../../../Library/StdDriver/src/crypto.c:1576:1
 	ldr	r0, [sp, #20]
+	.loc	1 1576 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1576:1
 	add	sp, #24
 	pop	{r7, pc}
 .Ltmp409:
 	.p2align	2
 @ %bb.21:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.31_0:
 	.long	pCurve
 .Lcpi_end50:
@@ -5790,7 +5797,7 @@ ECC_GenerateSignature_KS:
 .LBB32_16:
 	.loc	1 1927 12                       @ ../../../../../Library/StdDriver/src/crypto.c:1927:12
 	ldr	r0, [sp, #16]
-	.loc	1 1927 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:1927:5
+	.loc	1 1927 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:1927:5
 	add	sp, #184
 	pop	{r4, pc}
 .Ltmp436:
@@ -6900,12 +6907,13 @@ ECC_VerifySignature:
 .LBB33_70:
 	.loc	1 2239 1 is_stmt 1              @ ../../../../../Library/StdDriver/src/crypto.c:2239:1
 	ldr	r0, [sp, #364]
+	.loc	1 2239 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:2239:1
 	add	sp, #368
 	pop	{r4, pc}
 .Ltmp535:
 	.p2align	2
 @ %bb.71:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.33_0:
 	.long	2488                            @ 0x9b8
 .Lcpi_end63:
@@ -8011,7 +8019,7 @@ ECC_VerifySignature_KS:
 .LBB34_68:
 	.loc	1 2562 12                       @ ../../../../../Library/StdDriver/src/crypto.c:2562:12
 	ldr	r0, [sp, #48]
-	.loc	1 2562 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:2562:5
+	.loc	1 2562 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:2562:5
 	add	sp, #360
 	pop	{r4, pc}
 .Ltmp631:
@@ -8123,7 +8131,7 @@ ECC_Complete:
 	b	.LBB35_4
 .Ltmp638:
 .LBB35_4:
-	.loc	1 2608 1                        @ ../../../../../Library/StdDriver/src/crypto.c:2608:1
+	.loc	1 2608 1 epilogue_begin         @ ../../../../../Library/StdDriver/src/crypto.c:2608:1
 	add	sp, #8
 	pop	{r7, pc}
 .Ltmp639:
@@ -8204,7 +8212,7 @@ ECC_GetCurve:
 .LBB36_2:
 	.loc	1 2623 12                       @ ../../../../../Library/StdDriver/src/crypto.c:2623:12
 	ldr	r0, [sp]
-	.loc	1 2623 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/crypto.c:2623:5
+	.loc	1 2623 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:2623:5
 	add	sp, #16
 	pop	{r7, pc}
 .Ltmp645:
@@ -8316,12 +8324,13 @@ RSA_Open:
 .LBB37_5:
 	.loc	1 2748 1                        @ ../../../../../Library/StdDriver/src/crypto.c:2748:1
 	ldr	r0, [sp, #20]
+	.loc	1 2748 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:2748:1
 	add	sp, #24
 	pop	{r4, pc}
 .Ltmp653:
 	.p2align	2
 @ %bb.6:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.37_0:
 	.long	s_u32RsaOpMode
 .Lcpi_end78:
@@ -8596,12 +8605,13 @@ CheckRsaBufferSize:
 .LBB38_31:
 	.loc	1 2701 1                        @ ../../../../../Library/StdDriver/src/crypto.c:2701:1
 	ldr	r0, [sp, #44]
+	.loc	1 2701 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:2701:1
 	add	sp, #48
 	pop	{r4, r5, r7, pc}
 .Ltmp687:
 	.p2align	2
 @ %bb.32:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.38_0:
 	.long	.L__const.CheckRsaBufferSize.s_au32RsaBufSizeTbl
 .Lcpi_end80:
@@ -8683,12 +8693,13 @@ RSA_SetKey:
 .LBB39_3:
 	.loc	1 2767 1                        @ ../../../../../Library/StdDriver/src/crypto.c:2767:1
 	ldr	r0, [sp, #20]
+	.loc	1 2767 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:2767:1
 	add	sp, #24
 	pop	{r7, pc}
 .Ltmp692:
 	.p2align	2
 @ %bb.4:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.39_0:
 	.long	s_pRSABuf
 .Lcpi_end81:
@@ -9131,12 +9142,13 @@ RSA_SetDMATransfer:
 .LBB40_12:
 	.loc	1 2842 1                        @ ../../../../../Library/StdDriver/src/crypto.c:2842:1
 	ldr	r0, [sp, #68]
+	.loc	1 2842 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:2842:1
 	add	sp, #72
 	pop	{r4, pc}
 .Ltmp707:
 	.p2align	2
 @ %bb.13:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.40_0:
 	.long	s_pRSABuf
 .Lcpi_end82:
@@ -9216,7 +9228,7 @@ RSA_Start:
 	movs	r3, #1
 	orrs	r0, r3
 	str	r0, [r1, r2]
-	.loc	1 2852 1 is_stmt 1              @ ../../../../../Library/StdDriver/src/crypto.c:2852:1
+	.loc	1 2852 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:2852:1
 	add	sp, #4
 	bx	lr
 .Ltmp709:
@@ -9313,12 +9325,13 @@ RSA_Read:
 .LBB42_3:
 	.loc	1 2874 1                        @ ../../../../../Library/StdDriver/src/crypto.c:2874:1
 	ldr	r0, [sp, #36]
+	.loc	1 2874 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:2874:1
 	add	sp, #40
 	pop	{r7, pc}
 .Ltmp714:
 	.p2align	2
 @ %bb.4:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.42_0:
 	.long	s_pRSABuf
 .Lcpi_end94:
@@ -9406,7 +9419,7 @@ RSA_SetKey_KS:
 .LBB43_3:
 	.loc	1 0 25                          @ ../../../../../Library/StdDriver/src/crypto.c:0:25
 	movs	r0, #0
-	.loc	1 2898 5 is_stmt 1              @ ../../../../../Library/StdDriver/src/crypto.c:2898:5
+	.loc	1 2898 5 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/crypto.c:2898:5
 	add	sp, #16
 	bx	lr
 .Ltmp720:
@@ -9640,12 +9653,13 @@ RSA_SetDMATransfer_KS:
 .LBB44_8:
 	.loc	1 2958 1                        @ ../../../../../Library/StdDriver/src/crypto.c:2958:1
 	ldr	r0, [sp, #28]
+	.loc	1 2958 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:2958:1
 	add	sp, #32
 	pop	{r4, pc}
 .Ltmp732:
 	.p2align	2
 @ %bb.9:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.44_0:
 	.long	s_pRSABuf
 .Lcpi_end96:
@@ -10492,12 +10506,13 @@ SM2_Sign:
 .LBB45_49:
 	.loc	1 3230 1 is_stmt 1              @ ../../../../../Library/StdDriver/src/crypto.c:3230:1
 	ldr	r0, [sp, #156]
+	.loc	1 3230 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:3230:1
 	add	sp, #160
 	pop	{r4, pc}
 .Ltmp806:
 	.p2align	2
 @ %bb.50:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.45_0:
 	.long	2488                            @ 0x9b8
 .Lcpi_end105:
@@ -11517,13 +11532,14 @@ SM2_Verify:
 .LBB46_66:
 	.loc	1 3480 1                        @ ../../../../../Library/StdDriver/src/crypto.c:3480:1
 	ldr	r0, [sp, #508]
+	.loc	1 3480 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:3480:1
 	add	sp, #508
 	add	sp, #4
 	pop	{r4, pc}
 .Ltmp902:
 	.p2align	2
 @ %bb.67:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.46_0:
 	.long	2488                            @ 0x9b8
 .Lcpi_end109:
@@ -11711,12 +11727,13 @@ SM3:
 .LBB47_12:
 	.loc	1 3529 1                        @ ../../../../../Library/StdDriver/src/crypto.c:3529:1
 	ldr	r0, [sp, #20]
+	.loc	1 3529 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:3529:1
 	add	sp, #24
 	bx	lr
 .Ltmp917:
 	.p2align	2
 @ %bb.13:
-	.loc	1 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/crypto.c:0:1
+	.loc	1 0 1                           @ ../../../../../Library/StdDriver/src/crypto.c:0:1
 __arm_cp.47_0:
 	.long	1073741832                      @ 0x40000008
 .Lcpi_end114:
@@ -11786,7 +11803,7 @@ get_Nth_nibble_char:
 	.loc	1 960 12                        @ ../../../../../Library/StdDriver/src/crypto.c:960:12
 	ldr	r0, __arm_cp.48_0
 	ldrb	r0, [r0, r1]
-	.loc	1 960 5                         @ ../../../../../Library/StdDriver/src/crypto.c:960:5
+	.loc	1 960 5 epilogue_begin          @ ../../../../../Library/StdDriver/src/crypto.c:960:5
 	add	sp, #8
 	bx	lr
 .Ltmp919:
@@ -11886,6 +11903,7 @@ ch2hex:
 	add	r0, sp, #4
 	.loc	1 897 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:897:1
 	ldrb	r0, [r0]
+	.loc	1 897 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/crypto.c:897:1
 	add	sp, #8
 	bx	lr
 .Ltmp929:
@@ -11902,7 +11920,7 @@ ch2hex:
 	.thumb_func
 dump_ecc_reg:
 .Lfunc_begin50:
-	.loc	1 877 0                         @ ../../../../../Library/StdDriver/src/crypto.c:877:0
+	.loc	1 877 0 is_stmt 1               @ ../../../../../Library/StdDriver/src/crypto.c:877:0
 	.fnstart
 	.cfi_startproc
 @ %bb.0:
@@ -11913,7 +11931,7 @@ dump_ecc_reg:
 	str	r1, [sp, #4]
 	str	r2, [sp]
 .Ltmp930:
-	.loc	1 881 1 prologue_end            @ ../../../../../Library/StdDriver/src/crypto.c:881:1
+	.loc	1 881 1 prologue_end epilogue_begin @ ../../../../../Library/StdDriver/src/crypto.c:881:1
 	add	sp, #12
 	bx	lr
 .Ltmp931:
@@ -12896,7 +12914,7 @@ Curve_Copy:
 	.byte	4                               @ Address Size (in bytes)
 	.byte	1                               @ Abbrev [1] 0xb:0x2354 DW_TAG_compile_unit
 	.long	.Linfo_string0                  @ DW_AT_producer
-	.short	12                              @ DW_AT_language
+	.short	29                              @ DW_AT_language
 	.long	.Linfo_string1                  @ DW_AT_name
 	.long	.Lline_table_start0             @ DW_AT_stmt_list
 	.long	.Linfo_string2                  @ DW_AT_comp_dir
@@ -17552,762 +17570,762 @@ Curve_Copy:
 	.long	0
 	.section	.debug_str,"MS",%progbits,1
 .Linfo_string0:
-	.asciz	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]" @ string offset=0
+	.asciz	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]" @ string offset=0
 .Linfo_string1:
 	.asciz	"../../../../../Library/StdDriver/src\\crypto.c" @ string offset=68
 .Linfo_string2:
-	.asciz	"C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" @ string offset=114
+	.asciz	"C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" @ string offset=114
 .Linfo_string3:
-	.asciz	"char"                          @ string offset=230
+	.asciz	"char"                          @ string offset=249
 .Linfo_string4:
-	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=235
+	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=254
 .Linfo_string5:
-	.asciz	"pCurve"                        @ string offset=255
+	.asciz	"pCurve"                        @ string offset=274
 .Linfo_string6:
-	.asciz	"curve_id"                      @ string offset=262
+	.asciz	"curve_id"                      @ string offset=281
 .Linfo_string7:
-	.asciz	"int"                           @ string offset=271
+	.asciz	"int"                           @ string offset=290
 .Linfo_string8:
-	.asciz	"CURVE_P_192"                   @ string offset=275
+	.asciz	"CURVE_P_192"                   @ string offset=294
 .Linfo_string9:
-	.asciz	"CURVE_P_224"                   @ string offset=287
+	.asciz	"CURVE_P_224"                   @ string offset=306
 .Linfo_string10:
-	.asciz	"CURVE_P_256"                   @ string offset=299
+	.asciz	"CURVE_P_256"                   @ string offset=318
 .Linfo_string11:
-	.asciz	"CURVE_P_384"                   @ string offset=311
+	.asciz	"CURVE_P_384"                   @ string offset=330
 .Linfo_string12:
-	.asciz	"CURVE_P_521"                   @ string offset=323
+	.asciz	"CURVE_P_521"                   @ string offset=342
 .Linfo_string13:
-	.asciz	"CURVE_K_163"                   @ string offset=335
+	.asciz	"CURVE_K_163"                   @ string offset=354
 .Linfo_string14:
-	.asciz	"CURVE_K_233"                   @ string offset=347
+	.asciz	"CURVE_K_233"                   @ string offset=366
 .Linfo_string15:
-	.asciz	"CURVE_K_283"                   @ string offset=359
+	.asciz	"CURVE_K_283"                   @ string offset=378
 .Linfo_string16:
-	.asciz	"CURVE_K_409"                   @ string offset=371
+	.asciz	"CURVE_K_409"                   @ string offset=390
 .Linfo_string17:
-	.asciz	"CURVE_K_571"                   @ string offset=383
+	.asciz	"CURVE_K_571"                   @ string offset=402
 .Linfo_string18:
-	.asciz	"CURVE_B_163"                   @ string offset=395
+	.asciz	"CURVE_B_163"                   @ string offset=414
 .Linfo_string19:
-	.asciz	"CURVE_B_233"                   @ string offset=407
+	.asciz	"CURVE_B_233"                   @ string offset=426
 .Linfo_string20:
-	.asciz	"CURVE_B_283"                   @ string offset=419
+	.asciz	"CURVE_B_283"                   @ string offset=438
 .Linfo_string21:
-	.asciz	"CURVE_B_409"                   @ string offset=431
+	.asciz	"CURVE_B_409"                   @ string offset=450
 .Linfo_string22:
-	.asciz	"CURVE_B_571"                   @ string offset=443
+	.asciz	"CURVE_B_571"                   @ string offset=462
 .Linfo_string23:
-	.asciz	"CURVE_KO_192"                  @ string offset=455
+	.asciz	"CURVE_KO_192"                  @ string offset=474
 .Linfo_string24:
-	.asciz	"CURVE_KO_224"                  @ string offset=468
+	.asciz	"CURVE_KO_224"                  @ string offset=487
 .Linfo_string25:
-	.asciz	"CURVE_KO_256"                  @ string offset=481
+	.asciz	"CURVE_KO_256"                  @ string offset=500
 .Linfo_string26:
-	.asciz	"CURVE_BP_256"                  @ string offset=494
+	.asciz	"CURVE_BP_256"                  @ string offset=513
 .Linfo_string27:
-	.asciz	"CURVE_BP_384"                  @ string offset=507
+	.asciz	"CURVE_BP_384"                  @ string offset=526
 .Linfo_string28:
-	.asciz	"CURVE_BP_512"                  @ string offset=520
+	.asciz	"CURVE_BP_512"                  @ string offset=539
 .Linfo_string29:
-	.asciz	"CURVE_25519"                   @ string offset=533
+	.asciz	"CURVE_25519"                   @ string offset=552
 .Linfo_string30:
-	.asciz	"CURVE_SM2_256"                 @ string offset=545
+	.asciz	"CURVE_SM2_256"                 @ string offset=564
 .Linfo_string31:
-	.asciz	"CURVE_UNDEF"                   @ string offset=559
+	.asciz	"CURVE_UNDEF"                   @ string offset=578
 .Linfo_string32:
-	.asciz	"E_ECC_CURVE"                   @ string offset=571
+	.asciz	"E_ECC_CURVE"                   @ string offset=590
 .Linfo_string33:
-	.asciz	"Echar"                         @ string offset=583
+	.asciz	"Echar"                         @ string offset=602
 .Linfo_string34:
-	.asciz	"int32_t"                       @ string offset=589
+	.asciz	"int32_t"                       @ string offset=608
 .Linfo_string35:
-	.asciz	"Ea"                            @ string offset=597
+	.asciz	"Ea"                            @ string offset=616
 .Linfo_string36:
-	.asciz	"Eb"                            @ string offset=600
+	.asciz	"Eb"                            @ string offset=619
 .Linfo_string37:
-	.asciz	"Px"                            @ string offset=603
+	.asciz	"Px"                            @ string offset=622
 .Linfo_string38:
-	.asciz	"Py"                            @ string offset=606
+	.asciz	"Py"                            @ string offset=625
 .Linfo_string39:
-	.asciz	"Epl"                           @ string offset=609
+	.asciz	"Epl"                           @ string offset=628
 .Linfo_string40:
-	.asciz	"Pp"                            @ string offset=613
+	.asciz	"Pp"                            @ string offset=632
 .Linfo_string41:
-	.asciz	"Eol"                           @ string offset=616
+	.asciz	"Eol"                           @ string offset=635
 .Linfo_string42:
-	.asciz	"Eorder"                        @ string offset=620
+	.asciz	"Eorder"                        @ string offset=639
 .Linfo_string43:
-	.asciz	"key_len"                       @ string offset=627
+	.asciz	"key_len"                       @ string offset=646
 .Linfo_string44:
-	.asciz	"irreducible_k1"                @ string offset=635
+	.asciz	"irreducible_k1"                @ string offset=654
 .Linfo_string45:
-	.asciz	"irreducible_k2"                @ string offset=650
+	.asciz	"irreducible_k2"                @ string offset=669
 .Linfo_string46:
-	.asciz	"irreducible_k3"                @ string offset=665
+	.asciz	"irreducible_k3"                @ string offset=684
 .Linfo_string47:
-	.asciz	"GF"                            @ string offset=680
+	.asciz	"GF"                            @ string offset=699
 .Linfo_string48:
-	.asciz	"e_curve_t"                     @ string offset=683
+	.asciz	"e_curve_t"                     @ string offset=702
 .Linfo_string49:
-	.asciz	"ECC_CURVE"                     @ string offset=693
+	.asciz	"ECC_CURVE"                     @ string offset=712
 .Linfo_string50:
-	.asciz	"temp_hex_str"                  @ string offset=703
+	.asciz	"temp_hex_str"                  @ string offset=722
 .Linfo_string51:
-	.asciz	"g_ECC_done"                    @ string offset=716
+	.asciz	"g_ECC_done"                    @ string offset=735
 .Linfo_string52:
-	.asciz	"unsigned int"                  @ string offset=727
+	.asciz	"unsigned int"                  @ string offset=746
 .Linfo_string53:
-	.asciz	"uint32_t"                      @ string offset=740
+	.asciz	"uint32_t"                      @ string offset=759
 .Linfo_string54:
-	.asciz	"g_ECCERR_done"                 @ string offset=749
+	.asciz	"g_ECCERR_done"                 @ string offset=768
 .Linfo_string55:
-	.asciz	"s_pRSABuf"                     @ string offset=763
+	.asciz	"s_pRSABuf"                     @ string offset=782
 .Linfo_string56:
-	.asciz	"s_u32RsaOpMode"                @ string offset=773
+	.asciz	"s_u32RsaOpMode"                @ string offset=792
 .Linfo_string57:
-	.asciz	"hex_char_tbl"                  @ string offset=788
+	.asciz	"hex_char_tbl"                  @ string offset=807
 .Linfo_string58:
-	.asciz	"_Curve"                        @ string offset=801
+	.asciz	"_Curve"                        @ string offset=820
 .Linfo_string59:
-	.asciz	"Curve_Copy"                    @ string offset=808
+	.asciz	"Curve_Copy"                    @ string offset=827
 .Linfo_string60:
-	.asciz	"KS_SRAM"                       @ string offset=819
+	.asciz	"KS_SRAM"                       @ string offset=838
 .Linfo_string61:
-	.asciz	"KS_FLASH"                      @ string offset=827
+	.asciz	"KS_FLASH"                      @ string offset=846
 .Linfo_string62:
-	.asciz	"KS_OTP"                        @ string offset=836
+	.asciz	"KS_OTP"                        @ string offset=855
 .Linfo_string63:
-	.asciz	"KSMEM"                         @ string offset=843
+	.asciz	"KSMEM"                         @ string offset=862
 .Linfo_string64:
-	.asciz	"CURVE_GF_P"                    @ string offset=849
+	.asciz	"CURVE_GF_P"                    @ string offset=868
 .Linfo_string65:
-	.asciz	"CURVE_GF_2M"                   @ string offset=860
+	.asciz	"CURVE_GF_2M"                   @ string offset=879
 .Linfo_string66:
-	.asciz	"BUF_NORMAL"                    @ string offset=872
+	.asciz	"BUF_NORMAL"                    @ string offset=891
 .Linfo_string67:
-	.asciz	"BUF_CRT"                       @ string offset=883
+	.asciz	"BUF_CRT"                       @ string offset=902
 .Linfo_string68:
-	.asciz	"BUF_CRTBYPASS"                 @ string offset=891
+	.asciz	"BUF_CRTBYPASS"                 @ string offset=910
 .Linfo_string69:
-	.asciz	"BUF_SCAP"                      @ string offset=905
+	.asciz	"BUF_SCAP"                      @ string offset=924
 .Linfo_string70:
-	.asciz	"BUF_CRT_SCAP"                  @ string offset=914
+	.asciz	"BUF_CRT_SCAP"                  @ string offset=933
 .Linfo_string71:
-	.asciz	"BUF_CRTBYPASS_SCAP"            @ string offset=927
+	.asciz	"BUF_CRTBYPASS_SCAP"            @ string offset=946
 .Linfo_string72:
-	.asciz	"BUF_KS"                        @ string offset=946
+	.asciz	"BUF_KS"                        @ string offset=965
 .Linfo_string73:
-	.asciz	"INTEN"                         @ string offset=953
+	.asciz	"INTEN"                         @ string offset=972
 .Linfo_string74:
-	.asciz	"INTSTS"                        @ string offset=959
+	.asciz	"INTSTS"                        @ string offset=978
 .Linfo_string75:
-	.asciz	"PRNG_CTL"                      @ string offset=966
+	.asciz	"PRNG_CTL"                      @ string offset=985
 .Linfo_string76:
-	.asciz	"PRNG_SEED"                     @ string offset=975
+	.asciz	"PRNG_SEED"                     @ string offset=994
 .Linfo_string77:
-	.asciz	"PRNG_KEY"                      @ string offset=985
+	.asciz	"PRNG_KEY"                      @ string offset=1004
 .Linfo_string78:
-	.asciz	"PRNG_STS"                      @ string offset=994
+	.asciz	"PRNG_STS"                      @ string offset=1013
 .Linfo_string79:
-	.asciz	"RESERVE0"                      @ string offset=1003
+	.asciz	"RESERVE0"                      @ string offset=1022
 .Linfo_string80:
-	.asciz	"AES_FDBCK"                     @ string offset=1012
+	.asciz	"AES_FDBCK"                     @ string offset=1031
 .Linfo_string81:
-	.asciz	"RESERVE1"                      @ string offset=1022
+	.asciz	"RESERVE1"                      @ string offset=1041
 .Linfo_string82:
-	.asciz	"AES_GCM_IVCNT"                 @ string offset=1031
+	.asciz	"AES_GCM_IVCNT"                 @ string offset=1050
 .Linfo_string83:
-	.asciz	"AES_GCM_ACNT"                  @ string offset=1045
+	.asciz	"AES_GCM_ACNT"                  @ string offset=1064
 .Linfo_string84:
-	.asciz	"AES_GCM_PCNT"                  @ string offset=1058
+	.asciz	"AES_GCM_PCNT"                  @ string offset=1077
 .Linfo_string85:
-	.asciz	"RESERVE2"                      @ string offset=1071
+	.asciz	"RESERVE2"                      @ string offset=1090
 .Linfo_string86:
-	.asciz	"AES_FBADDR"                    @ string offset=1080
+	.asciz	"AES_FBADDR"                    @ string offset=1099
 .Linfo_string87:
-	.asciz	"RESERVE3"                      @ string offset=1091
+	.asciz	"RESERVE3"                      @ string offset=1110
 .Linfo_string88:
-	.asciz	"AES_CTL"                       @ string offset=1100
+	.asciz	"AES_CTL"                       @ string offset=1119
 .Linfo_string89:
-	.asciz	"AES_STS"                       @ string offset=1108
+	.asciz	"AES_STS"                       @ string offset=1127
 .Linfo_string90:
-	.asciz	"AES_DATIN"                     @ string offset=1116
+	.asciz	"AES_DATIN"                     @ string offset=1135
 .Linfo_string91:
-	.asciz	"AES_DATOUT"                    @ string offset=1126
+	.asciz	"AES_DATOUT"                    @ string offset=1145
 .Linfo_string92:
-	.asciz	"AES_KEY"                       @ string offset=1137
+	.asciz	"AES_KEY"                       @ string offset=1156
 .Linfo_string93:
-	.asciz	"AES_IV"                        @ string offset=1145
+	.asciz	"AES_IV"                        @ string offset=1164
 .Linfo_string94:
-	.asciz	"AES_SADDR"                     @ string offset=1152
+	.asciz	"AES_SADDR"                     @ string offset=1171
 .Linfo_string95:
-	.asciz	"AES_DADDR"                     @ string offset=1162
+	.asciz	"AES_DADDR"                     @ string offset=1181
 .Linfo_string96:
-	.asciz	"AES_CNT"                       @ string offset=1172
+	.asciz	"AES_CNT"                       @ string offset=1191
 .Linfo_string97:
-	.asciz	"RESERVE4"                      @ string offset=1180
+	.asciz	"RESERVE4"                      @ string offset=1199
 .Linfo_string98:
-	.asciz	"HMAC_CTL"                      @ string offset=1189
+	.asciz	"HMAC_CTL"                      @ string offset=1208
 .Linfo_string99:
-	.asciz	"HMAC_STS"                      @ string offset=1198
+	.asciz	"HMAC_STS"                      @ string offset=1217
 .Linfo_string100:
-	.asciz	"HMAC_DGST"                     @ string offset=1207
+	.asciz	"HMAC_DGST"                     @ string offset=1226
 .Linfo_string101:
-	.asciz	"HMAC_KEYCNT"                   @ string offset=1217
+	.asciz	"HMAC_KEYCNT"                   @ string offset=1236
 .Linfo_string102:
-	.asciz	"HMAC_SADDR"                    @ string offset=1229
+	.asciz	"HMAC_SADDR"                    @ string offset=1248
 .Linfo_string103:
-	.asciz	"HMAC_DMACNT"                   @ string offset=1240
+	.asciz	"HMAC_DMACNT"                   @ string offset=1259
 .Linfo_string104:
-	.asciz	"HMAC_DATIN"                    @ string offset=1252
+	.asciz	"HMAC_DATIN"                    @ string offset=1271
 .Linfo_string105:
-	.asciz	"HMAC_FDBCK"                    @ string offset=1263
+	.asciz	"HMAC_FDBCK"                    @ string offset=1282
 .Linfo_string106:
-	.asciz	"RESERVE5"                      @ string offset=1274
+	.asciz	"RESERVE5"                      @ string offset=1293
 .Linfo_string107:
-	.asciz	"HMAC_FBADDR"                   @ string offset=1283
+	.asciz	"HMAC_FBADDR"                   @ string offset=1302
 .Linfo_string108:
-	.asciz	"RESERVE6"                      @ string offset=1295
+	.asciz	"RESERVE6"                      @ string offset=1314
 .Linfo_string109:
-	.asciz	"ECC_CTL"                       @ string offset=1304
+	.asciz	"ECC_CTL"                       @ string offset=1323
 .Linfo_string110:
-	.asciz	"ECC_STS"                       @ string offset=1312
+	.asciz	"ECC_STS"                       @ string offset=1331
 .Linfo_string111:
-	.asciz	"ECC_X1"                        @ string offset=1320
+	.asciz	"ECC_X1"                        @ string offset=1339
 .Linfo_string112:
-	.asciz	"ECC_Y1"                        @ string offset=1327
+	.asciz	"ECC_Y1"                        @ string offset=1346
 .Linfo_string113:
-	.asciz	"ECC_X2"                        @ string offset=1334
+	.asciz	"ECC_X2"                        @ string offset=1353
 .Linfo_string114:
-	.asciz	"ECC_Y2"                        @ string offset=1341
+	.asciz	"ECC_Y2"                        @ string offset=1360
 .Linfo_string115:
-	.asciz	"ECC_A"                         @ string offset=1348
+	.asciz	"ECC_A"                         @ string offset=1367
 .Linfo_string116:
-	.asciz	"ECC_B"                         @ string offset=1354
+	.asciz	"ECC_B"                         @ string offset=1373
 .Linfo_string117:
-	.asciz	"ECC_N"                         @ string offset=1360
+	.asciz	"ECC_N"                         @ string offset=1379
 .Linfo_string118:
-	.asciz	"ECC_K"                         @ string offset=1366
+	.asciz	"ECC_K"                         @ string offset=1385
 .Linfo_string119:
-	.asciz	"ECC_SADDR"                     @ string offset=1372
+	.asciz	"ECC_SADDR"                     @ string offset=1391
 .Linfo_string120:
-	.asciz	"ECC_DADDR"                     @ string offset=1382
+	.asciz	"ECC_DADDR"                     @ string offset=1401
 .Linfo_string121:
-	.asciz	"ECC_STARTREG"                  @ string offset=1392
+	.asciz	"ECC_STARTREG"                  @ string offset=1411
 .Linfo_string122:
-	.asciz	"ECC_WORDCNT"                   @ string offset=1405
+	.asciz	"ECC_WORDCNT"                   @ string offset=1424
 .Linfo_string123:
-	.asciz	"RESERVE7"                      @ string offset=1417
+	.asciz	"RESERVE7"                      @ string offset=1436
 .Linfo_string124:
-	.asciz	"RSA_CTL"                       @ string offset=1426
+	.asciz	"RSA_CTL"                       @ string offset=1445
 .Linfo_string125:
-	.asciz	"RSA_STS"                       @ string offset=1434
+	.asciz	"RSA_STS"                       @ string offset=1453
 .Linfo_string126:
-	.asciz	"RSA_SADDR"                     @ string offset=1442
+	.asciz	"RSA_SADDR"                     @ string offset=1461
 .Linfo_string127:
-	.asciz	"RSA_DADDR"                     @ string offset=1452
+	.asciz	"RSA_DADDR"                     @ string offset=1471
 .Linfo_string128:
-	.asciz	"RSA_MADDR"                     @ string offset=1462
+	.asciz	"RSA_MADDR"                     @ string offset=1481
 .Linfo_string129:
-	.asciz	"RESERVE8"                      @ string offset=1472
+	.asciz	"RESERVE8"                      @ string offset=1491
 .Linfo_string130:
-	.asciz	"PRNG_KSCTL"                    @ string offset=1481
+	.asciz	"PRNG_KSCTL"                    @ string offset=1500
 .Linfo_string131:
-	.asciz	"PRNG_KSSTS"                    @ string offset=1492
+	.asciz	"PRNG_KSSTS"                    @ string offset=1511
 .Linfo_string132:
-	.asciz	"RESERVE9"                      @ string offset=1503
+	.asciz	"RESERVE9"                      @ string offset=1522
 .Linfo_string133:
-	.asciz	"AES_KSCTL"                     @ string offset=1512
+	.asciz	"AES_KSCTL"                     @ string offset=1531
 .Linfo_string134:
-	.asciz	"RESERVE10"                     @ string offset=1522
+	.asciz	"RESERVE10"                     @ string offset=1541
 .Linfo_string135:
-	.asciz	"HMAC_KSCTL"                    @ string offset=1532
+	.asciz	"HMAC_KSCTL"                    @ string offset=1551
 .Linfo_string136:
-	.asciz	"RESERVE11"                     @ string offset=1543
+	.asciz	"RESERVE11"                     @ string offset=1562
 .Linfo_string137:
-	.asciz	"ECC_KSCTL"                     @ string offset=1553
+	.asciz	"ECC_KSCTL"                     @ string offset=1572
 .Linfo_string138:
-	.asciz	"ECC_KSSTS"                     @ string offset=1563
+	.asciz	"ECC_KSSTS"                     @ string offset=1582
 .Linfo_string139:
-	.asciz	"ECC_KSXY"                      @ string offset=1573
+	.asciz	"ECC_KSXY"                      @ string offset=1592
 .Linfo_string140:
-	.asciz	"RESERVE12"                     @ string offset=1582
+	.asciz	"RESERVE12"                     @ string offset=1601
 .Linfo_string141:
-	.asciz	"RSA_KSCTL"                     @ string offset=1592
+	.asciz	"RSA_KSCTL"                     @ string offset=1611
 .Linfo_string142:
-	.asciz	"RSA_KSSTS"                     @ string offset=1602
+	.asciz	"RSA_KSSTS"                     @ string offset=1621
 .Linfo_string143:
-	.asciz	"RESERVE13"                     @ string offset=1612
+	.asciz	"RESERVE13"                     @ string offset=1631
 .Linfo_string144:
-	.asciz	"CRPT_T"                        @ string offset=1622
+	.asciz	"CRPT_T"                        @ string offset=1641
 .Linfo_string145:
-	.asciz	"au32RsaOutput"                 @ string offset=1629
+	.asciz	"au32RsaOutput"                 @ string offset=1648
 .Linfo_string146:
-	.asciz	"au32RsaN"                      @ string offset=1643
+	.asciz	"au32RsaN"                      @ string offset=1662
 .Linfo_string147:
-	.asciz	"au32RsaM"                      @ string offset=1652
+	.asciz	"au32RsaM"                      @ string offset=1671
 .Linfo_string148:
-	.asciz	"au32RsaE"                      @ string offset=1661
+	.asciz	"au32RsaE"                      @ string offset=1680
 .Linfo_string149:
-	.asciz	"RSA_BUF_NORMAL_T"              @ string offset=1670
+	.asciz	"RSA_BUF_NORMAL_T"              @ string offset=1689
 .Linfo_string150:
-	.asciz	"au32RsaP"                      @ string offset=1687
+	.asciz	"au32RsaP"                      @ string offset=1706
 .Linfo_string151:
-	.asciz	"au32RsaQ"                      @ string offset=1696
+	.asciz	"au32RsaQ"                      @ string offset=1715
 .Linfo_string152:
-	.asciz	"au32RsaTmpCp"                  @ string offset=1705
+	.asciz	"au32RsaTmpCp"                  @ string offset=1724
 .Linfo_string153:
-	.asciz	"au32RsaTmpCq"                  @ string offset=1718
+	.asciz	"au32RsaTmpCq"                  @ string offset=1737
 .Linfo_string154:
-	.asciz	"au32RsaTmpDp"                  @ string offset=1731
+	.asciz	"au32RsaTmpDp"                  @ string offset=1750
 .Linfo_string155:
-	.asciz	"au32RsaTmpDq"                  @ string offset=1744
+	.asciz	"au32RsaTmpDq"                  @ string offset=1763
 .Linfo_string156:
-	.asciz	"au32RsaTmpRp"                  @ string offset=1757
+	.asciz	"au32RsaTmpRp"                  @ string offset=1776
 .Linfo_string157:
-	.asciz	"au32RsaTmpRq"                  @ string offset=1770
+	.asciz	"au32RsaTmpRq"                  @ string offset=1789
 .Linfo_string158:
-	.asciz	"au32RsaTmpBlindKey"            @ string offset=1783
+	.asciz	"au32RsaTmpBlindKey"            @ string offset=1802
 .Linfo_string159:
-	.asciz	"RSA_BUF_CRT_SCAP_T"            @ string offset=1802
+	.asciz	"RSA_BUF_CRT_SCAP_T"            @ string offset=1821
 .Linfo_string160:
-	.asciz	"RSA_BUF_CRT_T"                 @ string offset=1821
+	.asciz	"RSA_BUF_CRT_T"                 @ string offset=1840
 .Linfo_string161:
-	.asciz	"RSA_BUF_SCAP_T"                @ string offset=1835
+	.asciz	"RSA_BUF_SCAP_T"                @ string offset=1854
 .Linfo_string162:
-	.asciz	"RSA_BUF_KS_T"                  @ string offset=1850
+	.asciz	"RSA_BUF_KS_T"                  @ string offset=1869
 .Linfo_string163:
-	.asciz	"PDID"                          @ string offset=1863
+	.asciz	"PDID"                          @ string offset=1882
 .Linfo_string164:
-	.asciz	"RSTSTS"                        @ string offset=1868
+	.asciz	"RSTSTS"                        @ string offset=1887
 .Linfo_string165:
-	.asciz	"IPRST0"                        @ string offset=1875
+	.asciz	"IPRST0"                        @ string offset=1894
 .Linfo_string166:
-	.asciz	"IPRST1"                        @ string offset=1882
+	.asciz	"IPRST1"                        @ string offset=1901
 .Linfo_string167:
-	.asciz	"IPRST2"                        @ string offset=1889
+	.asciz	"IPRST2"                        @ string offset=1908
 .Linfo_string168:
-	.asciz	"BODCTL"                        @ string offset=1896
+	.asciz	"BODCTL"                        @ string offset=1915
 .Linfo_string169:
-	.asciz	"IVSCTL"                        @ string offset=1903
+	.asciz	"IVSCTL"                        @ string offset=1922
 .Linfo_string170:
-	.asciz	"PORCTL0"                       @ string offset=1910
+	.asciz	"PORCTL0"                       @ string offset=1929
 .Linfo_string171:
-	.asciz	"VREFCTL"                       @ string offset=1918
+	.asciz	"VREFCTL"                       @ string offset=1937
 .Linfo_string172:
-	.asciz	"USBPHY"                        @ string offset=1926
+	.asciz	"USBPHY"                        @ string offset=1945
 .Linfo_string173:
-	.asciz	"GPA_MFPL"                      @ string offset=1933
+	.asciz	"GPA_MFPL"                      @ string offset=1952
 .Linfo_string174:
-	.asciz	"GPA_MFPH"                      @ string offset=1942
+	.asciz	"GPA_MFPH"                      @ string offset=1961
 .Linfo_string175:
-	.asciz	"GPB_MFPL"                      @ string offset=1951
+	.asciz	"GPB_MFPL"                      @ string offset=1970
 .Linfo_string176:
-	.asciz	"GPB_MFPH"                      @ string offset=1960
+	.asciz	"GPB_MFPH"                      @ string offset=1979
 .Linfo_string177:
-	.asciz	"GPC_MFPL"                      @ string offset=1969
+	.asciz	"GPC_MFPL"                      @ string offset=1988
 .Linfo_string178:
-	.asciz	"GPC_MFPH"                      @ string offset=1978
+	.asciz	"GPC_MFPH"                      @ string offset=1997
 .Linfo_string179:
-	.asciz	"GPD_MFPL"                      @ string offset=1987
+	.asciz	"GPD_MFPL"                      @ string offset=2006
 .Linfo_string180:
-	.asciz	"GPD_MFPH"                      @ string offset=1996
+	.asciz	"GPD_MFPH"                      @ string offset=2015
 .Linfo_string181:
-	.asciz	"GPE_MFPL"                      @ string offset=2005
+	.asciz	"GPE_MFPL"                      @ string offset=2024
 .Linfo_string182:
-	.asciz	"GPE_MFPH"                      @ string offset=2014
+	.asciz	"GPE_MFPH"                      @ string offset=2033
 .Linfo_string183:
-	.asciz	"GPF_MFPL"                      @ string offset=2023
+	.asciz	"GPF_MFPL"                      @ string offset=2042
 .Linfo_string184:
-	.asciz	"GPF_MFPH"                      @ string offset=2032
+	.asciz	"GPF_MFPH"                      @ string offset=2051
 .Linfo_string185:
-	.asciz	"GPG_MFPL"                      @ string offset=2041
+	.asciz	"GPG_MFPL"                      @ string offset=2060
 .Linfo_string186:
-	.asciz	"GPG_MFPH"                      @ string offset=2050
+	.asciz	"GPG_MFPH"                      @ string offset=2069
 .Linfo_string187:
-	.asciz	"GPH_MFPL"                      @ string offset=2059
+	.asciz	"GPH_MFPL"                      @ string offset=2078
 .Linfo_string188:
-	.asciz	"GPH_MFPH"                      @ string offset=2068
+	.asciz	"GPH_MFPH"                      @ string offset=2087
 .Linfo_string189:
-	.asciz	"GPA_MFOS"                      @ string offset=2077
+	.asciz	"GPA_MFOS"                      @ string offset=2096
 .Linfo_string190:
-	.asciz	"GPB_MFOS"                      @ string offset=2086
+	.asciz	"GPB_MFOS"                      @ string offset=2105
 .Linfo_string191:
-	.asciz	"GPC_MFOS"                      @ string offset=2095
+	.asciz	"GPC_MFOS"                      @ string offset=2114
 .Linfo_string192:
-	.asciz	"GPD_MFOS"                      @ string offset=2104
+	.asciz	"GPD_MFOS"                      @ string offset=2123
 .Linfo_string193:
-	.asciz	"GPE_MFOS"                      @ string offset=2113
+	.asciz	"GPE_MFOS"                      @ string offset=2132
 .Linfo_string194:
-	.asciz	"GPF_MFOS"                      @ string offset=2122
+	.asciz	"GPF_MFOS"                      @ string offset=2141
 .Linfo_string195:
-	.asciz	"GPG_MFOS"                      @ string offset=2131
+	.asciz	"GPG_MFOS"                      @ string offset=2150
 .Linfo_string196:
-	.asciz	"GPH_MFOS"                      @ string offset=2140
+	.asciz	"GPH_MFOS"                      @ string offset=2159
 .Linfo_string197:
-	.asciz	"VTORSET"                       @ string offset=2149
+	.asciz	"VTORSET"                       @ string offset=2168
 .Linfo_string198:
-	.asciz	"SRAMICTL"                      @ string offset=2157
+	.asciz	"SRAMICTL"                      @ string offset=2176
 .Linfo_string199:
-	.asciz	"SRAMSTS"                       @ string offset=2166
+	.asciz	"SRAMSTS"                       @ string offset=2185
 .Linfo_string200:
-	.asciz	"SRAMEADR"                      @ string offset=2174
+	.asciz	"SRAMEADR"                      @ string offset=2193
 .Linfo_string201:
-	.asciz	"SRAMPC0"                       @ string offset=2183
+	.asciz	"SRAMPC0"                       @ string offset=2202
 .Linfo_string202:
-	.asciz	"SRAMPC1"                       @ string offset=2191
+	.asciz	"SRAMPC1"                       @ string offset=2210
 .Linfo_string203:
-	.asciz	"TCTL48M"                       @ string offset=2199
+	.asciz	"TCTL48M"                       @ string offset=2218
 .Linfo_string204:
-	.asciz	"TIEN48M"                       @ string offset=2207
+	.asciz	"TIEN48M"                       @ string offset=2226
 .Linfo_string205:
-	.asciz	"TISTS48M"                      @ string offset=2215
+	.asciz	"TISTS48M"                      @ string offset=2234
 .Linfo_string206:
-	.asciz	"TCTL12M"                       @ string offset=2224
+	.asciz	"TCTL12M"                       @ string offset=2243
 .Linfo_string207:
-	.asciz	"TIEN12M"                       @ string offset=2232
+	.asciz	"TIEN12M"                       @ string offset=2251
 .Linfo_string208:
-	.asciz	"TISTS12M"                      @ string offset=2240
+	.asciz	"TISTS12M"                      @ string offset=2259
 .Linfo_string209:
-	.asciz	"REGLCTL"                       @ string offset=2249
+	.asciz	"REGLCTL"                       @ string offset=2268
 .Linfo_string210:
-	.asciz	"CPUCFG"                        @ string offset=2257
+	.asciz	"CPUCFG"                        @ string offset=2276
 .Linfo_string211:
-	.asciz	"BATLDCTL"                      @ string offset=2264
+	.asciz	"BATLDCTL"                      @ string offset=2283
 .Linfo_string212:
-	.asciz	"OVDCTL"                        @ string offset=2273
+	.asciz	"OVDCTL"                        @ string offset=2292
 .Linfo_string213:
-	.asciz	"PORCTL1"                       @ string offset=2280
+	.asciz	"PORCTL1"                       @ string offset=2299
 .Linfo_string214:
-	.asciz	"PSWCTL"                        @ string offset=2288
+	.asciz	"PSWCTL"                        @ string offset=2307
 .Linfo_string215:
-	.asciz	"PLCTL"                         @ string offset=2295
+	.asciz	"PLCTL"                         @ string offset=2314
 .Linfo_string216:
-	.asciz	"PLSTS"                         @ string offset=2301
+	.asciz	"PLSTS"                         @ string offset=2320
 .Linfo_string217:
-	.asciz	"AHBMCTL"                       @ string offset=2307
+	.asciz	"AHBMCTL"                       @ string offset=2326
 .Linfo_string218:
-	.asciz	"SYS_T"                         @ string offset=2315
+	.asciz	"SYS_T"                         @ string offset=2334
 .Linfo_string219:
-	.asciz	"PRNG_Open"                     @ string offset=2321
+	.asciz	"PRNG_Open"                     @ string offset=2340
 .Linfo_string220:
-	.asciz	"PRNG_Start"                    @ string offset=2331
+	.asciz	"PRNG_Start"                    @ string offset=2350
 .Linfo_string221:
-	.asciz	"PRNG_Read"                     @ string offset=2342
+	.asciz	"PRNG_Read"                     @ string offset=2361
 .Linfo_string222:
-	.asciz	"AES_Open"                      @ string offset=2352
+	.asciz	"AES_Open"                      @ string offset=2371
 .Linfo_string223:
-	.asciz	"AES_Start"                     @ string offset=2361
+	.asciz	"AES_Start"                     @ string offset=2380
 .Linfo_string224:
-	.asciz	"AES_SetKey"                    @ string offset=2371
+	.asciz	"AES_SetKey"                    @ string offset=2390
 .Linfo_string225:
-	.asciz	"AES_SetKey_KS"                 @ string offset=2382
+	.asciz	"AES_SetKey_KS"                 @ string offset=2401
 .Linfo_string226:
-	.asciz	"AES_SetInitVect"               @ string offset=2396
+	.asciz	"AES_SetInitVect"               @ string offset=2415
 .Linfo_string227:
-	.asciz	"AES_SetDMATransfer"            @ string offset=2412
+	.asciz	"AES_SetDMATransfer"            @ string offset=2431
 .Linfo_string228:
-	.asciz	"SHA_Open"                      @ string offset=2431
+	.asciz	"SHA_Open"                      @ string offset=2450
 .Linfo_string229:
-	.asciz	"SHA_Start"                     @ string offset=2440
+	.asciz	"SHA_Start"                     @ string offset=2459
 .Linfo_string230:
-	.asciz	"SHA_SetDMATransfer"            @ string offset=2450
+	.asciz	"SHA_SetDMATransfer"            @ string offset=2469
 .Linfo_string231:
-	.asciz	"SHA_Read"                      @ string offset=2469
+	.asciz	"SHA_Read"                      @ string offset=2488
 .Linfo_string232:
-	.asciz	"ECC_DriverISR"                 @ string offset=2478
+	.asciz	"ECC_DriverISR"                 @ string offset=2497
 .Linfo_string233:
-	.asciz	"CRPT_Reg2Hex"                  @ string offset=2492
+	.asciz	"CRPT_Reg2Hex"                  @ string offset=2511
 .Linfo_string234:
-	.asciz	"Reg2Hex"                       @ string offset=2505
+	.asciz	"Reg2Hex"                       @ string offset=2524
 .Linfo_string235:
-	.asciz	"CRPT_Hex2Reg"                  @ string offset=2513
+	.asciz	"CRPT_Hex2Reg"                  @ string offset=2532
 .Linfo_string236:
-	.asciz	"Hex2Reg"                       @ string offset=2526
+	.asciz	"Hex2Reg"                       @ string offset=2545
 .Linfo_string237:
-	.asciz	"is_zero"                       @ string offset=2534
+	.asciz	"is_zero"                       @ string offset=2553
 .Linfo_string238:
-	.asciz	"ECC_IsPrivateKeyValid"         @ string offset=2542
+	.asciz	"ECC_IsPrivateKeyValid"         @ string offset=2561
 .Linfo_string239:
-	.asciz	"get_curve"                     @ string offset=2564
+	.asciz	"get_curve"                     @ string offset=2583
 .Linfo_string240:
-	.asciz	"get_nibble_value"              @ string offset=2574
+	.asciz	"get_nibble_value"              @ string offset=2593
 .Linfo_string241:
-	.asciz	"ECC_GeneratePublicKey"         @ string offset=2591
+	.asciz	"ECC_GeneratePublicKey"         @ string offset=2610
 .Linfo_string242:
-	.asciz	"ecc_init_curve"                @ string offset=2613
+	.asciz	"ecc_init_curve"                @ string offset=2632
 .Linfo_string243:
-	.asciz	"clean_reg"                     @ string offset=2628
+	.asciz	"clean_reg"                     @ string offset=2647
 .Linfo_string244:
-	.asciz	"ECC_GeneratePublicKey_KS"      @ string offset=2638
+	.asciz	"ECC_GeneratePublicKey_KS"      @ string offset=2657
 .Linfo_string245:
-	.asciz	"ECC_Mutiply"                   @ string offset=2663
+	.asciz	"ECC_Mutiply"                   @ string offset=2682
 .Linfo_string246:
-	.asciz	"ECC_GenerateSecretZ"           @ string offset=2675
+	.asciz	"ECC_GenerateSecretZ"           @ string offset=2694
 .Linfo_string247:
-	.asciz	"Hex2RegEx"                     @ string offset=2695
+	.asciz	"Hex2RegEx"                     @ string offset=2714
 .Linfo_string248:
-	.asciz	"ECC_GenerateSecretZ_KS"        @ string offset=2705
+	.asciz	"ECC_GenerateSecretZ_KS"        @ string offset=2724
 .Linfo_string249:
-	.asciz	"ECC_GenerateSignature"         @ string offset=2728
+	.asciz	"ECC_GenerateSignature"         @ string offset=2747
 .Linfo_string250:
-	.asciz	"run_ecc_codec"                 @ string offset=2750
+	.asciz	"run_ecc_codec"                 @ string offset=2769
 .Linfo_string251:
-	.asciz	"ECC_GenerateSignature_KS"      @ string offset=2764
+	.asciz	"ECC_GenerateSignature_KS"      @ string offset=2783
 .Linfo_string252:
-	.asciz	"ECC_VerifySignature"           @ string offset=2789
+	.asciz	"ECC_VerifySignature"           @ string offset=2808
 .Linfo_string253:
-	.asciz	"ECC_VerifySignature_KS"        @ string offset=2809
+	.asciz	"ECC_VerifySignature_KS"        @ string offset=2828
 .Linfo_string254:
-	.asciz	"ECC_Complete"                  @ string offset=2832
+	.asciz	"ECC_Complete"                  @ string offset=2851
 .Linfo_string255:
-	.asciz	"ECC_GetCurve"                  @ string offset=2845
+	.asciz	"ECC_GetCurve"                  @ string offset=2864
 .Linfo_string256:
-	.asciz	"RSA_Open"                      @ string offset=2858
+	.asciz	"RSA_Open"                      @ string offset=2877
 .Linfo_string257:
-	.asciz	"CheckRsaBufferSize"            @ string offset=2867
+	.asciz	"CheckRsaBufferSize"            @ string offset=2886
 .Linfo_string258:
-	.asciz	"RSA_SetKey"                    @ string offset=2886
+	.asciz	"RSA_SetKey"                    @ string offset=2905
 .Linfo_string259:
-	.asciz	"RSA_SetDMATransfer"            @ string offset=2897
+	.asciz	"RSA_SetDMATransfer"            @ string offset=2916
 .Linfo_string260:
-	.asciz	"RSA_Start"                     @ string offset=2916
+	.asciz	"RSA_Start"                     @ string offset=2935
 .Linfo_string261:
-	.asciz	"RSA_Read"                      @ string offset=2926
+	.asciz	"RSA_Read"                      @ string offset=2945
 .Linfo_string262:
-	.asciz	"RSA_SetKey_KS"                 @ string offset=2935
+	.asciz	"RSA_SetKey_KS"                 @ string offset=2954
 .Linfo_string263:
-	.asciz	"RSA_SetDMATransfer_KS"         @ string offset=2949
+	.asciz	"RSA_SetDMATransfer_KS"         @ string offset=2968
 .Linfo_string264:
-	.asciz	"SM2_Sign"                      @ string offset=2971
+	.asciz	"SM2_Sign"                      @ string offset=2990
 .Linfo_string265:
-	.asciz	"SM2_Verify"                    @ string offset=2980
+	.asciz	"SM2_Verify"                    @ string offset=2999
 .Linfo_string266:
-	.asciz	"SM3"                           @ string offset=2991
+	.asciz	"SM3"                           @ string offset=3010
 .Linfo_string267:
-	.asciz	"get_Nth_nibble_char"           @ string offset=2995
+	.asciz	"get_Nth_nibble_char"           @ string offset=3014
 .Linfo_string268:
-	.asciz	"ch2hex"                        @ string offset=3015
+	.asciz	"ch2hex"                        @ string offset=3034
 .Linfo_string269:
-	.asciz	"dump_ecc_reg"                  @ string offset=3022
+	.asciz	"dump_ecc_reg"                  @ string offset=3041
 .Linfo_string270:
-	.asciz	"crpt"                          @ string offset=3035
+	.asciz	"crpt"                          @ string offset=3054
 .Linfo_string271:
-	.asciz	"u32KeySize"                    @ string offset=3040
+	.asciz	"u32KeySize"                    @ string offset=3059
 .Linfo_string272:
-	.asciz	"u32SeedReload"                 @ string offset=3051
+	.asciz	"u32SeedReload"                 @ string offset=3070
 .Linfo_string273:
-	.asciz	"u32Seed"                       @ string offset=3065
+	.asciz	"u32Seed"                       @ string offset=3084
 .Linfo_string274:
-	.asciz	"i32TimeOutCnt"                 @ string offset=3073
+	.asciz	"i32TimeOutCnt"                 @ string offset=3092
 .Linfo_string275:
-	.asciz	"u32RandKey"                    @ string offset=3087
+	.asciz	"u32RandKey"                    @ string offset=3106
 .Linfo_string276:
-	.asciz	"i"                             @ string offset=3098
+	.asciz	"i"                             @ string offset=3117
 .Linfo_string277:
-	.asciz	"wcnt"                          @ string offset=3100
+	.asciz	"wcnt"                          @ string offset=3119
 .Linfo_string278:
-	.asciz	"au32WcntTbl"                   @ string offset=3105
+	.asciz	"au32WcntTbl"                   @ string offset=3124
 .Linfo_string279:
-	.asciz	"u32Channel"                    @ string offset=3117
+	.asciz	"u32Channel"                    @ string offset=3136
 .Linfo_string280:
-	.asciz	"u32EncDec"                     @ string offset=3128
+	.asciz	"u32EncDec"                     @ string offset=3147
 .Linfo_string281:
-	.asciz	"u32OpMode"                     @ string offset=3138
+	.asciz	"u32OpMode"                     @ string offset=3157
 .Linfo_string282:
-	.asciz	"u32SwapType"                   @ string offset=3148
+	.asciz	"u32SwapType"                   @ string offset=3167
 .Linfo_string283:
-	.asciz	"u32DMAMode"                    @ string offset=3160
+	.asciz	"u32DMAMode"                    @ string offset=3179
 .Linfo_string284:
-	.asciz	"au32Keys"                      @ string offset=3171
+	.asciz	"au32Keys"                      @ string offset=3190
 .Linfo_string285:
-	.asciz	"key_reg_addr"                  @ string offset=3180
+	.asciz	"key_reg_addr"                  @ string offset=3199
 .Linfo_string286:
-	.asciz	"mem"                           @ string offset=3193
+	.asciz	"mem"                           @ string offset=3212
 .Linfo_string287:
-	.asciz	"KS_MEM_Type"                   @ string offset=3197
+	.asciz	"KS_MEM_Type"                   @ string offset=3216
 .Linfo_string288:
-	.asciz	"i32KeyIdx"                     @ string offset=3209
+	.asciz	"i32KeyIdx"                     @ string offset=3228
 .Linfo_string289:
-	.asciz	"au32IV"                        @ string offset=3219
+	.asciz	"au32IV"                        @ string offset=3238
 .Linfo_string290:
-	.asciz	"u32SrcAddr"                    @ string offset=3226
+	.asciz	"u32SrcAddr"                    @ string offset=3245
 .Linfo_string291:
-	.asciz	"u32DstAddr"                    @ string offset=3237
+	.asciz	"u32DstAddr"                    @ string offset=3256
 .Linfo_string292:
-	.asciz	"u32TransCnt"                   @ string offset=3248
+	.asciz	"u32TransCnt"                   @ string offset=3267
 .Linfo_string293:
-	.asciz	"hmac_key_len"                  @ string offset=3260
+	.asciz	"hmac_key_len"                  @ string offset=3279
 .Linfo_string294:
-	.asciz	"u32Digest"                     @ string offset=3273
+	.asciz	"u32Digest"                     @ string offset=3292
 .Linfo_string295:
-	.asciz	"reg_addr"                      @ string offset=3283
+	.asciz	"reg_addr"                      @ string offset=3302
 .Linfo_string296:
-	.asciz	"count"                         @ string offset=3292
+	.asciz	"count"                         @ string offset=3311
 .Linfo_string297:
-	.asciz	"reg"                           @ string offset=3298
+	.asciz	"reg"                           @ string offset=3317
 .Linfo_string298:
-	.asciz	"output"                        @ string offset=3302
+	.asciz	"output"                        @ string offset=3321
 .Linfo_string299:
-	.asciz	"idx"                           @ string offset=3309
+	.asciz	"idx"                           @ string offset=3328
 .Linfo_string300:
-	.asciz	"ri"                            @ string offset=3313
+	.asciz	"ri"                            @ string offset=3332
 .Linfo_string301:
-	.asciz	"input"                         @ string offset=3316
+	.asciz	"input"                         @ string offset=3335
 .Linfo_string302:
-	.asciz	"hex"                           @ string offset=3322
+	.asciz	"hex"                           @ string offset=3341
 .Linfo_string303:
-	.asciz	"si"                            @ string offset=3326
+	.asciz	"si"                            @ string offset=3345
 .Linfo_string304:
-	.asciz	"val32"                         @ string offset=3329
+	.asciz	"val32"                         @ string offset=3348
 .Linfo_string305:
-	.asciz	"s"                             @ string offset=3335
+	.asciz	"s"                             @ string offset=3354
 .Linfo_string306:
-	.asciz	"len"                           @ string offset=3337
+	.asciz	"len"                           @ string offset=3356
 .Linfo_string307:
-	.asciz	"ecc_curve"                     @ string offset=3341
+	.asciz	"ecc_curve"                     @ string offset=3360
 .Linfo_string308:
-	.asciz	"private_k"                     @ string offset=3351
+	.asciz	"private_k"                     @ string offset=3370
 .Linfo_string309:
-	.asciz	"ret"                           @ string offset=3361
+	.asciz	"ret"                           @ string offset=3380
 .Linfo_string310:
-	.asciz	"c"                             @ string offset=3365
+	.asciz	"c"                             @ string offset=3384
 .Linfo_string311:
-	.asciz	"ch"                            @ string offset=3367
+	.asciz	"ch"                            @ string offset=3386
 .Linfo_string312:
-	.asciz	"public_k1"                     @ string offset=3370
+	.asciz	"public_k1"                     @ string offset=3389
 .Linfo_string313:
-	.asciz	"public_k2"                     @ string offset=3380
+	.asciz	"public_k2"                     @ string offset=3399
 .Linfo_string314:
-	.asciz	"u32ExtraOp"                    @ string offset=3390
+	.asciz	"u32ExtraOp"                    @ string offset=3409
 .Linfo_string315:
-	.asciz	"x1"                            @ string offset=3401
+	.asciz	"x1"                            @ string offset=3420
 .Linfo_string316:
-	.asciz	"y1"                            @ string offset=3404
+	.asciz	"y1"                            @ string offset=3423
 .Linfo_string317:
-	.asciz	"k"                             @ string offset=3407
+	.asciz	"k"                             @ string offset=3426
 .Linfo_string318:
-	.asciz	"x2"                            @ string offset=3409
+	.asciz	"x2"                            @ string offset=3428
 .Linfo_string319:
-	.asciz	"y2"                            @ string offset=3412
+	.asciz	"y2"                            @ string offset=3431
 .Linfo_string320:
-	.asciz	"secret_z"                      @ string offset=3415
+	.asciz	"secret_z"                      @ string offset=3434
 .Linfo_string321:
-	.asciz	"shift"                         @ string offset=3424
+	.asciz	"shift"                         @ string offset=3443
 .Linfo_string322:
-	.asciz	"carry"                         @ string offset=3430
+	.asciz	"carry"                         @ string offset=3449
 .Linfo_string323:
-	.asciz	"message"                       @ string offset=3436
+	.asciz	"message"                       @ string offset=3455
 .Linfo_string324:
-	.asciz	"d"                             @ string offset=3444
+	.asciz	"d"                             @ string offset=3463
 .Linfo_string325:
-	.asciz	"R"                             @ string offset=3446
+	.asciz	"R"                             @ string offset=3465
 .Linfo_string326:
-	.asciz	"S"                             @ string offset=3448
+	.asciz	"S"                             @ string offset=3467
 .Linfo_string327:
-	.asciz	"temp_result1"                  @ string offset=3450
+	.asciz	"temp_result1"                  @ string offset=3469
 .Linfo_string328:
-	.asciz	"temp_result2"                  @ string offset=3463
+	.asciz	"temp_result2"                  @ string offset=3482
 .Linfo_string329:
-	.asciz	"mode"                          @ string offset=3476
+	.asciz	"mode"                          @ string offset=3495
 .Linfo_string330:
-	.asciz	"eccop"                         @ string offset=3481
+	.asciz	"eccop"                         @ string offset=3500
 .Linfo_string331:
-	.asciz	"mem_d"                         @ string offset=3487
+	.asciz	"mem_d"                         @ string offset=3506
 .Linfo_string332:
-	.asciz	"i32KeyIdx_d"                   @ string offset=3493
+	.asciz	"i32KeyIdx_d"                   @ string offset=3512
 .Linfo_string333:
-	.asciz	"mem_k"                         @ string offset=3505
+	.asciz	"mem_k"                         @ string offset=3524
 .Linfo_string334:
-	.asciz	"i32KeyIdx_k"                   @ string offset=3511
+	.asciz	"i32KeyIdx_k"                   @ string offset=3530
 .Linfo_string335:
-	.asciz	"temp_x"                        @ string offset=3523
+	.asciz	"temp_x"                        @ string offset=3542
 .Linfo_string336:
-	.asciz	"temp_y"                        @ string offset=3530
+	.asciz	"temp_y"                        @ string offset=3549
 .Linfo_string337:
-	.asciz	"mem_pk1"                       @ string offset=3537
+	.asciz	"mem_pk1"                       @ string offset=3556
 .Linfo_string338:
-	.asciz	"i32KeyIdx_pk1"                 @ string offset=3545
+	.asciz	"i32KeyIdx_pk1"                 @ string offset=3564
 .Linfo_string339:
-	.asciz	"mem_pk2"                       @ string offset=3559
+	.asciz	"mem_pk2"                       @ string offset=3578
 .Linfo_string340:
-	.asciz	"i32KeyIdx_pk2"                 @ string offset=3567
+	.asciz	"i32KeyIdx_pk2"                 @ string offset=3586
 .Linfo_string341:
-	.asciz	"curve"                         @ string offset=3581
+	.asciz	"curve"                         @ string offset=3600
 .Linfo_string342:
-	.asciz	"err"                           @ string offset=3587
+	.asciz	"err"                           @ string offset=3606
 .Linfo_string343:
-	.asciz	"psRSA_Buf"                     @ string offset=3591
+	.asciz	"psRSA_Buf"                     @ string offset=3610
 .Linfo_string344:
-	.asciz	"u32BufSize"                    @ string offset=3601
+	.asciz	"u32BufSize"                    @ string offset=3620
 .Linfo_string345:
-	.asciz	"u32UseKS"                      @ string offset=3612
+	.asciz	"u32UseKS"                      @ string offset=3631
 .Linfo_string346:
-	.asciz	"s_au32RsaBufSizeTbl"           @ string offset=3621
+	.asciz	"s_au32RsaBufSizeTbl"           @ string offset=3640
 .Linfo_string347:
-	.asciz	"Key"                           @ string offset=3641
+	.asciz	"Key"                           @ string offset=3660
 .Linfo_string348:
-	.asciz	"Src"                           @ string offset=3645
+	.asciz	"Src"                           @ string offset=3664
 .Linfo_string349:
-	.asciz	"n"                             @ string offset=3649
+	.asciz	"n"                             @ string offset=3668
 .Linfo_string350:
-	.asciz	"P"                             @ string offset=3651
+	.asciz	"P"                             @ string offset=3670
 .Linfo_string351:
-	.asciz	"Q"                             @ string offset=3653
+	.asciz	"Q"                             @ string offset=3672
 .Linfo_string352:
-	.asciz	"Output"                        @ string offset=3655
+	.asciz	"Output"                        @ string offset=3674
 .Linfo_string353:
-	.asciz	"au32CntTbl"                    @ string offset=3662
+	.asciz	"au32CntTbl"                    @ string offset=3681
 .Linfo_string354:
-	.asciz	"u32CntIdx"                     @ string offset=3673
+	.asciz	"u32CntIdx"                     @ string offset=3692
 .Linfo_string355:
-	.asciz	"u32KeyNum"                     @ string offset=3683
+	.asciz	"u32KeyNum"                     @ string offset=3702
 .Linfo_string356:
-	.asciz	"u32KSMemType"                  @ string offset=3693
+	.asciz	"u32KSMemType"                  @ string offset=3712
 .Linfo_string357:
-	.asciz	"u32BlindKeyNum"                @ string offset=3706
+	.asciz	"u32BlindKeyNum"                @ string offset=3725
 .Linfo_string358:
-	.asciz	"u32PNum"                       @ string offset=3721
+	.asciz	"u32PNum"                       @ string offset=3740
 .Linfo_string359:
-	.asciz	"u32QNum"                       @ string offset=3729
+	.asciz	"u32QNum"                       @ string offset=3748
 .Linfo_string360:
-	.asciz	"u32CpNum"                      @ string offset=3737
+	.asciz	"u32CpNum"                      @ string offset=3756
 .Linfo_string361:
-	.asciz	"u32CqNum"                      @ string offset=3746
+	.asciz	"u32CqNum"                      @ string offset=3765
 .Linfo_string362:
-	.asciz	"u32DpNum"                      @ string offset=3755
+	.asciz	"u32DpNum"                      @ string offset=3774
 .Linfo_string363:
-	.asciz	"u32DqNum"                      @ string offset=3764
+	.asciz	"u32DqNum"                      @ string offset=3783
 .Linfo_string364:
-	.asciz	"u32RpNum"                      @ string offset=3773
+	.asciz	"u32RpNum"                      @ string offset=3792
 .Linfo_string365:
-	.asciz	"u32RqNum"                      @ string offset=3782
+	.asciz	"u32RqNum"                      @ string offset=3801
 .Linfo_string366:
-	.asciz	"e"                             @ string offset=3791
+	.asciz	"e"                             @ string offset=3810
 .Linfo_string367:
-	.asciz	"r"                             @ string offset=3793
+	.asciz	"r"                             @ string offset=3812
 .Linfo_string368:
-	.asciz	"t"                             @ string offset=3795
+	.asciz	"t"                             @ string offset=3814
 .Linfo_string369:
-	.asciz	"e1"                            @ string offset=3797
+	.asciz	"e1"                            @ string offset=3816
 .Linfo_string370:
-	.asciz	"x"                             @ string offset=3800
+	.asciz	"x"                             @ string offset=3819
 .Linfo_string371:
-	.asciz	"y"                             @ string offset=3802
+	.asciz	"y"                             @ string offset=3821
 .Linfo_string372:
-	.asciz	"pu32Addr"                      @ string offset=3804
+	.asciz	"pu32Addr"                      @ string offset=3823
 .Linfo_string373:
-	.asciz	"u32Size"                       @ string offset=3813
+	.asciz	"u32Size"                       @ string offset=3832
 .Linfo_string374:
-	.asciz	"digest"                        @ string offset=3821
+	.asciz	"digest"                        @ string offset=3840
 .Linfo_string375:
-	.asciz	"timeout"                       @ string offset=3828
+	.asciz	"timeout"                       @ string offset=3847
 .Linfo_string376:
-	.asciz	"str"                           @ string offset=3836
+	.asciz	"str"                           @ string offset=3855
 .Linfo_string377:
-	.asciz	"regs"                          @ string offset=3840
-	.ident	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]"
+	.asciz	"regs"                          @ string offset=3859
+	.ident	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]"
 	.section	".note.GNU-stack","",%progbits
 	.eabi_attribute	30, 6	@ Tag_ABI_optimization_goals
 	.ARM_attribute	6, 1	@ Tag_AV_cpp_exceptions

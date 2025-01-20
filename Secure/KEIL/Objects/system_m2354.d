@@ -1,17 +1,8 @@
 ./objects/system_m2354.o: \
   ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\system_M2354.c \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_cmse.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   ..\..\..\..\..\Library\Device\Nuvoton\M2354\Include\NuMicro.h \
   ..\..\..\..\..\Library\Device\Nuvoton\M2354\Include\M2354.h \
   ..\..\..\..\..\Library\CMSIS\Include\core_armv8mbl.h \
-  ..\..\..\..\..\Library\CMSIS\Include\cmsis_version.h \
-  ..\..\..\..\..\Library\CMSIS\Include\cmsis_compiler.h \
-  ..\..\..\..\..\Library\CMSIS\Include\cmsis_armclang.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
   ..\..\..\..\..\Library\Device\Nuvoton\M2354\Include\system_M2354.h \
   ..\..\partition_M2354.h \
   ..\..\..\..\..\Library\Device\Nuvoton\M2354\Include\acmp_reg.h \

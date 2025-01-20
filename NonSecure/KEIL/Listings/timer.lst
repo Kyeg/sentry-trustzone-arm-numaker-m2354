@@ -18,8 +18,8 @@
 	.eabi_attribute	26, 2	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"timer.c"
-	.file	1 "C:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
-	.file	2 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include/timer_reg.h"
+	.file	1 "C:\\Users\\LogoslabMiniPC" "AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h"
+	.file	2 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include\\timer_reg.h"
 	.section	.text.TIMER_Open,"ax",%progbits
 	.hidden	TIMER_Open                      @ -- Begin function TIMER_Open
 	.globl	TIMER_Open
@@ -29,7 +29,7 @@
 	.thumb_func
 TIMER_Open:
 .Lfunc_begin0:
-	.file	3 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/StdDriver/src/timer.c"
+	.file	3 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/StdDriver/src/timer.c"
 	.loc	3 43 0                          @ ../../../../../Library/StdDriver/src/timer.c:43:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -147,7 +147,7 @@ TIMER_Open:
 	muls	r1, r2, r1
 	.loc	3 63 24                         @ ../../../../../Library/StdDriver/src/timer.c:63:24
 	udiv	r0, r0, r1
-	.loc	3 63 5                          @ ../../../../../Library/StdDriver/src/timer.c:63:5
+	.loc	3 63 5 epilogue_begin           @ ../../../../../Library/StdDriver/src/timer.c:63:5
 	add	sp, #24
 	pop	{r7, pc}
 .Ltmp9:
@@ -461,12 +461,13 @@ TIMER_GetModuleClock:
 .LBB1_34:
 	.loc	3 314 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/timer.c:314:1
 	ldr	r0, [sp, #44]
+	.loc	3 314 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/timer.c:314:1
 	add	sp, #48
 	pop	{r4, r5, r7, pc}
 .Ltmp41:
 	.p2align	2
 @ %bb.35:
-	.loc	3 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/timer.c:0:1
+	.loc	3 0 1                           @ ../../../../../Library/StdDriver/src/timer.c:0:1
 __arm_cp.1_0:
 	.long	12000000                        @ 0xb71b00
 .Lcpi_end0:
@@ -563,7 +564,7 @@ TIMER_Close:
 	ldr	r1, [sp]
 	.loc	3 78 19 is_stmt 0               @ ../../../../../Library/StdDriver/src/timer.c:78:19
 	str	r0, [r1, #20]
-	.loc	3 79 1 is_stmt 1                @ ../../../../../Library/StdDriver/src/timer.c:79:1
+	.loc	3 79 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/timer.c:79:1
 	add	sp, #4
 	bx	lr
 .Ltmp43:
@@ -941,12 +942,13 @@ TIMER_Delay:
 .LBB3_29:
 	.loc	3 175 1                         @ ../../../../../Library/StdDriver/src/timer.c:175:1
 	ldr	r0, [sp, #44]
+	.loc	3 175 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/timer.c:175:1
 	add	sp, #48
 	pop	{r7, pc}
 .Ltmp84:
 	.p2align	2
 @ %bb.30:
-	.loc	3 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/timer.c:0:1
+	.loc	3 0 1                           @ ../../../../../Library/StdDriver/src/timer.c:0:1
 __arm_cp.3_0:
 	.long	1000000                         @ 0xf4240
 .Lcpi_end16:
@@ -1010,7 +1012,7 @@ TIMER_EnableCapture:
 	ldr	r1, [sp, #8]
 	.loc	3 200 19 is_stmt 0              @ ../../../../../Library/StdDriver/src/timer.c:200:19
 	str	r0, [r1, #20]
-	.loc	3 202 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/timer.c:202:1
+	.loc	3 202 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/timer.c:202:1
 	add	sp, #12
 	bx	lr
 .Ltmp86:
@@ -1052,7 +1054,7 @@ TIMER_DisableCapture:
 	movs	r2, #8
 	bics	r0, r2
 	str	r0, [r1, #20]
-	.loc	3 216 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/timer.c:216:1
+	.loc	3 216 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/timer.c:216:1
 	add	sp, #4
 	bx	lr
 .Ltmp88:
@@ -1103,7 +1105,7 @@ TIMER_EnableEventCounter:
 	lsls	r2, r2, #24
 	orrs	r0, r2
 	str	r0, [r1]
-	.loc	3 236 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/timer.c:236:1
+	.loc	3 236 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/timer.c:236:1
 	add	sp, #8
 	bx	lr
 .Ltmp90:
@@ -1139,7 +1141,7 @@ TIMER_DisableEventCounter:
 	lsls	r2, r2, #24
 	bics	r0, r2
 	str	r0, [r1]
-	.loc	3 250 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/timer.c:250:1
+	.loc	3 250 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/timer.c:250:1
 	add	sp, #4
 	bx	lr
 .Ltmp92:
@@ -1309,7 +1311,7 @@ TIMER_EnableFreqCounter:
 	b	.LBB8_17
 .Ltmp114:
 .LBB8_17:
-	.loc	3 373 1                         @ ../../../../../Library/StdDriver/src/timer.c:373:1
+	.loc	3 373 1 epilogue_begin          @ ../../../../../Library/StdDriver/src/timer.c:373:1
 	add	sp, #20
 	bx	lr
 .Ltmp115:
@@ -1388,7 +1390,7 @@ TIMER_DisableFreqCounter:
 	lsls	r2, r2, #19
 	bics	r0, r2
 	str	r0, [r1]
-	.loc	3 387 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/timer.c:387:1
+	.loc	3 387 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/timer.c:387:1
 	add	sp, #4
 	bx	lr
 .Ltmp117:
@@ -1432,7 +1434,7 @@ TIMER_SetTriggerSource:
 	ldr	r1, [sp, #4]
 	.loc	3 403 19                        @ ../../../../../Library/StdDriver/src/timer.c:403:19
 	str	r0, [r1, #28]
-	.loc	3 404 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/timer.c:404:1
+	.loc	3 404 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/timer.c:404:1
 	add	sp, #8
 	bx	lr
 .Ltmp119:
@@ -1476,7 +1478,7 @@ TIMER_SetTriggerTarget:
 	ldr	r1, [sp, #4]
 	.loc	3 423 19                        @ ../../../../../Library/StdDriver/src/timer.c:423:19
 	str	r0, [r1, #28]
-	.loc	3 424 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/timer.c:424:1
+	.loc	3 424 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/timer.c:424:1
 	add	sp, #8
 	bx	lr
 .Ltmp121:
@@ -1585,7 +1587,7 @@ TIMER_ResetCounter:
 .LBB12_7:
 	.loc	3 447 12                        @ ../../../../../Library/StdDriver/src/timer.c:447:12
 	ldr	r0, [sp, #4]                    @ 4-byte Reload
-	.loc	3 447 5                         @ ../../../../../Library/StdDriver/src/timer.c:447:5
+	.loc	3 447 5 epilogue_begin          @ ../../../../../Library/StdDriver/src/timer.c:447:5
 	add	sp, #24
 	pop	{r7, pc}
 .Ltmp125:
@@ -1904,7 +1906,7 @@ __arm_cp.12_0:
 	.byte	4                               @ Address Size (in bytes)
 	.byte	1                               @ Abbrev [1] 0xb:0x58a DW_TAG_compile_unit
 	.long	.Linfo_string0                  @ DW_AT_producer
-	.short	12                              @ DW_AT_language
+	.short	29                              @ DW_AT_language
 	.long	.Linfo_string1                  @ DW_AT_name
 	.long	.Lline_table_start0             @ DW_AT_stmt_list
 	.long	.Linfo_string2                  @ DW_AT_comp_dir
@@ -2671,162 +2673,162 @@ __arm_cp.12_0:
 	.long	0
 	.section	.debug_str,"MS",%progbits,1
 .Linfo_string0:
-	.asciz	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]" @ string offset=0
+	.asciz	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]" @ string offset=0
 .Linfo_string1:
 	.asciz	"../../../../../Library/StdDriver/src\\timer.c" @ string offset=68
 .Linfo_string2:
-	.asciz	"C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Nonsecure\\KEIL" @ string offset=113
+	.asciz	"C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" @ string offset=113
 .Linfo_string3:
-	.asciz	"CTL"                           @ string offset=232
+	.asciz	"CTL"                           @ string offset=251
 .Linfo_string4:
-	.asciz	"unsigned int"                  @ string offset=236
+	.asciz	"unsigned int"                  @ string offset=255
 .Linfo_string5:
-	.asciz	"uint32_t"                      @ string offset=249
+	.asciz	"uint32_t"                      @ string offset=268
 .Linfo_string6:
-	.asciz	"CMP"                           @ string offset=258
+	.asciz	"CMP"                           @ string offset=277
 .Linfo_string7:
-	.asciz	"INTSTS"                        @ string offset=262
+	.asciz	"INTSTS"                        @ string offset=281
 .Linfo_string8:
-	.asciz	"CNT"                           @ string offset=269
+	.asciz	"CNT"                           @ string offset=288
 .Linfo_string9:
-	.asciz	"CAP"                           @ string offset=273
+	.asciz	"CAP"                           @ string offset=292
 .Linfo_string10:
-	.asciz	"EXTCTL"                        @ string offset=277
+	.asciz	"EXTCTL"                        @ string offset=296
 .Linfo_string11:
-	.asciz	"EINTSTS"                       @ string offset=284
+	.asciz	"EINTSTS"                       @ string offset=303
 .Linfo_string12:
-	.asciz	"TRGCTL"                        @ string offset=292
+	.asciz	"TRGCTL"                        @ string offset=311
 .Linfo_string13:
-	.asciz	"ALTCTL"                        @ string offset=299
+	.asciz	"ALTCTL"                        @ string offset=318
 .Linfo_string14:
-	.asciz	"RESERVE0"                      @ string offset=306
+	.asciz	"RESERVE0"                      @ string offset=325
 .Linfo_string15:
-	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=315
+	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=334
 .Linfo_string16:
-	.asciz	"PWMCTL"                        @ string offset=335
+	.asciz	"PWMCTL"                        @ string offset=354
 .Linfo_string17:
-	.asciz	"PWMCLKSRC"                     @ string offset=342
+	.asciz	"PWMCLKSRC"                     @ string offset=361
 .Linfo_string18:
-	.asciz	"PWMCLKPSC"                     @ string offset=352
+	.asciz	"PWMCLKPSC"                     @ string offset=371
 .Linfo_string19:
-	.asciz	"PWMCNTCLR"                     @ string offset=362
+	.asciz	"PWMCNTCLR"                     @ string offset=381
 .Linfo_string20:
-	.asciz	"PWMPERIOD"                     @ string offset=372
+	.asciz	"PWMPERIOD"                     @ string offset=391
 .Linfo_string21:
-	.asciz	"PWMCMPDAT"                     @ string offset=382
+	.asciz	"PWMCMPDAT"                     @ string offset=401
 .Linfo_string22:
-	.asciz	"PWMDTCTL"                      @ string offset=392
+	.asciz	"PWMDTCTL"                      @ string offset=411
 .Linfo_string23:
-	.asciz	"PWMCNT"                        @ string offset=401
+	.asciz	"PWMCNT"                        @ string offset=420
 .Linfo_string24:
-	.asciz	"PWMMSKEN"                      @ string offset=408
+	.asciz	"PWMMSKEN"                      @ string offset=427
 .Linfo_string25:
-	.asciz	"PWMMSK"                        @ string offset=417
+	.asciz	"PWMMSK"                        @ string offset=436
 .Linfo_string26:
-	.asciz	"PWMBNF"                        @ string offset=424
+	.asciz	"PWMBNF"                        @ string offset=443
 .Linfo_string27:
-	.asciz	"PWMFAILBRK"                    @ string offset=431
+	.asciz	"PWMFAILBRK"                    @ string offset=450
 .Linfo_string28:
-	.asciz	"PWMBRKCTL"                     @ string offset=442
+	.asciz	"PWMBRKCTL"                     @ string offset=461
 .Linfo_string29:
-	.asciz	"PWMPOLCTL"                     @ string offset=452
+	.asciz	"PWMPOLCTL"                     @ string offset=471
 .Linfo_string30:
-	.asciz	"PWMPOEN"                       @ string offset=462
+	.asciz	"PWMPOEN"                       @ string offset=481
 .Linfo_string31:
-	.asciz	"PWMSWBRK"                      @ string offset=470
+	.asciz	"PWMSWBRK"                      @ string offset=489
 .Linfo_string32:
-	.asciz	"PWMINTEN0"                     @ string offset=479
+	.asciz	"PWMINTEN0"                     @ string offset=498
 .Linfo_string33:
-	.asciz	"PWMINTEN1"                     @ string offset=489
+	.asciz	"PWMINTEN1"                     @ string offset=508
 .Linfo_string34:
-	.asciz	"PWMINTSTS0"                    @ string offset=499
+	.asciz	"PWMINTSTS0"                    @ string offset=518
 .Linfo_string35:
-	.asciz	"PWMINTSTS1"                    @ string offset=510
+	.asciz	"PWMINTSTS1"                    @ string offset=529
 .Linfo_string36:
-	.asciz	"PWMTRGCTL"                     @ string offset=521
+	.asciz	"PWMTRGCTL"                     @ string offset=540
 .Linfo_string37:
-	.asciz	"PWMSCTL"                       @ string offset=531
+	.asciz	"PWMSCTL"                       @ string offset=550
 .Linfo_string38:
-	.asciz	"PWMSTRG"                       @ string offset=539
+	.asciz	"PWMSTRG"                       @ string offset=558
 .Linfo_string39:
-	.asciz	"PWMSTATUS"                     @ string offset=547
+	.asciz	"PWMSTATUS"                     @ string offset=566
 .Linfo_string40:
-	.asciz	"PWMPBUF"                       @ string offset=557
+	.asciz	"PWMPBUF"                       @ string offset=576
 .Linfo_string41:
-	.asciz	"PWMCMPBUF"                     @ string offset=565
+	.asciz	"PWMCMPBUF"                     @ string offset=584
 .Linfo_string42:
-	.asciz	"TIMER_T"                       @ string offset=575
+	.asciz	"TIMER_T"                       @ string offset=594
 .Linfo_string43:
-	.asciz	"TIMER_Open"                    @ string offset=583
+	.asciz	"TIMER_Open"                    @ string offset=602
 .Linfo_string44:
-	.asciz	"TIMER_GetModuleClock"          @ string offset=594
+	.asciz	"TIMER_GetModuleClock"          @ string offset=613
 .Linfo_string45:
-	.asciz	"TIMER_Close"                   @ string offset=615
+	.asciz	"TIMER_Close"                   @ string offset=634
 .Linfo_string46:
-	.asciz	"TIMER_Delay"                   @ string offset=627
+	.asciz	"TIMER_Delay"                   @ string offset=646
 .Linfo_string47:
-	.asciz	"int"                           @ string offset=639
+	.asciz	"int"                           @ string offset=658
 .Linfo_string48:
-	.asciz	"int32_t"                       @ string offset=643
+	.asciz	"int32_t"                       @ string offset=662
 .Linfo_string49:
-	.asciz	"TIMER_EnableCapture"           @ string offset=651
+	.asciz	"TIMER_EnableCapture"           @ string offset=670
 .Linfo_string50:
-	.asciz	"TIMER_DisableCapture"          @ string offset=671
+	.asciz	"TIMER_DisableCapture"          @ string offset=690
 .Linfo_string51:
-	.asciz	"TIMER_EnableEventCounter"      @ string offset=692
+	.asciz	"TIMER_EnableEventCounter"      @ string offset=711
 .Linfo_string52:
-	.asciz	"TIMER_DisableEventCounter"     @ string offset=717
+	.asciz	"TIMER_DisableEventCounter"     @ string offset=736
 .Linfo_string53:
-	.asciz	"TIMER_EnableFreqCounter"       @ string offset=743
+	.asciz	"TIMER_EnableFreqCounter"       @ string offset=762
 .Linfo_string54:
-	.asciz	"TIMER_DisableFreqCounter"      @ string offset=767
+	.asciz	"TIMER_DisableFreqCounter"      @ string offset=786
 .Linfo_string55:
-	.asciz	"TIMER_SetTriggerSource"        @ string offset=792
+	.asciz	"TIMER_SetTriggerSource"        @ string offset=811
 .Linfo_string56:
-	.asciz	"TIMER_SetTriggerTarget"        @ string offset=815
+	.asciz	"TIMER_SetTriggerTarget"        @ string offset=834
 .Linfo_string57:
-	.asciz	"TIMER_ResetCounter"            @ string offset=838
+	.asciz	"TIMER_ResetCounter"            @ string offset=857
 .Linfo_string58:
-	.asciz	"timer"                         @ string offset=857
+	.asciz	"timer"                         @ string offset=876
 .Linfo_string59:
-	.asciz	"u32Mode"                       @ string offset=863
+	.asciz	"u32Mode"                       @ string offset=882
 .Linfo_string60:
-	.asciz	"u32Freq"                       @ string offset=871
+	.asciz	"u32Freq"                       @ string offset=890
 .Linfo_string61:
-	.asciz	"u32ClkFreq"                    @ string offset=879
+	.asciz	"u32ClkFreq"                    @ string offset=898
 .Linfo_string62:
-	.asciz	"u32Cmpr"                       @ string offset=890
+	.asciz	"u32Cmpr"                       @ string offset=909
 .Linfo_string63:
-	.asciz	"u32Prescale"                   @ string offset=898
+	.asciz	"u32Prescale"                   @ string offset=917
 .Linfo_string64:
-	.asciz	"u32Src"                        @ string offset=910
+	.asciz	"u32Src"                        @ string offset=929
 .Linfo_string65:
-	.asciz	"au32Clk"                       @ string offset=917
+	.asciz	"au32Clk"                       @ string offset=936
 .Linfo_string66:
-	.asciz	"u32Usec"                       @ string offset=925
+	.asciz	"u32Usec"                       @ string offset=944
 .Linfo_string67:
-	.asciz	"u32Delay"                      @ string offset=933
+	.asciz	"u32Delay"                      @ string offset=952
 .Linfo_string68:
-	.asciz	"u32Cntr"                       @ string offset=942
+	.asciz	"u32Cntr"                       @ string offset=961
 .Linfo_string69:
-	.asciz	"u32NsecPerTick"                @ string offset=950
+	.asciz	"u32NsecPerTick"                @ string offset=969
 .Linfo_string70:
-	.asciz	"i"                             @ string offset=965
+	.asciz	"i"                             @ string offset=984
 .Linfo_string71:
-	.asciz	"u32CapMode"                    @ string offset=967
+	.asciz	"u32CapMode"                    @ string offset=986
 .Linfo_string72:
-	.asciz	"u32Edge"                       @ string offset=978
+	.asciz	"u32Edge"                       @ string offset=997
 .Linfo_string73:
-	.asciz	"u32DropCount"                  @ string offset=986
+	.asciz	"u32DropCount"                  @ string offset=1005
 .Linfo_string74:
-	.asciz	"u32Timeout"                    @ string offset=999
+	.asciz	"u32Timeout"                    @ string offset=1018
 .Linfo_string75:
-	.asciz	"u32EnableInt"                  @ string offset=1010
+	.asciz	"u32EnableInt"                  @ string offset=1029
 .Linfo_string76:
-	.asciz	"t"                             @ string offset=1023
+	.asciz	"t"                             @ string offset=1042
 .Linfo_string77:
-	.asciz	"u32Mask"                       @ string offset=1025
-	.ident	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]"
+	.asciz	"u32Mask"                       @ string offset=1044
+	.ident	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]"
 	.section	".note.GNU-stack","",%progbits
 	.eabi_attribute	30, 6	@ Tag_ABI_optimization_goals
 	.ARM_attribute	6, 1	@ Tag_AV_cpp_exceptions

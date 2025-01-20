@@ -27,7 +27,7 @@
 	.thumb_func
 GPIO_SetMode:
 .Lfunc_begin0:
-	.file	1 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/StdDriver/src/gpio.c"
+	.file	1 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/StdDriver/src/gpio.c"
 	.loc	1 46 0                          @ ../../../../../Library/StdDriver/src/gpio.c:46:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -107,7 +107,7 @@ GPIO_SetMode:
 	b	.LBB0_1
 .Ltmp8:
 .LBB0_6:
-	.loc	1 56 1 is_stmt 1                @ ../../../../../Library/StdDriver/src/gpio.c:56:1
+	.loc	1 56 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/gpio.c:56:1
 	add	sp, #16
 	bx	lr
 .Ltmp9:
@@ -184,7 +184,7 @@ GPIO_EnableInt:
 	ldr	r1, [sp, #8]
 	.loc	1 86 17                         @ ../../../../../Library/StdDriver/src/gpio.c:86:17
 	str	r0, [r1, #28]
-	.loc	1 87 1 is_stmt 1                @ ../../../../../Library/StdDriver/src/gpio.c:87:1
+	.loc	1 87 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/gpio.c:87:1
 	add	sp, #12
 	bx	lr
 .Ltmp11:
@@ -242,7 +242,7 @@ GPIO_DisableInt:
 	ldr	r0, [r1, #28]
 	bics	r0, r2
 	str	r0, [r1, #28]
-	.loc	1 114 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/gpio.c:114:1
+	.loc	1 114 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/gpio.c:114:1
 	add	sp, #8
 	bx	lr
 .Ltmp13:
@@ -346,7 +346,7 @@ GPIO_SetSlewCtl:
 	b	.LBB3_1
 .Ltmp22:
 .LBB3_6:
-	.loc	1 148 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/gpio.c:148:1
+	.loc	1 148 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/gpio.c:148:1
 	add	sp, #16
 	bx	lr
 .Ltmp23:
@@ -443,7 +443,7 @@ GPIO_SetPullCtl:
 	b	.LBB4_1
 .Ltmp32:
 .LBB4_6:
-	.loc	1 182 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/gpio.c:182:1
+	.loc	1 182 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/gpio.c:182:1
 	add	sp, #16
 	bx	lr
 .Ltmp33:
@@ -453,8 +453,8 @@ GPIO_SetPullCtl:
 	.cantunwind
 	.fnend
                                         @ -- End function
-	.file	2 "C:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
-	.file	3 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include/gpio_reg.h"
+	.file	2 "C:\\Users\\LogoslabMiniPC" "AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h"
+	.file	3 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include\\gpio_reg.h"
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                               @ Abbreviation Code
 	.byte	17                              @ DW_TAG_compile_unit
@@ -634,7 +634,7 @@ GPIO_SetPullCtl:
 	.byte	4                               @ Address Size (in bytes)
 	.byte	1                               @ Abbrev [1] 0xb:0x250 DW_TAG_compile_unit
 	.long	.Linfo_string0                  @ DW_AT_producer
-	.short	12                              @ DW_AT_language
+	.short	29                              @ DW_AT_language
 	.long	.Linfo_string1                  @ DW_AT_name
 	.long	.Lline_table_start0             @ DW_AT_stmt_list
 	.long	.Linfo_string2                  @ DW_AT_comp_dir
@@ -968,70 +968,70 @@ GPIO_SetPullCtl:
 	.long	0
 	.section	.debug_str,"MS",%progbits,1
 .Linfo_string0:
-	.asciz	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]" @ string offset=0
+	.asciz	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]" @ string offset=0
 .Linfo_string1:
 	.asciz	"../../../../../Library/StdDriver/src\\gpio.c" @ string offset=68
 .Linfo_string2:
-	.asciz	"C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" @ string offset=112
+	.asciz	"C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" @ string offset=112
 .Linfo_string3:
-	.asciz	"GPIO_SetMode"                  @ string offset=228
+	.asciz	"GPIO_SetMode"                  @ string offset=247
 .Linfo_string4:
-	.asciz	"GPIO_EnableInt"                @ string offset=241
+	.asciz	"GPIO_EnableInt"                @ string offset=260
 .Linfo_string5:
-	.asciz	"GPIO_DisableInt"               @ string offset=256
+	.asciz	"GPIO_DisableInt"               @ string offset=275
 .Linfo_string6:
-	.asciz	"GPIO_SetSlewCtl"               @ string offset=272
+	.asciz	"GPIO_SetSlewCtl"               @ string offset=291
 .Linfo_string7:
-	.asciz	"GPIO_SetPullCtl"               @ string offset=288
+	.asciz	"GPIO_SetPullCtl"               @ string offset=307
 .Linfo_string8:
-	.asciz	"port"                          @ string offset=304
+	.asciz	"port"                          @ string offset=323
 .Linfo_string9:
-	.asciz	"MODE"                          @ string offset=309
+	.asciz	"MODE"                          @ string offset=328
 .Linfo_string10:
-	.asciz	"unsigned int"                  @ string offset=314
+	.asciz	"unsigned int"                  @ string offset=333
 .Linfo_string11:
-	.asciz	"uint32_t"                      @ string offset=327
+	.asciz	"uint32_t"                      @ string offset=346
 .Linfo_string12:
-	.asciz	"DINOFF"                        @ string offset=336
+	.asciz	"DINOFF"                        @ string offset=355
 .Linfo_string13:
-	.asciz	"DOUT"                          @ string offset=343
+	.asciz	"DOUT"                          @ string offset=362
 .Linfo_string14:
-	.asciz	"DATMSK"                        @ string offset=348
+	.asciz	"DATMSK"                        @ string offset=367
 .Linfo_string15:
-	.asciz	"PIN"                           @ string offset=355
+	.asciz	"PIN"                           @ string offset=374
 .Linfo_string16:
-	.asciz	"DBEN"                          @ string offset=359
+	.asciz	"DBEN"                          @ string offset=378
 .Linfo_string17:
-	.asciz	"INTTYPE"                       @ string offset=364
+	.asciz	"INTTYPE"                       @ string offset=383
 .Linfo_string18:
-	.asciz	"INTEN"                         @ string offset=372
+	.asciz	"INTEN"                         @ string offset=391
 .Linfo_string19:
-	.asciz	"INTSRC"                        @ string offset=378
+	.asciz	"INTSRC"                        @ string offset=397
 .Linfo_string20:
-	.asciz	"SMTEN"                         @ string offset=385
+	.asciz	"SMTEN"                         @ string offset=404
 .Linfo_string21:
-	.asciz	"SLEWCTL"                       @ string offset=391
+	.asciz	"SLEWCTL"                       @ string offset=410
 .Linfo_string22:
-	.asciz	"RESERVE0"                      @ string offset=399
+	.asciz	"RESERVE0"                      @ string offset=418
 .Linfo_string23:
-	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=408
+	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=427
 .Linfo_string24:
-	.asciz	"PUSEL"                         @ string offset=428
+	.asciz	"PUSEL"                         @ string offset=447
 .Linfo_string25:
-	.asciz	"DBCTL"                         @ string offset=434
+	.asciz	"DBCTL"                         @ string offset=453
 .Linfo_string26:
-	.asciz	"GPIO_T"                        @ string offset=440
+	.asciz	"GPIO_T"                        @ string offset=459
 .Linfo_string27:
-	.asciz	"u32PinMask"                    @ string offset=447
+	.asciz	"u32PinMask"                    @ string offset=466
 .Linfo_string28:
-	.asciz	"u32Mode"                       @ string offset=458
+	.asciz	"u32Mode"                       @ string offset=477
 .Linfo_string29:
-	.asciz	"u32Idx"                        @ string offset=466
+	.asciz	"u32Idx"                        @ string offset=485
 .Linfo_string30:
-	.asciz	"u32Pin"                        @ string offset=473
+	.asciz	"u32Pin"                        @ string offset=492
 .Linfo_string31:
-	.asciz	"u32IntAttribs"                 @ string offset=480
-	.ident	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]"
+	.asciz	"u32IntAttribs"                 @ string offset=499
+	.ident	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]"
 	.section	".note.GNU-stack","",%progbits
 	.eabi_attribute	30, 6	@ Tag_ABI_optimization_goals
 	.ARM_attribute	6, 1	@ Tag_AV_cpp_exceptions

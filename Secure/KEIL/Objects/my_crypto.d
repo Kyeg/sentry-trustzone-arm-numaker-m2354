@@ -2,12 +2,6 @@
   ..\..\..\..\..\Library\Device\Nuvoton\M2354\Include\NuMicro.h \
   ..\..\..\..\..\Library\Device\Nuvoton\M2354\Include\M2354.h \
   ..\..\..\..\..\Library\CMSIS\Include\core_armv8mbl.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\..\..\..\..\Library\CMSIS\Include\cmsis_version.h \
-  ..\..\..\..\..\Library\CMSIS\Include\cmsis_compiler.h \
-  ..\..\..\..\..\Library\CMSIS\Include\cmsis_armclang.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
   ..\..\..\..\..\Library\Device\Nuvoton\M2354\Include\system_M2354.h \
   ..\..\partition_M2354.h \
   ..\..\..\..\..\Library\Device\Nuvoton\M2354\Include\acmp_reg.h \
@@ -83,7 +77,6 @@
   ..\..\..\..\..\Library\StdDriver\inc\usci_uart.h \
   ..\..\..\..\..\Library\StdDriver\inc\usci_i2c.h \
   ..\..\..\..\..\Library\StdDriver\inc\sdh.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   ..\..\..\..\..\Library\StdDriver\inc\qei.h \
   ..\..\..\..\..\Library\StdDriver\inc\can.h \
   ..\..\..\..\..\Library\StdDriver\inc\scu.h \
@@ -94,7 +87,4 @@
   ..\..\..\..\..\Library\StdDriver\inc\ewwdt.h \
   ..\..\..\..\..\Library\StdDriver\inc\ewdt.h \
   ..\..\..\..\..\Library\StdDriver\inc\plm.h \
-  ..\..\..\..\..\Library\StdDriver\inc\lcd.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\ctype.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h
+  ..\..\..\..\..\Library\StdDriver\inc\lcd.h

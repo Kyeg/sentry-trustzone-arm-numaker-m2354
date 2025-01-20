@@ -1,1 +1,21 @@
-{}
+{
+    "current_u_ticket_id": "D990XG/PYicawpzjl4oBIdcheavZFwfQ/IjvXDXfs+c=",
+    "current_device_id": "06VRr9ijlNiYtdpcOGhl+KNozT6L0MPpItHfctFTzOQ=-d4/FYVpxL9DN7LmPz47fN7zs4I4tcsLGWgN/YVIqfjs=",
+    "current_holder_id": "DWTmEy/aE731EyOw3uhwthCqsszDhlEvQvUEVTdc3KA=-00cdwGmln6VSy1Th97hnkHNqtLvZFnMCGF6SYOL1x60=",
+    "current_task_scope": "{\"ALL\": \"allow\"}",
+    "challenge_1": "2317ce43a707d1612c27649e9bd19f6a",
+    "challenge_2": "Pqm8T02p0bCcp9eZo6YckVzRgHJqzLU4/OMm07sf+nA=",
+    "key_exchange_salt_1": "6ff502101bee00fdaf8c101a858b4018",
+    "key_exchange_salt_2": "+W1R5x8kaRNHlqtiH655HzY4ZNeLdqDO/Yu+rXAmjAE=",
+    "current_session_key_str": "9QC8roI0Zo3i/Rzd9xxwQd+Qj5kwkWARrsWOcJDQdlY=",
+    "plaintext_cmd": "ACCESS_END",
+    "associated_plaintext_cmd": "AUC",
+    "iv_cmd": "4c04ebca723b",
+    "ciphertext_cmd": "p/mBAIu2sj8NXw==",
+    "gcm_authentication_tag_cmd": "wkSx6RQ0LXpncIV4int9Sw==",
+    "plaintext_data": "V:0",
+    "associated_plaintext_data": "DATA: AUC",
+    "iv_data": "M09TpVObjaGzdav3",
+    "ciphertext_data": "y7My",
+    "gcm_authentication_tag_data": "3kJyXu9A3oMuFNi1t1yH8g=="
+}

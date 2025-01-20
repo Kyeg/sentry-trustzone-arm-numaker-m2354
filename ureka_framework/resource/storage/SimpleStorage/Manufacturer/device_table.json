@@ -1,12 +1,12 @@
 {
-    "FW4UwhflzNwwo/DzCIj+hhz7Rga6dX/ThZ+0QpBwN2s=-2MOJ7HB9JWJW+QuEvPIrVkWQWVLyLBvJhUWB98EnGIU=": {
+    "06VRr9ijlNiYtdpcOGhl+KNozT6L0MPpItHfctFTzOQ=-d4/FYVpxL9DN7LmPz47fN7zs4I4tcsLGWgN/YVIqfjs=": {
         "device_access_end_r_ticket_for_others": null,
         "device_access_u_ticket_for_others": null,
-        "device_id": "FW4UwhflzNwwo/DzCIj+hhz7Rga6dX/ThZ+0QpBwN2s=-2MOJ7HB9JWJW+QuEvPIrVkWQWVLyLBvJhUWB98EnGIU=",
+        "device_id": "06VRr9ijlNiYtdpcOGhl+KNozT6L0MPpItHfctFTzOQ=-d4/FYVpxL9DN7LmPz47fN7zs4I4tcsLGWgN/YVIqfjs=",
         "device_ownership_r_ticket_for_others": null,
-        "device_ownership_u_ticket_for_others": "{\"protocol_version\":\"UREKA-1.0\",\"u_ticket_id\":\"wV4J8uT1MdsjWR7qq90lmG97Lx9hywd86qDSqidsS5U=\",\"u_ticket_type\":\"OWNERSHIP\",\"device_id\":\"FW4UwhflzNwwo/DzCIj+hhz7Rga6dX/ThZ+0QpBwN2s=-2MOJ7HB9JWJW+QuEvPIrVkWQWVLyLBvJhUWB98EnGIU=\",\"ticket_order\":1,\"holder_id\":\"3pPQj+o++kjKu6zcaQQbMbNklrcanphXcQp2bP3An7E=-MtBTFYIelMJsj317QhTb8arVr+wUaNeEcsU6pOhjKOo=\",\"issuer_signature\":\"1B+Kvos3Uk94sfiaxhX/ZEnWRGhARKEQf2otMqq3VA4=-Zw6FzRFlzsDnDJ+L175KWeZO5bynx8MFEzQdfVyT7yE=\"}",
-        "device_r_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"r_ticket_id\":\"6xvgTFmqu5RP/c3JDapRPQdkvPvT1JoMRW9JZfmNqiQ=\",\"r_ticket_type\":\"INITIALIZATION\",\"device_id\":\"FW4UwhflzNwwo/DzCIj+hhz7Rga6dX/ThZ+0QpBwN2s=-2MOJ7HB9JWJW+QuEvPIrVkWQWVLyLBvJhUWB98EnGIU=\",\"result\":\" -> SUCCESS: VERIFY_UT_CAN_EXECUTE\",\"ticket_order\":1,\"audit_start\":\"AbEOKc3zXnUgd9m/c0RAIlVmVt/JY4eMFq2Bvb10WvA=\",\"device_signature\":\"iczbWzZ3T+socrGqz5he7hR/7JbihOdfplVu84ZpJdE=-MNIoEQA4oGyZnQK16T1/rpjsP3T9gae0KmeIKUl+Tho=\"}",
-        "device_u_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"u_ticket_id\":\"AbEOKc3zXnUgd9m/c0RAIlVmVt/JY4eMFq2Bvb10WvA=\",\"u_ticket_type\":\"INITIALIZATION\",\"device_id\":\"no_id\",\"ticket_order\":0,\"holder_id\":\"2kN9FoOw9yH/8nu40IP4xEnIRNr1ip8DVlRO60hR5H8=-XmfYoSaP+VzZGR1MAmiZPc7RIMHSBlnNsV/91JaRLq4=\"}",
+        "device_ownership_u_ticket_for_others": "{\"protocol_version\":\"UREKA-1.0\",\"u_ticket_id\":\"TLc2DMWt43BPnn2kM1E3obDbI295fYaghN+PIkMjPTk=\",\"u_ticket_type\":\"OWNERSHIP\",\"device_id\":\"06VRr9ijlNiYtdpcOGhl+KNozT6L0MPpItHfctFTzOQ=-d4/FYVpxL9DN7LmPz47fN7zs4I4tcsLGWgN/YVIqfjs=\",\"ticket_order\":1,\"holder_id\":\"EMhPINveehBsVd9fo3CFBViiBBK5NHdnWWi7FKGtk18=-KZqMS4vA6EZbU0U8Mu9GX7Lq6e4ykZHjBzuNEFL3hL0=\",\"issuer_signature\":\"VdfWFYrGyBXzRTnSuGVZCVQGabdVze4Bhocc2+g9S/U=-xw3/p7aFF3Lzgt0ELdMaZLE82ktJq4tLiNSCdYxFo+U=\"}",
+        "device_r_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"r_ticket_id\":\"4EumLip9fWELC+X0MBNluS6R3Mxq4AM8/ADvxzUjITQ=\",\"r_ticket_type\":\"INITIALIZATION\",\"device_id\":\"06VRr9ijlNiYtdpcOGhl+KNozT6L0MPpItHfctFTzOQ=-d4/FYVpxL9DN7LmPz47fN7zs4I4tcsLGWgN/YVIqfjs=\",\"result\":\" -> SUCCESS: VERIFY_UT_CAN_EXECUTE\",\"ticket_order\":1,\"audit_start\":\"KbxNO2GUDTQC2XWCpM9FVPSJK/ymNqS97Ep6DXC/zqw=\",\"device_signature\":\"s3yteVebpnvB7ZcU/mz8ZnZWok32AHhj3UCpS/DzkMs=-flia5WPTCE7FQqAr6cmCvDLDNBlg9hhX8FU2K9lJ8f0=\"}",
+        "device_u_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"u_ticket_id\":\"KbxNO2GUDTQC2XWCpM9FVPSJK/ymNqS97Ep6DXC/zqw=\",\"u_ticket_type\":\"INITIALIZATION\",\"device_id\":\"no_id\",\"ticket_order\":0,\"holder_id\":\"oi6BOEKjplrI0ZNgwaXqPnPLORnK9ae5j3nWD1+BcWE=-NJ2jsYWDojEP2cmdLLPAw3trhsYUWuje/p802z2ixBQ=\"}",
         "ticket_order": 1
     },
     "no_id": {
@@ -16,7 +16,7 @@
         "device_ownership_r_ticket_for_others": null,
         "device_ownership_u_ticket_for_others": null,
         "device_r_ticket_for_owner": null,
-        "device_u_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"u_ticket_id\":\"AbEOKc3zXnUgd9m/c0RAIlVmVt/JY4eMFq2Bvb10WvA=\",\"u_ticket_type\":\"INITIALIZATION\",\"device_id\":\"no_id\",\"ticket_order\":0,\"holder_id\":\"2kN9FoOw9yH/8nu40IP4xEnIRNr1ip8DVlRO60hR5H8=-XmfYoSaP+VzZGR1MAmiZPc7RIMHSBlnNsV/91JaRLq4=\"}",
+        "device_u_ticket_for_owner": "{\"protocol_version\":\"UREKA-1.0\",\"u_ticket_id\":\"KbxNO2GUDTQC2XWCpM9FVPSJK/ymNqS97Ep6DXC/zqw=\",\"u_ticket_type\":\"INITIALIZATION\",\"device_id\":\"no_id\",\"ticket_order\":0,\"holder_id\":\"oi6BOEKjplrI0ZNgwaXqPnPLORnK9ae5j3nWD1+BcWE=-NJ2jsYWDojEP2cmdLLPAw3trhsYUWuje/p802z2ixBQ=\"}",
         "ticket_order": 0
     }
 }

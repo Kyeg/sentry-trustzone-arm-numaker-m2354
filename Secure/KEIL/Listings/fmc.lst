@@ -18,10 +18,10 @@
 	.eabi_attribute	26, 2	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"fmc.c"
-	.file	1 "C:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
-	.file	2 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/StdDriver/src/fmc.c"
-	.file	3 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include/fmc_reg.h"
-	.file	4 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include\\M2354.h"
+	.file	1 "C:\\Users\\LogoslabMiniPC" "AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h"
+	.file	2 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/StdDriver/src/fmc.c"
+	.file	3 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include\\fmc_reg.h"
+	.file	4 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include\\M2354.h"
 	.section	.text.FMC_CheckAllOne,"ax",%progbits
 	.hidden	FMC_CheckAllOne                 @ -- Begin function FMC_CheckAllOne
 	.globl	FMC_CheckAllOne
@@ -515,7 +515,7 @@ FMC_CheckAllOne:
 .LBB0_53:
 	.loc	2 102 12                        @ ../../../../../Library/StdDriver/src/fmc.c:102:12
 	ldr	r0, [sp, #132]
-	.loc	2 102 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:102:5
+	.loc	2 102 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:102:5
 	add	sp, #144
 	pop	{r7, pc}
 .Ltmp30:
@@ -1397,7 +1397,7 @@ FMC_ConfigXOM:
 .LBB2_78:
 	.loc	2 243 12                        @ ../../../../../Library/StdDriver/src/fmc.c:243:12
 	ldr	r0, [sp, #208]
-	.loc	2 243 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:243:5
+	.loc	2 243 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:243:5
 	add	sp, #224
 	pop	{r7, pc}
 .Ltmp77:
@@ -1565,7 +1565,7 @@ FMC_GetXOMState:
 .LBB3_6:
 	.loc	2 566 12                        @ ../../../../../Library/StdDriver/src/fmc.c:566:12
 	ldr	r0, [sp, #12]
-	.loc	2 566 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:566:5
+	.loc	2 566 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:566:5
 	add	sp, #24
 	pop	{r7, pc}
 .Ltmp86:
@@ -1807,7 +1807,7 @@ FMC_Erase:
 .LBB4_21:
 	.loc	2 292 12                        @ ../../../../../Library/StdDriver/src/fmc.c:292:12
 	ldr	r0, [sp, #56]
-	.loc	2 292 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:292:5
+	.loc	2 292 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:292:5
 	add	sp, #64
 	pop	{r7, pc}
 .Ltmp100:
@@ -1973,7 +1973,7 @@ FMC_EraseBank:
 .LBB5_7:
 	.loc	2 337 12                        @ ../../../../../Library/StdDriver/src/fmc.c:337:12
 	ldr	r0, [sp, #4]
-	.loc	2 337 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:337:5
+	.loc	2 337 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:337:5
 	add	sp, #12
 	bx	lr
 .Ltmp110:
@@ -2202,7 +2202,7 @@ FMC_EraseXOM:
 	str	r0, [r1]
 	.loc	2 408 12 is_stmt 1              @ ../../../../../Library/StdDriver/src/fmc.c:408:12
 	ldr	r0, [sp, #8]
-	.loc	2 408 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:408:5
+	.loc	2 408 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:408:5
 	add	sp, #24
 	pop	{r7, pc}
 .Ltmp133:
@@ -2596,12 +2596,13 @@ FMC_GetChkSum:
 .LBB7_35:
 	.loc	2 474 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/fmc.c:474:1
 	ldr	r0, [sp, #108]
+	.loc	2 474 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:474:1
 	add	sp, #112
 	pop	{r7, pc}
 .Ltmp148:
 	.p2align	2
 @ %bb.36:
-	.loc	2 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/fmc.c:0:1
+	.loc	2 0 1                           @ ../../../../../Library/StdDriver/src/fmc.c:0:1
 __arm_cp.7_0:
 	.long	g_FMC_i32ErrCode
 .Lcpi_end57:
@@ -2836,7 +2837,7 @@ FMC_IsOTPLocked:
 .LBB8_14:
 	.loc	2 537 12                        @ ../../../../../Library/StdDriver/src/fmc.c:537:12
 	ldr	r0, [sp, #4]
-	.loc	2 537 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:537:5
+	.loc	2 537 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:537:5
 	add	sp, #12
 	bx	lr
 .Ltmp169:
@@ -3038,7 +3039,7 @@ FMC_LockOTP:
 .LBB9_11:
 	.loc	2 622 12                        @ ../../../../../Library/StdDriver/src/fmc.c:622:12
 	ldr	r0, [sp, #4]
-	.loc	2 622 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:622:5
+	.loc	2 622 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:622:5
 	add	sp, #12
 	bx	lr
 .Ltmp186:
@@ -3126,7 +3127,7 @@ FMC_Open:
 	movs	r2, #1
 	orrs	r0, r2
 	str	r0, [r1]
-	.loc	2 641 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/fmc.c:641:1
+	.loc	2 641 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/fmc.c:641:1
 	add	sp, #8
 	pop	{r7, pc}
 .Ltmp188:
@@ -3315,12 +3316,13 @@ FMC_Read:
 .LBB11_16:
 	.loc	2 679 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/fmc.c:679:1
 	ldr	r0, [sp, #60]
+	.loc	2 679 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:679:1
 	add	sp, #64
 	pop	{r7, pc}
 .Ltmp194:
 	.p2align	2
 @ %bb.17:
-	.loc	2 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/fmc.c:0:1
+	.loc	2 0 1                           @ ../../../../../Library/StdDriver/src/fmc.c:0:1
 __arm_cp.11_0:
 	.long	g_FMC_i32ErrCode
 .Lcpi_end87:
@@ -3504,7 +3506,7 @@ FMC_Read64:
 .LBB12_8:
 	.loc	2 732 12 is_stmt 1              @ ../../../../../Library/StdDriver/src/fmc.c:732:12
 	ldr	r0, [sp, #4]
-	.loc	2 732 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:732:5
+	.loc	2 732 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:732:5
 	add	sp, #20
 	bx	lr
 .Ltmp206:
@@ -3733,7 +3735,7 @@ FMC_ReadOTP:
 .LBB13_12:
 	.loc	2 795 12                        @ ../../../../../Library/StdDriver/src/fmc.c:795:12
 	ldr	r0, [sp, #4]
-	.loc	2 795 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:795:5
+	.loc	2 795 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:795:5
 	add	sp, #20
 	bx	lr
 .Ltmp225:
@@ -3877,7 +3879,7 @@ FMC_ReadConfig:
 .LBB14_6:
 	.loc	2 827 12 is_stmt 1              @ ../../../../../Library/StdDriver/src/fmc.c:827:12
 	ldr	r0, [sp]
-	.loc	2 827 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:827:5
+	.loc	2 827 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:827:5
 	add	sp, #16
 	pop	{r7, pc}
 .Ltmp236:
@@ -4068,12 +4070,13 @@ FMC_Write:
 .LBB15_16:
 	.loc	2 867 1                         @ ../../../../../Library/StdDriver/src/fmc.c:867:1
 	ldr	r0, [sp, #60]
+	.loc	2 867 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:867:1
 	add	sp, #64
 	pop	{r7, pc}
 .Ltmp242:
 	.p2align	2
 @ %bb.17:
-	.loc	2 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/fmc.c:0:1
+	.loc	2 0 1                           @ ../../../../../Library/StdDriver/src/fmc.c:0:1
 __arm_cp.15_0:
 	.long	g_FMC_i32ErrCode
 .Lcpi_end116:
@@ -4250,12 +4253,13 @@ FMC_Write8Bytes:
 .LBB16_8:
 	.loc	2 915 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/fmc.c:915:1
 	ldr	r0, [sp, #20]
+	.loc	2 915 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:915:1
 	add	sp, #24
 	bx	lr
 .Ltmp252:
 	.p2align	2
 @ %bb.9:
-	.loc	2 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/fmc.c:0:1
+	.loc	2 0 1                           @ ../../../../../Library/StdDriver/src/fmc.c:0:1
 __arm_cp.16_0:
 	.long	g_FMC_i32ErrCode
 .Lcpi_end126:
@@ -4431,7 +4435,7 @@ FMC_WriteConfig:
 	str	r0, [r1]
 	.loc	2 953 12                        @ ../../../../../Library/StdDriver/src/fmc.c:953:12
 	ldr	r0, [sp, #4]
-	.loc	2 953 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/fmc.c:953:5
+	.loc	2 953 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:953:5
 	add	sp, #16
 	pop	{r7, pc}
 .Ltmp267:
@@ -4624,10 +4628,10 @@ FMC_WriteMultiple:
 	movs	r0, #1
 	str	r0, [sp, #68]
 .Ltmp278:
-	.file	5 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" "../../../../../Library/CMSIS/Include/cmsis_armclang.h"
-	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:46
+	.file	5 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" "../../../../../Library/CMSIS/Include\\cmsis_armclang.h"
+	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:46
 	ldr	r0, [sp, #68]
-	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:3
+	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:3
 	@APP
 	msr	primask, r0
 	@NO_APP
@@ -4652,9 +4656,9 @@ FMC_WriteMultiple:
 	movs	r0, #0
 	str	r0, [sp, #64]
 .Ltmp282:
-	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:46
+	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:46
 	ldr	r1, [sp, #64]
-	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:3
+	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:3
 	@APP
 	msr	primask, r1
 	@NO_APP
@@ -4699,9 +4703,9 @@ FMC_WriteMultiple:
 	movs	r0, #0
 	str	r0, [sp, #60]
 .Ltmp286:
-	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:46
+	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:46
 	ldr	r1, [sp, #60]
-	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:3
+	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:3
 	@APP
 	msr	primask, r1
 	@NO_APP
@@ -4811,9 +4815,9 @@ FMC_WriteMultiple:
 	movs	r0, #0
 	str	r0, [sp, #56]
 .Ltmp296:
-	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:46
+	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:46
 	ldr	r1, [sp, #56]
-	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:3
+	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:3
 	@APP
 	msr	primask, r1
 	@NO_APP
@@ -4858,9 +4862,9 @@ FMC_WriteMultiple:
 	movs	r0, #0
 	str	r0, [sp, #52]
 .Ltmp300:
-	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:46
+	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:46
 	ldr	r1, [sp, #52]
-	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:3
+	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:3
 	@APP
 	msr	primask, r1
 	@NO_APP
@@ -4948,9 +4952,9 @@ FMC_WriteMultiple:
 	movs	r0, #0
 	str	r0, [sp, #48]
 .Ltmp308:
-	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:46
+	.loc	5 400 46 is_stmt 1              @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:46
 	ldr	r0, [sp, #48]
-	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include/cmsis_armclang.h:400:3
+	.loc	5 400 3 is_stmt 0               @ ../../../../../Library/CMSIS/Include\cmsis_armclang.h:400:3
 	@APP
 	msr	primask, r0
 	@NO_APP
@@ -5067,12 +5071,13 @@ FMC_WriteMultiple:
 .LBB18_42:
 	.loc	2 1086 1 is_stmt 1              @ ../../../../../Library/StdDriver/src/fmc.c:1086:1
 	ldr	r0, [sp, #44]
+	.loc	2 1086 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:1086:1
 	add	sp, #72
 	bx	lr
 .Ltmp327:
 	.p2align	2
 @ %bb.43:
-	.loc	2 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/fmc.c:0:1
+	.loc	2 0 1                           @ ../../../../../Library/StdDriver/src/fmc.c:0:1
 __arm_cp.18_0:
 	.long	g_FMC_i32ErrCode
 .Lcpi_end136:
@@ -5398,7 +5403,7 @@ FMC_WriteOTP:
 .LBB19_20:
 	.loc	2 1169 12                       @ ../../../../../Library/StdDriver/src/fmc.c:1169:12
 	ldr	r0, [sp, #4]
-	.loc	2 1169 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/fmc.c:1169:5
+	.loc	2 1169 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:1169:5
 	add	sp, #20
 	bx	lr
 .Ltmp355:
@@ -5561,7 +5566,7 @@ FMC_RemapBank:
 .LBB20_7:
 	.loc	2 1214 12                       @ ../../../../../Library/StdDriver/src/fmc.c:1214:12
 	ldr	r0, [sp, #4]
-	.loc	2 1214 5 is_stmt 0              @ ../../../../../Library/StdDriver/src/fmc.c:1214:5
+	.loc	2 1214 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/fmc.c:1214:5
 	add	sp, #12
 	bx	lr
 .Ltmp365:
@@ -5990,7 +5995,7 @@ g_FMC_i32ErrCode:
 	.byte	4                               @ Address Size (in bytes)
 	.byte	1                               @ Abbrev [1] 0xb:0x983 DW_TAG_compile_unit
 	.long	.Linfo_string0                  @ DW_AT_producer
-	.short	12                              @ DW_AT_language
+	.short	29                              @ DW_AT_language
 	.long	.Linfo_string1                  @ DW_AT_name
 	.long	.Lline_table_start0             @ DW_AT_stmt_list
 	.long	.Linfo_string2                  @ DW_AT_comp_dir
@@ -7283,198 +7288,198 @@ g_FMC_i32ErrCode:
 	.long	0
 	.section	.debug_str,"MS",%progbits,1
 .Linfo_string0:
-	.asciz	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]" @ string offset=0
+	.asciz	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]" @ string offset=0
 .Linfo_string1:
 	.asciz	"../../../../../Library/StdDriver/src\\fmc.c" @ string offset=68
 .Linfo_string2:
-	.asciz	"C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Secure\\KEIL" @ string offset=111
+	.asciz	"C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Secure\\KEIL" @ string offset=111
 .Linfo_string3:
-	.asciz	"g_FMC_i32ErrCode"              @ string offset=227
+	.asciz	"g_FMC_i32ErrCode"              @ string offset=246
 .Linfo_string4:
-	.asciz	"int"                           @ string offset=244
+	.asciz	"int"                           @ string offset=263
 .Linfo_string5:
-	.asciz	"int32_t"                       @ string offset=248
+	.asciz	"int32_t"                       @ string offset=267
 .Linfo_string6:
-	.asciz	"ISPCTL"                        @ string offset=256
+	.asciz	"ISPCTL"                        @ string offset=275
 .Linfo_string7:
-	.asciz	"unsigned int"                  @ string offset=263
+	.asciz	"unsigned int"                  @ string offset=282
 .Linfo_string8:
-	.asciz	"uint32_t"                      @ string offset=276
+	.asciz	"uint32_t"                      @ string offset=295
 .Linfo_string9:
-	.asciz	"ISPADDR"                       @ string offset=285
+	.asciz	"ISPADDR"                       @ string offset=304
 .Linfo_string10:
-	.asciz	"ISPDAT"                        @ string offset=293
+	.asciz	"ISPDAT"                        @ string offset=312
 .Linfo_string11:
-	.asciz	"ISPCMD"                        @ string offset=300
+	.asciz	"ISPCMD"                        @ string offset=319
 .Linfo_string12:
-	.asciz	"ISPTRG"                        @ string offset=307
+	.asciz	"ISPTRG"                        @ string offset=326
 .Linfo_string13:
-	.asciz	"RESERVE0"                      @ string offset=314
+	.asciz	"RESERVE0"                      @ string offset=333
 .Linfo_string14:
-	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=323
+	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=342
 .Linfo_string15:
-	.asciz	"ISPSTS"                        @ string offset=343
+	.asciz	"ISPSTS"                        @ string offset=362
 .Linfo_string16:
-	.asciz	"RESERVE1"                      @ string offset=350
+	.asciz	"RESERVE1"                      @ string offset=369
 .Linfo_string17:
-	.asciz	"CYCCTL"                        @ string offset=359
+	.asciz	"CYCCTL"                        @ string offset=378
 .Linfo_string18:
-	.asciz	"RESERVE2"                      @ string offset=366
+	.asciz	"RESERVE2"                      @ string offset=385
 .Linfo_string19:
-	.asciz	"MPDAT0"                        @ string offset=375
+	.asciz	"MPDAT0"                        @ string offset=394
 .Linfo_string20:
-	.asciz	"MPDAT1"                        @ string offset=382
+	.asciz	"MPDAT1"                        @ string offset=401
 .Linfo_string21:
-	.asciz	"MPDAT2"                        @ string offset=389
+	.asciz	"MPDAT2"                        @ string offset=408
 .Linfo_string22:
-	.asciz	"MPDAT3"                        @ string offset=396
+	.asciz	"MPDAT3"                        @ string offset=415
 .Linfo_string23:
-	.asciz	"RESERVE3"                      @ string offset=403
+	.asciz	"RESERVE3"                      @ string offset=422
 .Linfo_string24:
-	.asciz	"MPSTS"                         @ string offset=412
+	.asciz	"MPSTS"                         @ string offset=431
 .Linfo_string25:
-	.asciz	"MPADDR"                        @ string offset=418
+	.asciz	"MPADDR"                        @ string offset=437
 .Linfo_string26:
-	.asciz	"RESERVE4"                      @ string offset=425
+	.asciz	"RESERVE4"                      @ string offset=444
 .Linfo_string27:
-	.asciz	"XOMR0STS"                      @ string offset=434
+	.asciz	"XOMR0STS"                      @ string offset=453
 .Linfo_string28:
-	.asciz	"XOMR1STS"                      @ string offset=443
+	.asciz	"XOMR1STS"                      @ string offset=462
 .Linfo_string29:
-	.asciz	"XOMR2STS"                      @ string offset=452
+	.asciz	"XOMR2STS"                      @ string offset=471
 .Linfo_string30:
-	.asciz	"XOMR3STS"                      @ string offset=461
+	.asciz	"XOMR3STS"                      @ string offset=480
 .Linfo_string31:
-	.asciz	"XOMSTS"                        @ string offset=470
+	.asciz	"XOMSTS"                        @ string offset=489
 .Linfo_string32:
-	.asciz	"RESERVE5"                      @ string offset=477
+	.asciz	"RESERVE5"                      @ string offset=496
 .Linfo_string33:
-	.asciz	"DFCTL"                         @ string offset=486
+	.asciz	"DFCTL"                         @ string offset=505
 .Linfo_string34:
-	.asciz	"RESERVE6"                      @ string offset=492
+	.asciz	"RESERVE6"                      @ string offset=511
 .Linfo_string35:
-	.asciz	"DFSTS"                         @ string offset=501
+	.asciz	"DFSTS"                         @ string offset=520
 .Linfo_string36:
-	.asciz	"SCRKEY"                        @ string offset=507
+	.asciz	"SCRKEY"                        @ string offset=526
 .Linfo_string37:
-	.asciz	"FMC_T"                         @ string offset=514
+	.asciz	"FMC_T"                         @ string offset=533
 .Linfo_string38:
-	.asciz	"vu32"                          @ string offset=520
+	.asciz	"vu32"                          @ string offset=539
 .Linfo_string39:
-	.asciz	"__set_PRIMASK"                 @ string offset=525
+	.asciz	"__set_PRIMASK"                 @ string offset=544
 .Linfo_string40:
-	.asciz	"priMask"                       @ string offset=539
+	.asciz	"priMask"                       @ string offset=558
 .Linfo_string41:
-	.asciz	"FMC_CheckAllOne"               @ string offset=547
+	.asciz	"FMC_CheckAllOne"               @ string offset=566
 .Linfo_string42:
-	.asciz	"FMC_Close"                     @ string offset=563
+	.asciz	"FMC_Close"                     @ string offset=582
 .Linfo_string43:
-	.asciz	"FMC_ConfigXOM"                 @ string offset=573
+	.asciz	"FMC_ConfigXOM"                 @ string offset=592
 .Linfo_string44:
-	.asciz	"FMC_GetXOMState"               @ string offset=587
+	.asciz	"FMC_GetXOMState"               @ string offset=606
 .Linfo_string45:
-	.asciz	"FMC_Erase"                     @ string offset=603
+	.asciz	"FMC_Erase"                     @ string offset=622
 .Linfo_string46:
-	.asciz	"FMC_EraseBank"                 @ string offset=613
+	.asciz	"FMC_EraseBank"                 @ string offset=632
 .Linfo_string47:
-	.asciz	"FMC_EraseXOM"                  @ string offset=627
+	.asciz	"FMC_EraseXOM"                  @ string offset=646
 .Linfo_string48:
-	.asciz	"FMC_GetChkSum"                 @ string offset=640
+	.asciz	"FMC_GetChkSum"                 @ string offset=659
 .Linfo_string49:
-	.asciz	"FMC_IsOTPLocked"               @ string offset=654
+	.asciz	"FMC_IsOTPLocked"               @ string offset=673
 .Linfo_string50:
-	.asciz	"FMC_LockOTP"                   @ string offset=670
+	.asciz	"FMC_LockOTP"                   @ string offset=689
 .Linfo_string51:
-	.asciz	"FMC_Open"                      @ string offset=682
+	.asciz	"FMC_Open"                      @ string offset=701
 .Linfo_string52:
-	.asciz	"FMC_Read"                      @ string offset=691
+	.asciz	"FMC_Read"                      @ string offset=710
 .Linfo_string53:
-	.asciz	"FMC_Read64"                    @ string offset=700
+	.asciz	"FMC_Read64"                    @ string offset=719
 .Linfo_string54:
-	.asciz	"FMC_ReadOTP"                   @ string offset=711
+	.asciz	"FMC_ReadOTP"                   @ string offset=730
 .Linfo_string55:
-	.asciz	"FMC_ReadConfig"                @ string offset=723
+	.asciz	"FMC_ReadConfig"                @ string offset=742
 .Linfo_string56:
-	.asciz	"FMC_Write"                     @ string offset=738
+	.asciz	"FMC_Write"                     @ string offset=757
 .Linfo_string57:
-	.asciz	"FMC_Write8Bytes"               @ string offset=748
+	.asciz	"FMC_Write8Bytes"               @ string offset=767
 .Linfo_string58:
-	.asciz	"FMC_WriteConfig"               @ string offset=764
+	.asciz	"FMC_WriteConfig"               @ string offset=783
 .Linfo_string59:
-	.asciz	"FMC_WriteMultiple"             @ string offset=780
+	.asciz	"FMC_WriteMultiple"             @ string offset=799
 .Linfo_string60:
-	.asciz	"FMC_WriteOTP"                  @ string offset=798
+	.asciz	"FMC_WriteOTP"                  @ string offset=817
 .Linfo_string61:
-	.asciz	"FMC_RemapBank"                 @ string offset=811
+	.asciz	"FMC_RemapBank"                 @ string offset=830
 .Linfo_string62:
-	.asciz	"u32addr"                       @ string offset=825
+	.asciz	"u32addr"                       @ string offset=844
 .Linfo_string63:
-	.asciz	"u32count"                      @ string offset=833
+	.asciz	"u32count"                      @ string offset=852
 .Linfo_string64:
-	.asciz	"ret"                           @ string offset=842
+	.asciz	"ret"                           @ string offset=861
 .Linfo_string65:
-	.asciz	"i32TimeOutCnt0"                @ string offset=846
+	.asciz	"i32TimeOutCnt0"                @ string offset=865
 .Linfo_string66:
-	.asciz	"i32TimeOutCnt1"                @ string offset=861
+	.asciz	"i32TimeOutCnt1"                @ string offset=880
 .Linfo_string67:
-	.asciz	"u32XomNum"                     @ string offset=876
+	.asciz	"u32XomNum"                     @ string offset=895
 .Linfo_string68:
-	.asciz	"u32XomBase"                    @ string offset=886
+	.asciz	"u32XomBase"                    @ string offset=905
 .Linfo_string69:
-	.asciz	"u8XomPage"                     @ string offset=897
+	.asciz	"u8XomPage"                     @ string offset=916
 .Linfo_string70:
-	.asciz	"unsigned char"                 @ string offset=907
+	.asciz	"unsigned char"                 @ string offset=926
 .Linfo_string71:
-	.asciz	"uint8_t"                       @ string offset=921
+	.asciz	"uint8_t"                       @ string offset=940
 .Linfo_string72:
-	.asciz	"u32ApromSize"                  @ string offset=929
+	.asciz	"u32ApromSize"                  @ string offset=948
 .Linfo_string73:
-	.asciz	"i32TimeOutCnt"                 @ string offset=942
+	.asciz	"i32TimeOutCnt"                 @ string offset=961
 .Linfo_string74:
-	.asciz	"u32act"                        @ string offset=956
+	.asciz	"u32act"                        @ string offset=975
 .Linfo_string75:
-	.asciz	"u32PageAddr"                   @ string offset=963
+	.asciz	"u32PageAddr"                   @ string offset=982
 .Linfo_string76:
-	.asciz	"u32BankAddr"                   @ string offset=975
+	.asciz	"u32BankAddr"                   @ string offset=994
 .Linfo_string77:
-	.asciz	"u32Addr"                       @ string offset=987
+	.asciz	"u32Addr"                       @ string offset=1006
 .Linfo_string78:
-	.asciz	"i32Active"                     @ string offset=995
+	.asciz	"i32Active"                     @ string offset=1014
 .Linfo_string79:
-	.asciz	"err"                           @ string offset=1005
+	.asciz	"err"                           @ string offset=1024
 .Linfo_string80:
-	.asciz	"u32OtpNum"                     @ string offset=1009
+	.asciz	"u32OtpNum"                     @ string offset=1028
 .Linfo_string81:
-	.asciz	"u32data0"                      @ string offset=1019
+	.asciz	"u32data0"                      @ string offset=1038
 .Linfo_string82:
-	.asciz	"u32data1"                      @ string offset=1028
+	.asciz	"u32data1"                      @ string offset=1047
 .Linfo_string83:
-	.asciz	"u32LowWord"                    @ string offset=1037
+	.asciz	"u32LowWord"                    @ string offset=1056
 .Linfo_string84:
-	.asciz	"u32HighWord"                   @ string offset=1048
+	.asciz	"u32HighWord"                   @ string offset=1067
 .Linfo_string85:
-	.asciz	"u32Config"                     @ string offset=1060
+	.asciz	"u32Config"                     @ string offset=1079
 .Linfo_string86:
-	.asciz	"u32Count"                      @ string offset=1070
+	.asciz	"u32Count"                      @ string offset=1089
 .Linfo_string87:
-	.asciz	"i"                             @ string offset=1079
+	.asciz	"i"                             @ string offset=1098
 .Linfo_string88:
-	.asciz	"u32Data"                       @ string offset=1081
+	.asciz	"u32Data"                       @ string offset=1100
 .Linfo_string89:
-	.asciz	"au32Config"                    @ string offset=1089
+	.asciz	"au32Config"                    @ string offset=1108
 .Linfo_string90:
-	.asciz	"pu32Buf"                       @ string offset=1100
+	.asciz	"pu32Buf"                       @ string offset=1119
 .Linfo_string91:
-	.asciz	"u32Len"                        @ string offset=1108
+	.asciz	"u32Len"                        @ string offset=1127
 .Linfo_string92:
-	.asciz	"idx"                           @ string offset=1115
+	.asciz	"idx"                           @ string offset=1134
 .Linfo_string93:
-	.asciz	"u32OnProg"                     @ string offset=1119
+	.asciz	"u32OnProg"                     @ string offset=1138
 .Linfo_string94:
-	.asciz	"retval"                        @ string offset=1129
+	.asciz	"retval"                        @ string offset=1148
 .Linfo_string95:
-	.asciz	"u32Bank"                       @ string offset=1136
-	.ident	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]"
+	.asciz	"u32Bank"                       @ string offset=1155
+	.ident	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]"
 	.section	".note.GNU-stack","",%progbits
 	.eabi_attribute	30, 6	@ Tag_ABI_optimization_goals
 	.ARM_attribute	6, 1	@ Tag_AV_cpp_exceptions

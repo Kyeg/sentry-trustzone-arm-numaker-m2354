@@ -18,7 +18,7 @@
 	.eabi_attribute	26, 2	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"uart.c"
-	.file	1 "C:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
+	.file	1 "C:\\Users\\LogoslabMiniPC" "AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h"
 	.section	.text.UART_ClearIntFlag,"ax",%progbits
 	.hidden	UART_ClearIntFlag               @ -- Begin function UART_ClearIntFlag
 	.globl	UART_ClearIntFlag
@@ -28,7 +28,7 @@
 	.thumb_func
 UART_ClearIntFlag:
 .Lfunc_begin0:
-	.file	2 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/StdDriver/src/uart.c"
+	.file	2 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/StdDriver/src/uart.c"
 	.loc	2 43 0                          @ ../../../../../Library/StdDriver/src/uart.c:43:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -160,7 +160,7 @@ UART_ClearIntFlag:
 	b	.LBB0_12
 .Ltmp12:
 .LBB0_12:
-	.loc	2 79 1                          @ ../../../../../Library/StdDriver/src/uart.c:79:1
+	.loc	2 79 1 epilogue_begin           @ ../../../../../Library/StdDriver/src/uart.c:79:1
 	add	sp, #8
 	bx	lr
 .Ltmp13:
@@ -204,7 +204,7 @@ UART_Close:
 	movs	r0, #0
 	.loc	2 93 17 is_stmt 0               @ ../../../../../Library/StdDriver/src/uart.c:93:17
 	str	r0, [r1, #4]
-	.loc	2 94 1 is_stmt 1                @ ../../../../../Library/StdDriver/src/uart.c:94:1
+	.loc	2 94 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/uart.c:94:1
 	add	sp, #4
 	bx	lr
 .Ltmp15:
@@ -239,7 +239,7 @@ UART_DisableFlowCtrl:
 	movw	r2, #12288
 	bics	r0, r2
 	str	r0, [r1, #4]
-	.loc	2 109 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/uart.c:109:1
+	.loc	2 109 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/uart.c:109:1
 	add	sp, #4
 	bx	lr
 .Ltmp17:
@@ -274,7 +274,7 @@ UART_DisableInt:
 	ldr	r0, [r1, #4]
 	bics	r0, r2
 	str	r0, [r1, #4]
-	.loc	2 137 1                         @ ../../../../../Library/StdDriver/src/uart.c:137:1
+	.loc	2 137 1 epilogue_begin          @ ../../../../../Library/StdDriver/src/uart.c:137:1
 	add	sp, #8
 	bx	lr
 .Ltmp19:
@@ -323,7 +323,7 @@ UART_EnableFlowCtrl:
 	movw	r2, #12288
 	orrs	r0, r2
 	str	r0, [r1, #4]
-	.loc	2 159 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/uart.c:159:1
+	.loc	2 159 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/uart.c:159:1
 	add	sp, #4
 	bx	lr
 .Ltmp21:
@@ -358,7 +358,7 @@ UART_EnableInt:
 	ldr	r0, [r1, #4]
 	orrs	r0, r2
 	str	r0, [r1, #4]
-	.loc	2 188 1                         @ ../../../../../Library/StdDriver/src/uart.c:188:1
+	.loc	2 188 1 epilogue_begin          @ ../../../../../Library/StdDriver/src/uart.c:188:1
 	add	sp, #8
 	bx	lr
 .Ltmp23:
@@ -822,7 +822,7 @@ UART_Open:
 	b	.LBB6_38
 .Ltmp62:
 .LBB6_38:
-	.loc	2 285 1                         @ ../../../../../Library/StdDriver/src/uart.c:285:1
+	.loc	2 285 1 epilogue_begin          @ ../../../../../Library/StdDriver/src/uart.c:285:1
 	add	sp, #80
 	pop	{r4, r5, r7, pc}
 .Ltmp63:
@@ -1044,7 +1044,7 @@ UART_Read:
 .LBB7_13:
 	.loc	2 331 12 is_stmt 1              @ ../../../../../Library/StdDriver/src/uart.c:331:12
 	ldr	r0, [sp, #8]
-	.loc	2 331 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/uart.c:331:5
+	.loc	2 331 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/uart.c:331:5
 	add	sp, #24
 	bx	lr
 .Ltmp81:
@@ -1505,12 +1505,13 @@ UART_SetLineConfig:
 	.loc	2 439 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/uart.c:439:1
 	b	.LBB8_39
 .LBB8_39:
+	.loc	2 439 1 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/uart.c:439:1
 	add	sp, #88
 	pop	{r4, r5, r7, pc}
 .Ltmp120:
 	.p2align	2
 @ %bb.40:
-	.loc	2 0 1 is_stmt 0                 @ ../../../../../Library/StdDriver/src/uart.c:0:1
+	.loc	2 0 1                           @ ../../../../../Library/StdDriver/src/uart.c:0:1
 __arm_cp.8_0:
 	.long	.L__const.UART_SetLineConfig.au32ClkTbl
 .Lcpi_end22:
@@ -1633,7 +1634,7 @@ UART_SetTimeoutCnt:
 	movw	r2, #2048
 	orrs	r0, r2
 	str	r0, [r1, #4]
-	.loc	2 459 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/uart.c:459:1
+	.loc	2 459 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/uart.c:459:1
 	add	sp, #8
 	bx	lr
 .Ltmp122:
@@ -2103,7 +2104,7 @@ UART_SelectIrDAMode:
 	b	.LBB10_40
 .Ltmp163:
 .LBB10_40:
-	.loc	2 562 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/uart.c:562:1
+	.loc	2 562 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/uart.c:562:1
 	add	sp, #88
 	pop	{r4, r5, r7, pc}
 .Ltmp164:
@@ -2241,7 +2242,7 @@ UART_SelectRS485Mode:
 	ldr	r0, [r1, #44]
 	orrs	r0, r2
 	str	r0, [r1, #44]
-	.loc	2 587 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/uart.c:587:1
+	.loc	2 587 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/uart.c:587:1
 	add	sp, #12
 	bx	lr
 .Ltmp166:
@@ -2302,7 +2303,7 @@ UART_SelectLINMode:
 	ldr	r0, [r1, #44]
 	orrs	r0, r2
 	str	r0, [r1, #44]
-	.loc	2 611 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/uart.c:611:1
+	.loc	2 611 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/uart.c:611:1
 	add	sp, #12
 	bx	lr
 .Ltmp168:
@@ -2443,7 +2444,7 @@ UART_Write:
 .LBB13_13:
 	.loc	2 656 12 is_stmt 1              @ ../../../../../Library/StdDriver/src/uart.c:656:12
 	ldr	r0, [sp, #8]
-	.loc	2 656 5 is_stmt 0               @ ../../../../../Library/StdDriver/src/uart.c:656:5
+	.loc	2 656 5 epilogue_begin is_stmt 0 @ ../../../../../Library/StdDriver/src/uart.c:656:5
 	add	sp, #24
 	bx	lr
 .Ltmp186:
@@ -2485,7 +2486,7 @@ UART_SelectSingleWireMode:
 	ldr	r1, [sp]
 	.loc	2 671 19                        @ ../../../../../Library/StdDriver/src/uart.c:671:19
 	str	r0, [r1, #48]
-	.loc	2 672 1 is_stmt 1               @ ../../../../../Library/StdDriver/src/uart.c:672:1
+	.loc	2 672 1 epilogue_begin is_stmt 1 @ ../../../../../Library/StdDriver/src/uart.c:672:1
 	add	sp, #4
 	bx	lr
 .Ltmp188:
@@ -2535,7 +2536,7 @@ UART_SelectSingleWireMode:
 	.long	0                               @ 0x0
 	.size	.L__const.UART_SelectIrDAMode.au32ClkTbl, 32
 
-	.file	3 "C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include/uart_reg.h"
+	.file	3 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include\\uart_reg.h"
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                               @ Abbreviation Code
 	.byte	17                              @ DW_TAG_compile_unit
@@ -2795,7 +2796,7 @@ UART_SelectSingleWireMode:
 	.byte	4                               @ Address Size (in bytes)
 	.byte	1                               @ Abbrev [1] 0xb:0x595 DW_TAG_compile_unit
 	.long	.Linfo_string0                  @ DW_AT_producer
-	.short	12                              @ DW_AT_language
+	.short	29                              @ DW_AT_language
 	.long	.Linfo_string1                  @ DW_AT_name
 	.long	.Lline_table_start0             @ DW_AT_stmt_list
 	.long	.Linfo_string2                  @ DW_AT_comp_dir
@@ -3580,138 +3581,138 @@ UART_SelectSingleWireMode:
 	.long	0
 	.section	.debug_str,"MS",%progbits,1
 .Linfo_string0:
-	.asciz	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]" @ string offset=0
+	.asciz	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]" @ string offset=0
 .Linfo_string1:
 	.asciz	"../../../../../Library/StdDriver/src\\uart.c" @ string offset=68
 .Linfo_string2:
-	.asciz	"C:\\Users\\Borhan\\Desktop\\M2354_Series_BSP_CMSIS_V3.00.005_duplicate\\SampleCode\\TrustZone\\E-Voting-System\\Nonsecure\\KEIL" @ string offset=112
+	.asciz	"C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" @ string offset=112
 .Linfo_string3:
-	.asciz	"unsigned int"                  @ string offset=231
+	.asciz	"unsigned int"                  @ string offset=250
 .Linfo_string4:
-	.asciz	"uint32_t"                      @ string offset=244
+	.asciz	"uint32_t"                      @ string offset=263
 .Linfo_string5:
-	.asciz	"unsigned char"                 @ string offset=253
+	.asciz	"unsigned char"                 @ string offset=272
 .Linfo_string6:
-	.asciz	"uint8_t"                       @ string offset=267
+	.asciz	"uint8_t"                       @ string offset=286
 .Linfo_string7:
-	.asciz	"UART_ClearIntFlag"             @ string offset=275
+	.asciz	"UART_ClearIntFlag"             @ string offset=294
 .Linfo_string8:
-	.asciz	"UART_Close"                    @ string offset=293
+	.asciz	"UART_Close"                    @ string offset=312
 .Linfo_string9:
-	.asciz	"UART_DisableFlowCtrl"          @ string offset=304
+	.asciz	"UART_DisableFlowCtrl"          @ string offset=323
 .Linfo_string10:
-	.asciz	"UART_DisableInt"               @ string offset=325
+	.asciz	"UART_DisableInt"               @ string offset=344
 .Linfo_string11:
-	.asciz	"UART_EnableFlowCtrl"           @ string offset=341
+	.asciz	"UART_EnableFlowCtrl"           @ string offset=360
 .Linfo_string12:
-	.asciz	"UART_EnableInt"                @ string offset=361
+	.asciz	"UART_EnableInt"                @ string offset=380
 .Linfo_string13:
-	.asciz	"UART_Open"                     @ string offset=376
+	.asciz	"UART_Open"                     @ string offset=395
 .Linfo_string14:
-	.asciz	"UART_Read"                     @ string offset=386
+	.asciz	"UART_Read"                     @ string offset=405
 .Linfo_string15:
-	.asciz	"UART_SetLineConfig"            @ string offset=396
+	.asciz	"UART_SetLineConfig"            @ string offset=415
 .Linfo_string16:
-	.asciz	"UART_SetTimeoutCnt"            @ string offset=415
+	.asciz	"UART_SetTimeoutCnt"            @ string offset=434
 .Linfo_string17:
-	.asciz	"UART_SelectIrDAMode"           @ string offset=434
+	.asciz	"UART_SelectIrDAMode"           @ string offset=453
 .Linfo_string18:
-	.asciz	"UART_SelectRS485Mode"          @ string offset=454
+	.asciz	"UART_SelectRS485Mode"          @ string offset=473
 .Linfo_string19:
-	.asciz	"UART_SelectLINMode"            @ string offset=475
+	.asciz	"UART_SelectLINMode"            @ string offset=494
 .Linfo_string20:
-	.asciz	"UART_Write"                    @ string offset=494
+	.asciz	"UART_Write"                    @ string offset=513
 .Linfo_string21:
-	.asciz	"UART_SelectSingleWireMode"     @ string offset=505
+	.asciz	"UART_SelectSingleWireMode"     @ string offset=524
 .Linfo_string22:
-	.asciz	"uart"                          @ string offset=531
+	.asciz	"uart"                          @ string offset=550
 .Linfo_string23:
-	.asciz	"DAT"                           @ string offset=536
+	.asciz	"DAT"                           @ string offset=555
 .Linfo_string24:
-	.asciz	"INTEN"                         @ string offset=540
+	.asciz	"INTEN"                         @ string offset=559
 .Linfo_string25:
-	.asciz	"FIFO"                          @ string offset=546
+	.asciz	"FIFO"                          @ string offset=565
 .Linfo_string26:
-	.asciz	"LINE"                          @ string offset=551
+	.asciz	"LINE"                          @ string offset=570
 .Linfo_string27:
-	.asciz	"MODEM"                         @ string offset=556
+	.asciz	"MODEM"                         @ string offset=575
 .Linfo_string28:
-	.asciz	"MODEMSTS"                      @ string offset=562
+	.asciz	"MODEMSTS"                      @ string offset=581
 .Linfo_string29:
-	.asciz	"FIFOSTS"                       @ string offset=571
+	.asciz	"FIFOSTS"                       @ string offset=590
 .Linfo_string30:
-	.asciz	"INTSTS"                        @ string offset=579
+	.asciz	"INTSTS"                        @ string offset=598
 .Linfo_string31:
-	.asciz	"TOUT"                          @ string offset=586
+	.asciz	"TOUT"                          @ string offset=605
 .Linfo_string32:
-	.asciz	"BAUD"                          @ string offset=591
+	.asciz	"BAUD"                          @ string offset=610
 .Linfo_string33:
-	.asciz	"IRDA"                          @ string offset=596
+	.asciz	"IRDA"                          @ string offset=615
 .Linfo_string34:
-	.asciz	"ALTCTL"                        @ string offset=601
+	.asciz	"ALTCTL"                        @ string offset=620
 .Linfo_string35:
-	.asciz	"FUNCSEL"                       @ string offset=608
+	.asciz	"FUNCSEL"                       @ string offset=627
 .Linfo_string36:
-	.asciz	"LINCTL"                        @ string offset=616
+	.asciz	"LINCTL"                        @ string offset=635
 .Linfo_string37:
-	.asciz	"LINSTS"                        @ string offset=623
+	.asciz	"LINSTS"                        @ string offset=642
 .Linfo_string38:
-	.asciz	"BRCOMP"                        @ string offset=630
+	.asciz	"BRCOMP"                        @ string offset=649
 .Linfo_string39:
-	.asciz	"WKCTL"                         @ string offset=637
+	.asciz	"WKCTL"                         @ string offset=656
 .Linfo_string40:
-	.asciz	"WKSTS"                         @ string offset=643
+	.asciz	"WKSTS"                         @ string offset=662
 .Linfo_string41:
-	.asciz	"DWKCOMP"                       @ string offset=649
+	.asciz	"DWKCOMP"                       @ string offset=668
 .Linfo_string42:
-	.asciz	"UART_T"                        @ string offset=657
+	.asciz	"UART_T"                        @ string offset=676
 .Linfo_string43:
-	.asciz	"u32InterruptFlag"              @ string offset=664
+	.asciz	"u32InterruptFlag"              @ string offset=683
 .Linfo_string44:
-	.asciz	"u32baudrate"                   @ string offset=681
+	.asciz	"u32baudrate"                   @ string offset=700
 .Linfo_string45:
-	.asciz	"u32UartClkSrcSel"              @ string offset=693
+	.asciz	"u32UartClkSrcSel"              @ string offset=712
 .Linfo_string46:
-	.asciz	"u32UartClkDivNum"              @ string offset=710
+	.asciz	"u32UartClkDivNum"              @ string offset=729
 .Linfo_string47:
-	.asciz	"au32ClkTbl"                    @ string offset=727
+	.asciz	"au32ClkTbl"                    @ string offset=746
 .Linfo_string48:
-	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=738
+	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=757
 .Linfo_string49:
-	.asciz	"u32BaudDiv"                    @ string offset=758
+	.asciz	"u32BaudDiv"                    @ string offset=777
 .Linfo_string50:
-	.asciz	"pu8RxBuf"                      @ string offset=769
+	.asciz	"pu8RxBuf"                      @ string offset=788
 .Linfo_string51:
-	.asciz	"u32ReadBytes"                  @ string offset=778
+	.asciz	"u32ReadBytes"                  @ string offset=797
 .Linfo_string52:
-	.asciz	"u32Count"                      @ string offset=791
+	.asciz	"u32Count"                      @ string offset=810
 .Linfo_string53:
-	.asciz	"u32delayno"                    @ string offset=800
+	.asciz	"u32delayno"                    @ string offset=819
 .Linfo_string54:
-	.asciz	"u32Exit"                       @ string offset=811
+	.asciz	"u32Exit"                       @ string offset=830
 .Linfo_string55:
-	.asciz	"u32data_width"                 @ string offset=819
+	.asciz	"u32data_width"                 @ string offset=838
 .Linfo_string56:
-	.asciz	"u32parity"                     @ string offset=833
+	.asciz	"u32parity"                     @ string offset=852
 .Linfo_string57:
-	.asciz	"u32stop_bits"                  @ string offset=843
+	.asciz	"u32stop_bits"                  @ string offset=862
 .Linfo_string58:
-	.asciz	"u32TOC"                        @ string offset=856
+	.asciz	"u32TOC"                        @ string offset=875
 .Linfo_string59:
-	.asciz	"u32Buadrate"                   @ string offset=863
+	.asciz	"u32Buadrate"                   @ string offset=882
 .Linfo_string60:
-	.asciz	"u32Direction"                  @ string offset=875
+	.asciz	"u32Direction"                  @ string offset=894
 .Linfo_string61:
-	.asciz	"u32Mode"                       @ string offset=888
+	.asciz	"u32Mode"                       @ string offset=907
 .Linfo_string62:
-	.asciz	"u32Addr"                       @ string offset=896
+	.asciz	"u32Addr"                       @ string offset=915
 .Linfo_string63:
-	.asciz	"u32BreakLength"                @ string offset=904
+	.asciz	"u32BreakLength"                @ string offset=923
 .Linfo_string64:
-	.asciz	"pu8TxBuf"                      @ string offset=919
+	.asciz	"pu8TxBuf"                      @ string offset=938
 .Linfo_string65:
-	.asciz	"u32WriteBytes"                 @ string offset=928
-	.ident	"Component: Arm Compiler for Embedded 6.19 Tool: armclang [5e73cb00]"
+	.asciz	"u32WriteBytes"                 @ string offset=947
+	.ident	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]"
 	.section	".note.GNU-stack","",%progbits
 	.eabi_attribute	30, 6	@ Tag_ABI_optimization_goals
 	.ARM_attribute	6, 1	@ Tag_AV_cpp_exceptions
