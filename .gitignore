@@ -9,17 +9,14 @@
 # VScode
 **/.vscode/
 
-# # Python: Byte-compiled / optimized / DLL files
-# **/__pycache__
+# Python: Byte-compiled / optimized / DLL files
+**/__pycache__
 
-# # Python: Environments
-# **/.env
-# **/.venv
-# **/env/
-# **/venv/
+# Python: Environments
+**/.env
+**/.venv
+**/env/
+**/venv/
 
 # Python: Log
 **/*.log
-
-# Python: Agents Storage (Test-only: Re-initialzied)
-ureka_framework/resource/storage/SimpleStorage/**/*.json

@@ -1,0 +1,19 @@
+# Required
+cryptography # ==3.3.2 in legacy systems
+pydantic
+pydantic
+pyserial
+regex
+inquirer
+
+# Optional
+pyclean
+monkeytype # Needs libcst
+mypy
+pylint
+
+# Considering
+pytest
+pytest-cover
+pytest-mock
+pytest-benchmark

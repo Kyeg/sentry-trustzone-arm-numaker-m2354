@@ -5,7 +5,7 @@
 
   <Header>### uVision Project, (C) Keil Software</Header>
 
-  <WorkspaceName>C:\Users\LogoslabMiniPC\GitHub_Box_Windows\logoslab\M2354\Old_M2354_BSP_300004\SampleCode\TrustZone\Borhan-E-Voting-System\TrustZone.uvmpw</WorkspaceName>
+  <WorkspaceName>C:\Users\LogoslabMiniPC\GitHub_Box_Windows\logoslab\M2354\Ureka-NuMaker-M2354\TrustZone.uvmpw</WorkspaceName>
 
   <project>
     <PathAndName>.\Secure\KEIL\Secure.uvprojx</PathAndName>
