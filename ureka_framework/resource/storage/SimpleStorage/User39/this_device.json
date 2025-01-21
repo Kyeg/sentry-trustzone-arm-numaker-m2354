@@ -1,9 +1,0 @@
-{
-    "device_name": "User39",
-    "device_priv_key": "MIGEAgEAMBAGByqGSM49AgEGBSuBBAAKBG0wawIBAQQgFuRnfZu3efH0nFHybE1PTxUgnSXD4aEv1ixBD/r4frehRANCAAREGQIzdUYJAGOJBurVs5kM6dGuRhXp1JK29ggFB+A5DD3zFG/eXYfsN9yoB24iGCYmqcV5JuMFwmw847NnucGD",
-    "device_pub_key": "RBkCM3VGCQBjiQbq1bOZDOnRrkYV6dSStvYIBQfgOQw=-PfMUb95dh+w33KgHbiIYJiapxXkm4wXCbDzjs2e5wYM=",
-    "device_type": "USER-AGENT-OR-CLOUD-SERVER",
-    "has_device_type": true,
-    "owner_pub_key": "FPe8dMwOf3BLXwNX5yvGmgcbJIHJkq/LgEUaOo/Tt+k=-4Tro1Jhq0mYd0GDIx/+ZZM4WTihpF7Il2OpEtI/af2w=",
-    "ticket_order": 1
-}
