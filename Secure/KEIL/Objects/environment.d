@@ -1,2 +1,2 @@
-./objects/environment.o: ..\..\..\..\..\Library\Evoting\environment.cpp \
-  ..\..\..\..\..\Library\Evoting\environment.hpp
+./objects/environment.o: ..\..\Library_ThirdParty\Evoting\environment.cpp \
+  ..\..\Library_ThirdParty\Evoting\environment.hpp

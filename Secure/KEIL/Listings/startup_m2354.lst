@@ -890,7 +890,7 @@ Command Line: --debug --no_warn --xref --diag_suppress=9931,A1950W --cpu=Cortex
 -M23 --depend=.\objects\startup_m2354.d -o.\objects\startup_m2354.o -IC:\Users\
 LogoslabMiniPC\AppData\Local\Arm\Packs\Nuvoton\NuMicro_DFP\1.3.26\Device\M2354\
 Include --predefine="__UVISION_VERSION SETA 540" --list=.\listings\startup_m235
-4.lst ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM\startup_M2354.s
+4.lst ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\startup_M2354.s
 
 
 
@@ -901,8 +901,8 @@ Relocatable symbols
 
 Symbol: .STACK
    Definitions
-      At line 25 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 25 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
       None
 Comment: .STACK unused
@@ -910,23 +910,23 @@ Stack_Mem 00000000
 
 Symbol: Stack_Mem
    Definitions
-      At line 26 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 26 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
-      At line 526 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 528 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 526 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 528 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 __initial_sp 00001800
 
 Symbol: __initial_sp
    Definitions
-      At line 27 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 27 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
-      At line 57 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 57 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
 Comment: __initial_sp used once
 3 symbols
 
@@ -939,8 +939,8 @@ HEAP 00000000
 
 Symbol: HEAP
    Definitions
-      At line 38 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 38 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
       None
 Comment: HEAP unused
@@ -948,20 +948,20 @@ Heap_Mem 00000000
 
 Symbol: Heap_Mem
    Definitions
-      At line 40 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 40 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
-      At line 525 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 527 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 525 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 527 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 __heap_base 00000000
 
 Symbol: __heap_base
    Definitions
-      At line 39 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 39 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
       None
 Comment: __heap_base unused
@@ -969,8 +969,8 @@ __heap_limit 00004000
 
 Symbol: __heap_limit
    Definitions
-      At line 41 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 41 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
       None
 Comment: __heap_limit unused
@@ -985,8 +985,8 @@ RESET 00000000
 
 Symbol: RESET
    Definitions
-      At line 50 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 50 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
       None
 Comment: RESET unused
@@ -994,25 +994,25 @@ __Vectors 00000000
 
 Symbol: __Vectors
    Definitions
-      At line 57 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 57 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
-      At line 51 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 196 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 51 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 196 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 __Vectors_End 00000210
 
 Symbol: __Vectors_End
    Definitions
-      At line 194 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 194 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 52 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 196 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 52 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 196 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 3 symbols
 
@@ -1025,8 +1025,8 @@ Relocatable symbols
 
 Symbol: .text
    Definitions
-      At line 198 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 198 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
       None
 Comment: .text unused
@@ -1034,49 +1034,49 @@ ACMP01_IRQHandler 00000022
 
 Symbol: ACMP01_IRQHandler
    Definitions
-      At line 431 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 431 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 120 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 311 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 120 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 311 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 BOD_IRQHandler 00000022
 
 Symbol: BOD_IRQHandler
    Definitions
-      At line 387 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 387 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 76 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 267 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 76 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 267 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 BPWM0_IRQHandler 00000022
 
 Symbol: BPWM0_IRQHandler
    Definitions
-      At line 465 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 465 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 154 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 345 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 154 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 345 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 BPWM1_IRQHandler 00000022
 
 Symbol: BPWM1_IRQHandler
    Definitions
-      At line 466 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 466 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 155 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 346 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 155 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 346 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 BRAKE0_IRQHandler 00000022
 
@@ -1088,59 +1088,59 @@ Relocatable symbols
 
 Symbol: BRAKE0_IRQHandler
    Definitions
-      At line 411 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 411 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 100 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 291 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 100 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 291 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 BRAKE1_IRQHandler 00000022
 
 Symbol: BRAKE1_IRQHandler
    Definitions
-      At line 415 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 415 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 104 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 295 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 104 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 295 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 CAN0_IRQHandler 00000022
 
 Symbol: CAN0_IRQHandler
    Definitions
-      At line 443 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 443 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 132 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 323 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 132 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 323 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 CAN1_IRQHandler 00000022
 
 Symbol: CAN1_IRQHandler
    Definitions
-      At line 444 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 444 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 324 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 324 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: CAN1_IRQHandler used once
 CLKFAIL_IRQHandler 00000022
 
 Symbol: CLKFAIL_IRQHandler
    Definitions
-      At line 391 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 391 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 80 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 271 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 80 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 271 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 CRPT_IRQHandler 00000022
 
@@ -1152,104 +1152,104 @@ ARM Macro Assembler    Page 3 Alphabetic symbol ordering
 Relocatable symbols
 
    Definitions
-      At line 458 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 458 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 147 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 338 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 147 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 338 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 DAC_IRQHandler 00000022
 
 Symbol: DAC_IRQHandler
    Definitions
-      At line 428 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 428 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 117 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 308 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 117 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 308 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 DEFAULT_IRQHandler 00000022
 
 Symbol: DEFAULT_IRQHandler
    Definitions
-      At line 504 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 504 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 81 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 121 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 126 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 133 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 137 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 139 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 141 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 142 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 143 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 145 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 156 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 157 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 159 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 166 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 167 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 168 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
+      At line 81 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 121 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 126 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 133 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 137 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 139 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 141 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 142 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 143 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 145 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 156 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 157 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 159 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 166 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 167 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 168 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
 
 
 
 ARM Macro Assembler    Page 4 Alphabetic symbol ordering
 Relocatable symbols
 
-M\startup_M2354.s
-      At line 169 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 170 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 171 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 172 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 173 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 178 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 179 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 180 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 181 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 182 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 183 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 184 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 385 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+rtup_M2354.s
+      At line 169 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 170 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 171 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 172 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 173 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 178 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 179 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 180 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 181 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 182 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 183 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 184 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 385 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 Default_Handler 00000022
 
 Symbol: Default_Handler
    Definitions
-      At line 265 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 265 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
       None
 Comment: Default_Handler unused
@@ -1257,218 +1257,218 @@ EADC0_IRQHandler 00000022
 
 Symbol: EADC0_IRQHandler
    Definitions
-      At line 429 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 429 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 118 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 309 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 118 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 309 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EADC1_IRQHandler 00000022
 
 Symbol: EADC1_IRQHandler
    Definitions
-      At line 430 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 430 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 119 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 310 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
+      At line 119 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 310 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
 
 
 
 ARM Macro Assembler    Page 5 Alphabetic symbol ordering
 Relocatable symbols
 
-M\startup_M2354.s
+rtup_M2354.s
 
 EADC2_IRQHandler 00000022
 
 Symbol: EADC2_IRQHandler
    Definitions
-      At line 433 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 433 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 122 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 313 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 122 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 313 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EADC3_IRQHandler 00000022
 
 Symbol: EADC3_IRQHandler
    Definitions
-      At line 434 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 434 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 123 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 314 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 123 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 314 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 ECAP0_IRQHandler 00000022
 
 Symbol: ECAP0_IRQHandler
    Definitions
-      At line 473 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 473 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 162 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 353 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 162 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 353 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 ECAP1_IRQHandler 00000022
 
 Symbol: ECAP1_IRQHandler
    Definitions
-      At line 474 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 474 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 163 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 354 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 163 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 354 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EINT0_IRQHandler 00000022
 
 Symbol: EINT0_IRQHandler
    Definitions
-      At line 397 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 397 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 86 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 86 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
 
 
 
 ARM Macro Assembler    Page 6 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 277 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 277 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EINT1_IRQHandler 00000022
 
 Symbol: EINT1_IRQHandler
    Definitions
-      At line 398 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 398 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 87 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 278 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 87 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 278 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EINT2_IRQHandler 00000022
 
 Symbol: EINT2_IRQHandler
    Definitions
-      At line 399 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 399 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 88 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 279 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 88 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 279 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EINT3_IRQHandler 00000022
 
 Symbol: EINT3_IRQHandler
    Definitions
-      At line 400 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 400 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 89 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 280 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 89 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 280 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EINT4_IRQHandler 00000022
 
 Symbol: EINT4_IRQHandler
    Definitions
-      At line 401 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 401 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 90 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 281 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 90 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 281 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EINT5_IRQHandler 00000022
 
 Symbol: EINT5_IRQHandler
    Definitions
-      At line 402 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 402 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 91 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
+      At line 91 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
 
 
 
 ARM Macro Assembler    Page 7 Alphabetic symbol ordering
 Relocatable symbols
 
-\startup_M2354.s
-      At line 282 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+tup_M2354.s
+      At line 282 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EINT6_IRQHandler 00000022
 
 Symbol: EINT6_IRQHandler
    Definitions
-      At line 460 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 460 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 149 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 340 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 149 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 340 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EINT7_IRQHandler 00000022
 
 Symbol: EINT7_IRQHandler
    Definitions
-      At line 476 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 476 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 165 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 356 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 165 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 356 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EPWM0_P0_IRQHandler 00000022
 
 Symbol: EPWM0_P0_IRQHandler
    Definitions
-      At line 412 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 412 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 101 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 292 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 101 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 292 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EPWM0_P1_IRQHandler 00000022
 
 Symbol: EPWM0_P1_IRQHandler
    Definitions
-      At line 413 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 413 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 102 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 293 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 102 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 293 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EPWM0_P2_IRQHandler 00000022
 
 Symbol: EPWM0_P2_IRQHandler
    Definitions
-      At line 414 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 414 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
 
 
@@ -1476,65 +1476,65 @@ M\startup_M2354.s
 ARM Macro Assembler    Page 8 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 103 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 294 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 103 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 294 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EPWM1_P0_IRQHandler 00000022
 
 Symbol: EPWM1_P0_IRQHandler
    Definitions
-      At line 416 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 416 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 105 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 296 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 105 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 296 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EPWM1_P1_IRQHandler 00000022
 
 Symbol: EPWM1_P1_IRQHandler
    Definitions
-      At line 417 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 417 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 106 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 297 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 106 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 297 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EPWM1_P2_IRQHandler 00000022
 
 Symbol: EPWM1_P2_IRQHandler
    Definitions
-      At line 418 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 418 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 107 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 298 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 107 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 298 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EWDT_IRQHandler 00000022
 
 Symbol: EWDT_IRQHandler
    Definitions
-      At line 498 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 498 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 187 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 378 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 187 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 378 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 EWWDT_IRQHandler 00000022
 
 Symbol: EWWDT_IRQHandler
    Definitions
-      At line 499 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 499 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 
 
@@ -1542,124 +1542,124 @@ ARM Macro Assembler    Page 9 Alphabetic symbol ordering
 Relocatable symbols
 
    Uses
-      At line 188 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 379 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 188 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 379 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 GPA_IRQHandler 00000022
 
 Symbol: GPA_IRQHandler
    Definitions
-      At line 403 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 403 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 92 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 283 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 92 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 283 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 GPB_IRQHandler 00000022
 
 Symbol: GPB_IRQHandler
    Definitions
-      At line 404 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 404 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 93 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 284 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 93 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 284 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 GPC_IRQHandler 00000022
 
 Symbol: GPC_IRQHandler
    Definitions
-      At line 405 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 405 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 94 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 285 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 94 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 285 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 GPD_IRQHandler 00000022
 
 Symbol: GPD_IRQHandler
    Definitions
-      At line 406 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 406 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 95 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 286 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 95 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 286 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 GPE_IRQHandler 00000022
 
 Symbol: GPE_IRQHandler
    Definitions
-      At line 407 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
+      At line 407 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
 
 
 
 ARM Macro Assembler    Page 10 Alphabetic symbol ordering
 Relocatable symbols
 
-M\startup_M2354.s
+rtup_M2354.s
    Uses
-      At line 96 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 287 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 96 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 287 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 GPF_IRQHandler 00000022
 
 Symbol: GPF_IRQHandler
    Definitions
-      At line 408 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 408 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 97 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 288 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 97 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 288 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 GPG_IRQHandler 00000022
 
 Symbol: GPG_IRQHandler
    Definitions
-      At line 459 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 459 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 148 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 339 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 148 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 339 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 GPH_IRQHandler 00000022
 
 Symbol: GPH_IRQHandler
    Definitions
-      At line 475 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 475 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 164 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 355 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 164 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 355 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 HardFault_Handler 0000000A
 
 Symbol: HardFault_Handler
    Definitions
-      At line 237 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 237 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 60 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 239 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 60 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 239 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 I2C0_IRQHandler 00000022
 
@@ -1671,61 +1671,61 @@ Symbol: I2C0_IRQHandler
 ARM Macro Assembler    Page 11 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 425 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 425 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 114 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 305 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 114 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 305 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 I2C1_IRQHandler 00000022
 
 Symbol: I2C1_IRQHandler
    Definitions
-      At line 426 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 426 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 115 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 306 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 115 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 306 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 I2C2_IRQHandler 00000022
 
 Symbol: I2C2_IRQHandler
    Definitions
-      At line 469 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 469 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 158 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 349 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 158 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 349 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 I2S0_IRQHandler 00000022
 
 Symbol: I2S0_IRQHandler
    Definitions
-      At line 455 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 455 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 144 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 335 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 144 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 335 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 IRC_IRQHandler 00000022
 
 Symbol: IRC_IRQHandler
    Definitions
-      At line 388 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 388 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 77 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 268 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 77 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 268 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 KS_IRQHandler 00000022
 
@@ -1737,61 +1737,61 @@ ARM Macro Assembler    Page 12 Alphabetic symbol ordering
 Relocatable symbols
 
    Definitions
-      At line 496 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 496 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 185 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 376 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 185 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 376 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 LCD_IRQHandler 00000022
 
 Symbol: LCD_IRQHandler
    Definitions
-      At line 487 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 487 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 176 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 367 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 176 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 367 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 NMI_Handler 00000008
 
 Symbol: NMI_Handler
    Definitions
-      At line 232 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 232 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 59 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 233 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 59 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 233 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 NS_ISP_IRQHandler 00000022
 
 Symbol: NS_ISP_IRQHandler
    Definitions
-      At line 500 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 500 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 189 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 380 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 189 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 380 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 OPA0_IRQHandler 00000022
 
 Symbol: OPA0_IRQHandler
    Definitions
-      At line 457 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 457 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 146 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 337 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 146 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 337 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 PDMA0_IRQHandler 00000022
 
@@ -1803,59 +1803,59 @@ Relocatable symbols
 
 Symbol: PDMA0_IRQHandler
    Definitions
-      At line 427 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 427 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 116 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 307 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 116 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 307 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 PDMA1_IRQHandler 00000022
 
 Symbol: PDMA1_IRQHandler
    Definitions
-      At line 485 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 485 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 174 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 365 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 174 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 365 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 PWRWU_IRQHandler 00000022
 
 Symbol: PWRWU_IRQHandler
    Definitions
-      At line 389 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 389 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 78 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 269 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 78 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 269 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 PendSV_Handler 0000001E
 
 Symbol: PendSV_Handler
    Definitions
-      At line 256 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 256 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 71 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 257 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 71 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 257 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 ProcessHardFaultx 0000001A
 
 Symbol: ProcessHardFaultx
    Definitions
-      At line 248 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 248 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 249 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 249 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: ProcessHardFaultx used once
 QEI0_IRQHandler 00000022
 
@@ -1867,61 +1867,61 @@ ARM Macro Assembler    Page 14 Alphabetic symbol ordering
 Relocatable symbols
 
    Definitions
-      At line 471 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 471 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 160 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 351 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 160 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 351 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 QEI1_IRQHandler 00000022
 
 Symbol: QEI1_IRQHandler
    Definitions
-      At line 472 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 472 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 161 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 352 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 161 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 352 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 QSPI0_IRQHandler 00000022
 
 Symbol: QSPI0_IRQHandler
    Definitions
-      At line 409 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 409 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 98 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 289 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 98 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 289 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 RTC_IRQHandler 00000022
 
 Symbol: RTC_IRQHandler
    Definitions
-      At line 393 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 393 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 82 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 273 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 82 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 273 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 RTC_TAMPER_IRQHandler 00000022
 
 Symbol: RTC_TAMPER_IRQHandler
    Definitions
-      At line 394 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 394 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 83 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 274 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 83 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 274 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 Reset_Handler 00000000
 
@@ -1933,59 +1933,59 @@ Relocatable symbols
 
 Symbol: Reset_Handler
    Definitions
-      At line 203 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 203 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 58 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 204 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 58 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 204 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 SC0_IRQHandler 00000022
 
 Symbol: SC0_IRQHandler
    Definitions
-      At line 445 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 445 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 134 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 325 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 134 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 325 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 SC1_IRQHandler 00000022
 
 Symbol: SC1_IRQHandler
    Definitions
-      At line 446 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 446 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 135 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 326 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 135 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 326 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 SC2_IRQHandler 00000022
 
 Symbol: SC2_IRQHandler
    Definitions
-      At line 447 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 447 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 136 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 327 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 136 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 327 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 SC3_IRQHandler 00000022
 
 Symbol: SC3_IRQHandler
    Definitions
-      At line 448 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 448 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 328 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 328 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: SC3_IRQHandler used once
 SDH0_IRQHandler 00000022
 
@@ -1997,258 +1997,258 @@ ARM Macro Assembler    Page 16 Alphabetic symbol ordering
 Relocatable symbols
 
    Definitions
-      At line 451 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 451 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 140 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 331 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 140 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 331 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 SDH1_IRQHandler 00000022
 
 Symbol: SDH1_IRQHandler
    Definitions
-      At line 477 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 477 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 357 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 357 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: SDH1_IRQHandler used once
 SH_DoCommand 00000030
 
 Symbol: SH_DoCommand
    Definitions
-      At line 538 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 538 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 540 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 540 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: SH_DoCommand used once
 SPD_Next 00000052
 
 Symbol: SPD_Next
    Definitions
-      At line 573 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 573 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 568 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 568 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: SPD_Next used once
 SPD_Return 00000040
 
 Symbol: SPD_Return
    Definitions
-      At line 560 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 560 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 561 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 561 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: SPD_Return used once
 SPI0_IRQHandler 00000022
 
 Symbol: SPI0_IRQHandler
    Definitions
-      At line 410 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 410 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 99 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 290 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
+      At line 99 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 290 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
 
 
 
 ARM Macro Assembler    Page 17 Alphabetic symbol ordering
 Relocatable symbols
 
-M\startup_M2354.s
+rtup_M2354.s
 
 SPI1_IRQHandler 00000022
 
 Symbol: SPI1_IRQHandler
    Definitions
-      At line 438 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 438 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 127 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 318 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 127 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 318 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 SPI2_IRQHandler 00000022
 
 Symbol: SPI2_IRQHandler
    Definitions
-      At line 439 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 439 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 128 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 319 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 128 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 319 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 SPI3_IRQHandler 00000022
 
 Symbol: SPI3_IRQHandler
    Definitions
-      At line 449 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 449 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 138 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 329 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 138 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 329 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 SRAM_IRQHandler 00000022
 
 Symbol: SRAM_IRQHandler
    Definitions
-      At line 390 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 390 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 79 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 270 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 79 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 270 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 SVC_Handler 0000001C
 
 Symbol: SVC_Handler
    Definitions
-      At line 252 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 252 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 68 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 68 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
 
 
 
 ARM Macro Assembler    Page 18 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 253 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 253 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 SysTick_Handler 00000020
 
 Symbol: SysTick_Handler
    Definitions
-      At line 260 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 260 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 72 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 261 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 72 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 261 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 TAMPER_IRQHandler 00000022
 
 Symbol: TAMPER_IRQHandler
    Definitions
-      At line 497 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 497 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 186 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 377 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 186 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 377 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 TMR0_IRQHandler 00000022
 
 Symbol: TMR0_IRQHandler
    Definitions
-      At line 419 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 419 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 108 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 299 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 108 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 299 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 TMR1_IRQHandler 00000022
 
 Symbol: TMR1_IRQHandler
    Definitions
-      At line 420 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 420 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 109 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 300 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 109 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 300 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 TMR2_IRQHandler 00000022
 
 Symbol: TMR2_IRQHandler
    Definitions
-      At line 421 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 421 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 110 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
+      At line 110 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
 
 
 
 ARM Macro Assembler    Page 19 Alphabetic symbol ordering
 Relocatable symbols
 
-M\startup_M2354.s
-      At line 301 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+rtup_M2354.s
+      At line 301 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 TMR3_IRQHandler 00000022
 
 Symbol: TMR3_IRQHandler
    Definitions
-      At line 422 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 422 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 111 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 302 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 111 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 302 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 TMR4_IRQHandler 00000022
 
 Symbol: TMR4_IRQHandler
    Definitions
-      At line 501 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 501 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 190 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 381 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 190 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 381 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 TMR5_IRQHandler 00000022
 
 Symbol: TMR5_IRQHandler
    Definitions
-      At line 502 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 502 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 191 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 382 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 191 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 382 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 TRNG_IRQHandler 00000022
 
 Symbol: TRNG_IRQHandler
    Definitions
-      At line 488 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 488 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 177 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 368 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 177 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 368 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 UART0_IRQHandler 00000022
 
 Symbol: UART0_IRQHandler
    Definitions
-      At line 423 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 423 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
 
 
@@ -2256,65 +2256,65 @@ M\startup_M2354.s
 ARM Macro Assembler    Page 20 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 112 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 303 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 112 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 303 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 UART1_IRQHandler 00000022
 
 Symbol: UART1_IRQHandler
    Definitions
-      At line 424 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 424 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 113 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 304 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 113 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 304 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 UART2_IRQHandler 00000022
 
 Symbol: UART2_IRQHandler
    Definitions
-      At line 435 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 435 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 124 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 315 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 124 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 315 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 UART3_IRQHandler 00000022
 
 Symbol: UART3_IRQHandler
    Definitions
-      At line 436 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 436 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 125 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 316 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 125 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 316 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 UART4_IRQHandler 00000022
 
 Symbol: UART4_IRQHandler
    Definitions
-      At line 461 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 461 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 150 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 341 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 150 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 341 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 UART5_IRQHandler 00000022
 
 Symbol: UART5_IRQHandler
    Definitions
-      At line 462 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 462 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 
 
@@ -2322,120 +2322,120 @@ ARM Macro Assembler    Page 21 Alphabetic symbol ordering
 Relocatable symbols
 
    Uses
-      At line 151 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 342 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 151 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 342 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 USBD_IRQHandler 00000022
 
 Symbol: USBD_IRQHandler
    Definitions
-      At line 440 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 440 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 129 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 320 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 129 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 320 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 USBH_IRQHandler 00000022
 
 Symbol: USBH_IRQHandler
    Definitions
-      At line 441 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 441 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 130 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 321 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 130 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 321 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 USBOTG_IRQHandler 00000022
 
 Symbol: USBOTG_IRQHandler
    Definitions
-      At line 442 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 442 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 131 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 322 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 131 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 322 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 USCI0_IRQHandler 00000022
 
 Symbol: USCI0_IRQHandler
    Definitions
-      At line 463 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 463 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 152 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 343 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 152 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 343 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 USCI1_IRQHandler 00000022
 
 Symbol: USCI1_IRQHandler
    Definitions
-      At line 464 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
+      At line 464 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
 
 
 
 ARM Macro Assembler    Page 22 Alphabetic symbol ordering
 Relocatable symbols
 
-M\startup_M2354.s
+rtup_M2354.s
    Uses
-      At line 153 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
-      At line 344 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 153 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
+      At line 344 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 WDT_IRQHandler 00000022
 
 Symbol: WDT_IRQHandler
    Definitions
-      At line 395 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 395 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 84 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 275 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 84 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 275 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 WWDT_IRQHandler 00000022
 
 Symbol: WWDT_IRQHandler
    Definitions
-      At line 396 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 396 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 85 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 276 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 85 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 276 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 __PC 0000003A
 
 Symbol: __PC
    Definitions
-      At line 551 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 551 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 552 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 552 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: __PC used once
 __user_initial_stackheap 00000024
 
 Symbol: __user_initial_stackheap
    Definitions
-      At line 524 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 524 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 522 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 522 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: __user_initial_stackheap used once
 105 symbols
 
@@ -2448,35 +2448,35 @@ Heap_Size 00004000
 
 Symbol: Heap_Size
    Definitions
-      At line 35 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 35 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
-      At line 40 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 527 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 40 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 527 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 Stack_Size 00001800
 
 Symbol: Stack_Size
    Definitions
-      At line 22 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 22 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
-      At line 26 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
-      At line 526 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 26 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
+      At line 526 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 
 __Vectors_Size 00000210
 
 Symbol: __Vectors_Size
    Definitions
-      At line 196 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 196 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 53 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 53 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
 Comment: __Vectors_Size used once
 3 symbols
 
@@ -2489,38 +2489,38 @@ ProcessHardFault 00000000
 
 Symbol: ProcessHardFault
    Definitions
-      At line 238 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 238 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 243 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 243 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: ProcessHardFault used once
 SCU_IRQHandler 00000000
 
 Symbol: SCU_IRQHandler
    Definitions
-      At line 55 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 55 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
-      At line 175 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 175 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: SCU_IRQHandler used once
 SH_Return 00000000
 
 Symbol: SH_Return
    Definitions
-      At line 541 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 541 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 544 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 544 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: SH_Return used once
 SendChar_ToUART 00000000
 
 Symbol: SendChar_ToUART
    Definitions
-      At line 54 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\ARM
-\startup_M2354.s
+      At line 54 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\star
+tup_M2354.s
    Uses
       None
 Comment: SendChar_ToUART unused
@@ -2528,21 +2528,21 @@ SystemInit 00000000
 
 Symbol: SystemInit
    Definitions
-      At line 205 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 205 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 223 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 223 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: SystemInit used once
 __main 00000000
 
 Symbol: __main
    Definitions
-      At line 206 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 206 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
-      At line 225 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 225 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
 Comment: __main used once
 
 
@@ -2554,8 +2554,8 @@ __use_two_region_memory 00000000
 
 Symbol: __use_two_region_memory
    Definitions
-      At line 521 in file ..\..\..\..\..\Library\Device\Nuvoton\M2354\Source\AR
-M\startup_M2354.s
+      At line 521 in file ..\..\Library_BSP\Device\Nuvoton\M2354\Source\ARM\sta
+rtup_M2354.s
    Uses
       None
 Comment: __use_two_region_memory unused

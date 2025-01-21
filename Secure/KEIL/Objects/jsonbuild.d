@@ -1,2 +1,2 @@
-./objects/jsonbuild.o: ..\..\..\..\..\Library\Evoting\jsonBuild.cpp \
-  ..\..\..\..\..\Library\Evoting\jsonBuild.hpp
+./objects/jsonbuild.o: ..\..\Library_ThirdParty\Evoting\jsonBuild.cpp \
+  ..\..\Library_ThirdParty\Evoting\jsonBuild.hpp

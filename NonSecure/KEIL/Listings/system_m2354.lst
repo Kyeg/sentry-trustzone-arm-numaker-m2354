@@ -19,10 +19,10 @@
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"system_M2354.c"
 	.file	1 "C:\\Users\\LogoslabMiniPC" "AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h"
-	.file	2 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c"
-	.file	3 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include\\sys_reg.h"
-	.file	4 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/Device/Nuvoton/M2354/Include\\clk_reg.h"
-	.file	5 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../../../../Library/CMSIS/Include\\core_armv8mbl.h"
+	.file	2 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c"
+	.file	3 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../Library_BSP/Device/Nuvoton/M2354/Include\\sys_reg.h"
+	.file	4 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../Library_BSP/Device/Nuvoton/M2354/Include\\clk_reg.h"
+	.file	5 "C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" "../../Library_BSP/CMSIS/Include\\core_armv8mbl.h"
 	.section	.text.SCU_IRQHandler,"ax",%progbits
 	.hidden	SCU_IRQHandler                  @ -- Begin function SCU_IRQHandler
 	.weak	SCU_IRQHandler
@@ -36,7 +36,7 @@ SCU_IRQHandler:
 	.cfi_sections .debug_frame
 	.cfi_startproc
 @ %bb.0:
-	.loc	2 386 5 prologue_end            @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:386:5
+	.loc	2 386 5 prologue_end            @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:386:5
 	b	.LBB0_1
 .LBB0_1:                                @ =>This Inner Loop Header: Depth=1
 	b	.LBB0_1
@@ -55,7 +55,7 @@ SCU_IRQHandler:
 	.thumb_func
 SystemCoreClockUpdate:
 .Lfunc_begin1:
-	.loc	2 398 0                         @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:398:0
+	.loc	2 398 0                         @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:398:0
 	.fnstart
 	.cfi_startproc
 @ %bb.0:
@@ -65,34 +65,34 @@ SystemCoreClockUpdate:
 	.cfi_offset lr, -4
 	.cfi_offset r7, -8
 .Ltmp1:
-	.loc	2 400 16 prologue_end           @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:400:16
+	.loc	2 400 16 prologue_end           @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:400:16
 	bl	CLK_GetPLLClockFreq
-	.loc	2 400 14 is_stmt 0              @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:400:14
+	.loc	2 400 14 is_stmt 0              @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:400:14
 	ldr	r1, __arm_cp.1_0
 	str	r0, [r1]
-	.loc	2 403 23 is_stmt 1              @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:403:23
+	.loc	2 403 23 is_stmt 1              @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:403:23
 	bl	CLK_GetCPUFreq
 	mov	r1, r0
-	.loc	2 403 21 is_stmt 0              @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:403:21
+	.loc	2 403 21 is_stmt 0              @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:403:21
 	ldr	r0, __arm_cp.1_1
 	str	r1, [r0]
-	.loc	2 406 20 is_stmt 1              @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:406:20
+	.loc	2 406 20 is_stmt 1              @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:406:20
 	ldr	r0, [r0]
 	ldr	r1, __arm_cp.1_2
-	.loc	2 406 36 is_stmt 0              @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:406:36
+	.loc	2 406 36 is_stmt 0              @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:406:36
 	adds	r0, r0, r1
 	ldr	r1, __arm_cp.1_3
-	.loc	2 406 48                        @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:406:48
+	.loc	2 406 48                        @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:406:48
 	udiv	r0, r0, r1
-	.loc	2 406 17                        @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:406:17
+	.loc	2 406 17                        @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:406:17
 	ldr	r1, __arm_cp.1_4
 	str	r0, [r1]
-	.loc	2 407 1 epilogue_begin is_stmt 1 @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:407:1
+	.loc	2 407 1 epilogue_begin is_stmt 1 @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:407:1
 	pop	{r7, pc}
 .Ltmp2:
 	.p2align	2
 @ %bb.1:
-	.loc	2 0 1 is_stmt 0                 @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:0:1
+	.loc	2 0 1 is_stmt 0                 @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:0:1
 __arm_cp.1_0:
 	.long	PllClock
 .Lcpi_end0:
@@ -127,7 +127,7 @@ __arm_cp.1_4:
 	.thumb_func
 SystemInit:
 .Lfunc_begin2:
-	.loc	2 417 0 is_stmt 1               @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:417:0
+	.loc	2 417 0 is_stmt 1               @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:417:0
 	.fnstart
 	.cfi_startproc
 @ %bb.0:
@@ -137,71 +137,71 @@ SystemInit:
 	.cfi_offset lr, -4
 	.cfi_offset r7, -8
 .Ltmp3:
-	.loc	2 419 9 prologue_end            @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:419:9
+	.loc	2 419 9 prologue_end            @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:419:9
 	bl	__PC
 .Ltmp4:
-	.loc	2 419 8 is_stmt 0               @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:419:8
+	.loc	2 419 8 is_stmt 0               @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:419:8
 	lsls	r0, r0, #3
 	cmp	r0, #0
 	bmi	.LBB2_5
 	b	.LBB2_1
 .LBB2_1:
 .Ltmp5:
-	.loc	2 422 9 is_stmt 1               @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:422:9
+	.loc	2 422 9 is_stmt 1               @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:422:9
 	b	.LBB2_2
 .LBB2_2:                                @ =>This Inner Loop Header: Depth=1
-	.loc	2 0 9 is_stmt 0                 @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:0:9
+	.loc	2 0 9 is_stmt 0                 @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:0:9
 	ldr	r1, __arm_cp.2_0
 	movs	r0, #89
 .Ltmp6:
-	.loc	2 424 26 is_stmt 1              @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:424:26
+	.loc	2 424 26 is_stmt 1              @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:424:26
 	str	r0, [r1]
 	movs	r0, #22
-	.loc	2 425 26                        @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:425:26
+	.loc	2 425 26                        @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:425:26
 	str	r0, [r1]
 	movs	r0, #136
-	.loc	2 426 26                        @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:426:26
+	.loc	2 426 26                        @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:426:26
 	str	r0, [r1]
-	.loc	2 427 9                         @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:427:9
+	.loc	2 427 9                         @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:427:9
 	b	.LBB2_3
 .Ltmp7:
 .LBB2_3:                                @   in Loop: Header=BB2_2 Depth=1
-	.loc	2 0 9 is_stmt 0                 @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:0:9
+	.loc	2 0 9 is_stmt 0                 @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:0:9
 	ldr	r0, __arm_cp.2_0
-	.loc	2 428 21 is_stmt 1              @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:428:21
+	.loc	2 428 21 is_stmt 1              @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:428:21
 	ldr	r0, [r0]
 .Ltmp8:
-	.loc	2 427 9                         @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:427:9
+	.loc	2 427 9                         @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:427:9
 	cmp	r0, #0
 	beq	.LBB2_2
 	b	.LBB2_4
 .Ltmp9:
 .LBB2_4:
-	.loc	2 0 9 is_stmt 0                 @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:0:9
+	.loc	2 0 9 is_stmt 0                 @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:0:9
 	ldr	r1, __arm_cp.2_1
 	movw	r0, #4096
-	.loc	2 431 21 is_stmt 1              @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:431:21
+	.loc	2 431 21 is_stmt 1              @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:431:21
 	str	r0, [r1]
 	ldr	r1, __arm_cp.2_2
-	.loc	2 434 21                        @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:434:21
+	.loc	2 434 21                        @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:434:21
 	ldr	r0, [r1]
 	ldr	r2, __arm_cp.2_3
 	orrs	r0, r2
 	str	r0, [r1]
-	.loc	2 435 5                         @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:435:5
+	.loc	2 435 5                         @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:435:5
 	b	.LBB2_5
 .Ltmp10:
 .LBB2_5:
-	.loc	2 438 15                        @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:438:15
+	.loc	2 438 15                        @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:438:15
 	ldr	r0, __arm_cp.2_4
 	ldr	r1, __arm_cp.2_5
 	str	r0, [r1]
-	.loc	2 451 1 epilogue_begin          @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:451:1
+	.loc	2 451 1 epilogue_begin          @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:451:1
 	pop	{r7, pc}
 .Ltmp11:
 	.p2align	2
 @ %bb.6:
-	.loc	2 0 1 is_stmt 0                 @ ../../../../../Library/Device/Nuvoton/M2354/Source/system_M2354.c:0:1
+	.loc	2 0 1 is_stmt 0                 @ ../../Library_BSP/Device/Nuvoton/M2354/Source/system_M2354.c:0:1
 __arm_cp.2_0:
 	.long	1073742080                      @ 0x40000100
 .Lcpi_end5:
@@ -1338,237 +1338,237 @@ PllClock:
 .Linfo_string0:
 	.asciz	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]" @ string offset=0
 .Linfo_string1:
-	.asciz	"../../../../../Library/Device/Nuvoton/M2354/Source\\system_M2354.c" @ string offset=68
+	.asciz	"../../Library_BSP/Device/Nuvoton/M2354/Source\\system_M2354.c" @ string offset=68
 .Linfo_string2:
-	.asciz	"C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" @ string offset=134
+	.asciz	"C:\\Users\\LogoslabMiniPC\\GitHub_Box_Windows\\logoslab\\M2354\\Old_M2354_BSP_300004\\SampleCode\\TrustZone\\Borhan-E-Voting-System\\Nonsecure\\KEIL" @ string offset=129
 .Linfo_string3:
-	.asciz	"SystemCoreClock"               @ string offset=272
+	.asciz	"SystemCoreClock"               @ string offset=267
 .Linfo_string4:
-	.asciz	"unsigned int"                  @ string offset=288
+	.asciz	"unsigned int"                  @ string offset=283
 .Linfo_string5:
-	.asciz	"uint32_t"                      @ string offset=301
+	.asciz	"uint32_t"                      @ string offset=296
 .Linfo_string6:
-	.asciz	"CyclesPerUs"                   @ string offset=310
+	.asciz	"CyclesPerUs"                   @ string offset=305
 .Linfo_string7:
-	.asciz	"PllClock"                      @ string offset=322
+	.asciz	"PllClock"                      @ string offset=317
 .Linfo_string8:
-	.asciz	"PDID"                          @ string offset=331
+	.asciz	"PDID"                          @ string offset=326
 .Linfo_string9:
-	.asciz	"RSTSTS"                        @ string offset=336
+	.asciz	"RSTSTS"                        @ string offset=331
 .Linfo_string10:
-	.asciz	"IPRST0"                        @ string offset=343
+	.asciz	"IPRST0"                        @ string offset=338
 .Linfo_string11:
-	.asciz	"IPRST1"                        @ string offset=350
+	.asciz	"IPRST1"                        @ string offset=345
 .Linfo_string12:
-	.asciz	"IPRST2"                        @ string offset=357
+	.asciz	"IPRST2"                        @ string offset=352
 .Linfo_string13:
-	.asciz	"RESERVE0"                      @ string offset=364
+	.asciz	"RESERVE0"                      @ string offset=359
 .Linfo_string14:
-	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=373
+	.asciz	"__ARRAY_SIZE_TYPE__"           @ string offset=368
 .Linfo_string15:
-	.asciz	"BODCTL"                        @ string offset=393
+	.asciz	"BODCTL"                        @ string offset=388
 .Linfo_string16:
-	.asciz	"IVSCTL"                        @ string offset=400
+	.asciz	"IVSCTL"                        @ string offset=395
 .Linfo_string17:
-	.asciz	"RESERVE1"                      @ string offset=407
+	.asciz	"RESERVE1"                      @ string offset=402
 .Linfo_string18:
-	.asciz	"PORCTL0"                       @ string offset=416
+	.asciz	"PORCTL0"                       @ string offset=411
 .Linfo_string19:
-	.asciz	"VREFCTL"                       @ string offset=424
+	.asciz	"VREFCTL"                       @ string offset=419
 .Linfo_string20:
-	.asciz	"USBPHY"                        @ string offset=432
+	.asciz	"USBPHY"                        @ string offset=427
 .Linfo_string21:
-	.asciz	"GPA_MFPL"                      @ string offset=439
+	.asciz	"GPA_MFPL"                      @ string offset=434
 .Linfo_string22:
-	.asciz	"GPA_MFPH"                      @ string offset=448
+	.asciz	"GPA_MFPH"                      @ string offset=443
 .Linfo_string23:
-	.asciz	"GPB_MFPL"                      @ string offset=457
+	.asciz	"GPB_MFPL"                      @ string offset=452
 .Linfo_string24:
-	.asciz	"GPB_MFPH"                      @ string offset=466
+	.asciz	"GPB_MFPH"                      @ string offset=461
 .Linfo_string25:
-	.asciz	"GPC_MFPL"                      @ string offset=475
+	.asciz	"GPC_MFPL"                      @ string offset=470
 .Linfo_string26:
-	.asciz	"GPC_MFPH"                      @ string offset=484
+	.asciz	"GPC_MFPH"                      @ string offset=479
 .Linfo_string27:
-	.asciz	"GPD_MFPL"                      @ string offset=493
+	.asciz	"GPD_MFPL"                      @ string offset=488
 .Linfo_string28:
-	.asciz	"GPD_MFPH"                      @ string offset=502
+	.asciz	"GPD_MFPH"                      @ string offset=497
 .Linfo_string29:
-	.asciz	"GPE_MFPL"                      @ string offset=511
+	.asciz	"GPE_MFPL"                      @ string offset=506
 .Linfo_string30:
-	.asciz	"GPE_MFPH"                      @ string offset=520
+	.asciz	"GPE_MFPH"                      @ string offset=515
 .Linfo_string31:
-	.asciz	"GPF_MFPL"                      @ string offset=529
+	.asciz	"GPF_MFPL"                      @ string offset=524
 .Linfo_string32:
-	.asciz	"GPF_MFPH"                      @ string offset=538
+	.asciz	"GPF_MFPH"                      @ string offset=533
 .Linfo_string33:
-	.asciz	"GPG_MFPL"                      @ string offset=547
+	.asciz	"GPG_MFPL"                      @ string offset=542
 .Linfo_string34:
-	.asciz	"GPG_MFPH"                      @ string offset=556
+	.asciz	"GPG_MFPH"                      @ string offset=551
 .Linfo_string35:
-	.asciz	"GPH_MFPL"                      @ string offset=565
+	.asciz	"GPH_MFPL"                      @ string offset=560
 .Linfo_string36:
-	.asciz	"GPH_MFPH"                      @ string offset=574
+	.asciz	"GPH_MFPH"                      @ string offset=569
 .Linfo_string37:
-	.asciz	"RESERVE2"                      @ string offset=583
+	.asciz	"RESERVE2"                      @ string offset=578
 .Linfo_string38:
-	.asciz	"GPA_MFOS"                      @ string offset=592
+	.asciz	"GPA_MFOS"                      @ string offset=587
 .Linfo_string39:
-	.asciz	"GPB_MFOS"                      @ string offset=601
+	.asciz	"GPB_MFOS"                      @ string offset=596
 .Linfo_string40:
-	.asciz	"GPC_MFOS"                      @ string offset=610
+	.asciz	"GPC_MFOS"                      @ string offset=605
 .Linfo_string41:
-	.asciz	"GPD_MFOS"                      @ string offset=619
+	.asciz	"GPD_MFOS"                      @ string offset=614
 .Linfo_string42:
-	.asciz	"GPE_MFOS"                      @ string offset=628
+	.asciz	"GPE_MFOS"                      @ string offset=623
 .Linfo_string43:
-	.asciz	"GPF_MFOS"                      @ string offset=637
+	.asciz	"GPF_MFOS"                      @ string offset=632
 .Linfo_string44:
-	.asciz	"GPG_MFOS"                      @ string offset=646
+	.asciz	"GPG_MFOS"                      @ string offset=641
 .Linfo_string45:
-	.asciz	"GPH_MFOS"                      @ string offset=655
+	.asciz	"GPH_MFOS"                      @ string offset=650
 .Linfo_string46:
-	.asciz	"VTORSET"                       @ string offset=664
+	.asciz	"VTORSET"                       @ string offset=659
 .Linfo_string47:
-	.asciz	"RESERVE3"                      @ string offset=672
+	.asciz	"RESERVE3"                      @ string offset=667
 .Linfo_string48:
-	.asciz	"SRAMICTL"                      @ string offset=681
+	.asciz	"SRAMICTL"                      @ string offset=676
 .Linfo_string49:
-	.asciz	"SRAMSTS"                       @ string offset=690
+	.asciz	"SRAMSTS"                       @ string offset=685
 .Linfo_string50:
-	.asciz	"SRAMEADR"                      @ string offset=698
+	.asciz	"SRAMEADR"                      @ string offset=693
 .Linfo_string51:
-	.asciz	"RESERVE4"                      @ string offset=707
+	.asciz	"RESERVE4"                      @ string offset=702
 .Linfo_string52:
-	.asciz	"SRAMPC0"                       @ string offset=716
+	.asciz	"SRAMPC0"                       @ string offset=711
 .Linfo_string53:
-	.asciz	"SRAMPC1"                       @ string offset=724
+	.asciz	"SRAMPC1"                       @ string offset=719
 .Linfo_string54:
-	.asciz	"TCTL48M"                       @ string offset=732
+	.asciz	"TCTL48M"                       @ string offset=727
 .Linfo_string55:
-	.asciz	"TIEN48M"                       @ string offset=740
+	.asciz	"TIEN48M"                       @ string offset=735
 .Linfo_string56:
-	.asciz	"TISTS48M"                      @ string offset=748
+	.asciz	"TISTS48M"                      @ string offset=743
 .Linfo_string57:
-	.asciz	"TCTL12M"                       @ string offset=757
+	.asciz	"TCTL12M"                       @ string offset=752
 .Linfo_string58:
-	.asciz	"TIEN12M"                       @ string offset=765
+	.asciz	"TIEN12M"                       @ string offset=760
 .Linfo_string59:
-	.asciz	"TISTS12M"                      @ string offset=773
+	.asciz	"TISTS12M"                      @ string offset=768
 .Linfo_string60:
-	.asciz	"RESERVE6"                      @ string offset=782
+	.asciz	"RESERVE6"                      @ string offset=777
 .Linfo_string61:
-	.asciz	"REGLCTL"                       @ string offset=791
+	.asciz	"REGLCTL"                       @ string offset=786
 .Linfo_string62:
-	.asciz	"RESERVE7"                      @ string offset=799
+	.asciz	"RESERVE7"                      @ string offset=794
 .Linfo_string63:
-	.asciz	"CPUCFG"                        @ string offset=808
+	.asciz	"CPUCFG"                        @ string offset=803
 .Linfo_string64:
-	.asciz	"BATLDCTL"                      @ string offset=815
+	.asciz	"BATLDCTL"                      @ string offset=810
 .Linfo_string65:
-	.asciz	"OVDCTL"                        @ string offset=824
+	.asciz	"OVDCTL"                        @ string offset=819
 .Linfo_string66:
-	.asciz	"RESERVE8"                      @ string offset=831
+	.asciz	"RESERVE8"                      @ string offset=826
 .Linfo_string67:
-	.asciz	"PORCTL1"                       @ string offset=840
+	.asciz	"PORCTL1"                       @ string offset=835
 .Linfo_string68:
-	.asciz	"RESERVE9"                      @ string offset=848
+	.asciz	"RESERVE9"                      @ string offset=843
 .Linfo_string69:
-	.asciz	"PSWCTL"                        @ string offset=857
+	.asciz	"PSWCTL"                        @ string offset=852
 .Linfo_string70:
-	.asciz	"PLCTL"                         @ string offset=864
+	.asciz	"PLCTL"                         @ string offset=859
 .Linfo_string71:
-	.asciz	"PLSTS"                         @ string offset=870
+	.asciz	"PLSTS"                         @ string offset=865
 .Linfo_string72:
-	.asciz	"RESERVE10"                     @ string offset=876
+	.asciz	"RESERVE10"                     @ string offset=871
 .Linfo_string73:
-	.asciz	"AHBMCTL"                       @ string offset=886
+	.asciz	"AHBMCTL"                       @ string offset=881
 .Linfo_string74:
-	.asciz	"SYS_T"                         @ string offset=894
+	.asciz	"SYS_T"                         @ string offset=889
 .Linfo_string75:
-	.asciz	"PWRCTL"                        @ string offset=900
+	.asciz	"PWRCTL"                        @ string offset=895
 .Linfo_string76:
-	.asciz	"AHBCLK"                        @ string offset=907
+	.asciz	"AHBCLK"                        @ string offset=902
 .Linfo_string77:
-	.asciz	"APBCLK0"                       @ string offset=914
+	.asciz	"APBCLK0"                       @ string offset=909
 .Linfo_string78:
-	.asciz	"APBCLK1"                       @ string offset=922
+	.asciz	"APBCLK1"                       @ string offset=917
 .Linfo_string79:
-	.asciz	"CLKSEL0"                       @ string offset=930
+	.asciz	"CLKSEL0"                       @ string offset=925
 .Linfo_string80:
-	.asciz	"CLKSEL1"                       @ string offset=938
+	.asciz	"CLKSEL1"                       @ string offset=933
 .Linfo_string81:
-	.asciz	"CLKSEL2"                       @ string offset=946
+	.asciz	"CLKSEL2"                       @ string offset=941
 .Linfo_string82:
-	.asciz	"CLKSEL3"                       @ string offset=954
+	.asciz	"CLKSEL3"                       @ string offset=949
 .Linfo_string83:
-	.asciz	"CLKDIV0"                       @ string offset=962
+	.asciz	"CLKDIV0"                       @ string offset=957
 .Linfo_string84:
-	.asciz	"CLKDIV1"                       @ string offset=970
+	.asciz	"CLKDIV1"                       @ string offset=965
 .Linfo_string85:
-	.asciz	"CLKDIV4"                       @ string offset=978
+	.asciz	"CLKDIV4"                       @ string offset=973
 .Linfo_string86:
-	.asciz	"PLLCTL"                        @ string offset=986
+	.asciz	"PLLCTL"                        @ string offset=981
 .Linfo_string87:
-	.asciz	"STATUS"                        @ string offset=993
+	.asciz	"STATUS"                        @ string offset=988
 .Linfo_string88:
-	.asciz	"CLKOCTL"                       @ string offset=1000
+	.asciz	"CLKOCTL"                       @ string offset=995
 .Linfo_string89:
-	.asciz	"CLKDCTL"                       @ string offset=1008
+	.asciz	"CLKDCTL"                       @ string offset=1003
 .Linfo_string90:
-	.asciz	"CLKDSTS"                       @ string offset=1016
+	.asciz	"CLKDSTS"                       @ string offset=1011
 .Linfo_string91:
-	.asciz	"CDUPB"                         @ string offset=1024
+	.asciz	"CDUPB"                         @ string offset=1019
 .Linfo_string92:
-	.asciz	"CDLOWB"                        @ string offset=1030
+	.asciz	"CDLOWB"                        @ string offset=1025
 .Linfo_string93:
-	.asciz	"RESERVE5"                      @ string offset=1037
+	.asciz	"RESERVE5"                      @ string offset=1032
 .Linfo_string94:
-	.asciz	"PMUCTL"                        @ string offset=1046
+	.asciz	"PMUCTL"                        @ string offset=1041
 .Linfo_string95:
-	.asciz	"PMUSTS"                        @ string offset=1053
+	.asciz	"PMUSTS"                        @ string offset=1048
 .Linfo_string96:
-	.asciz	"SWKDBCTL"                      @ string offset=1060
+	.asciz	"SWKDBCTL"                      @ string offset=1055
 .Linfo_string97:
-	.asciz	"PASWKCTL"                      @ string offset=1069
+	.asciz	"PASWKCTL"                      @ string offset=1064
 .Linfo_string98:
-	.asciz	"PBSWKCTL"                      @ string offset=1078
+	.asciz	"PBSWKCTL"                      @ string offset=1073
 .Linfo_string99:
-	.asciz	"PCSWKCTL"                      @ string offset=1087
+	.asciz	"PCSWKCTL"                      @ string offset=1082
 .Linfo_string100:
-	.asciz	"PDSWKCTL"                      @ string offset=1096
+	.asciz	"PDSWKCTL"                      @ string offset=1091
 .Linfo_string101:
-	.asciz	"IOPDCTL"                       @ string offset=1105
+	.asciz	"IOPDCTL"                       @ string offset=1100
 .Linfo_string102:
-	.asciz	"HXTFSEL"                       @ string offset=1113
+	.asciz	"HXTFSEL"                       @ string offset=1108
 .Linfo_string103:
-	.asciz	"CLK_T"                         @ string offset=1121
+	.asciz	"CLK_T"                         @ string offset=1116
 .Linfo_string104:
-	.asciz	"CPUID"                         @ string offset=1127
+	.asciz	"CPUID"                         @ string offset=1122
 .Linfo_string105:
-	.asciz	"ICSR"                          @ string offset=1133
+	.asciz	"ICSR"                          @ string offset=1128
 .Linfo_string106:
-	.asciz	"VTOR"                          @ string offset=1138
+	.asciz	"VTOR"                          @ string offset=1133
 .Linfo_string107:
-	.asciz	"AIRCR"                         @ string offset=1143
+	.asciz	"AIRCR"                         @ string offset=1138
 .Linfo_string108:
-	.asciz	"SCR"                           @ string offset=1149
+	.asciz	"SCR"                           @ string offset=1144
 .Linfo_string109:
-	.asciz	"CCR"                           @ string offset=1153
+	.asciz	"CCR"                           @ string offset=1148
 .Linfo_string110:
-	.asciz	"RESERVED1"                     @ string offset=1157
+	.asciz	"RESERVED1"                     @ string offset=1152
 .Linfo_string111:
-	.asciz	"SHPR"                          @ string offset=1167
+	.asciz	"SHPR"                          @ string offset=1162
 .Linfo_string112:
-	.asciz	"SHCSR"                         @ string offset=1172
+	.asciz	"SHCSR"                         @ string offset=1167
 .Linfo_string113:
-	.asciz	"SCB_Type"                      @ string offset=1178
+	.asciz	"SCB_Type"                      @ string offset=1173
 .Linfo_string114:
-	.asciz	"SCU_IRQHandler"                @ string offset=1187
+	.asciz	"SCU_IRQHandler"                @ string offset=1182
 .Linfo_string115:
-	.asciz	"SystemCoreClockUpdate"         @ string offset=1202
+	.asciz	"SystemCoreClockUpdate"         @ string offset=1197
 .Linfo_string116:
-	.asciz	"SystemInit"                    @ string offset=1224
+	.asciz	"SystemInit"                    @ string offset=1219
 	.ident	"Component: Arm Compiler for Embedded 6.22 Tool: armclang [5ee92100]"
 	.section	".note.GNU-stack","",%progbits
 	.eabi_attribute	30, 6	@ Tag_ABI_optimization_goals

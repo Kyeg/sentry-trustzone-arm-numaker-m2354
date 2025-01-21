@@ -1,9 +1,9 @@
 {
     "device_name": "User20",
-    "device_priv_key": "MIGEAgEAMBAGByqGSM49AgEGBSuBBAAKBG0wawIBAQQg8u3Syj+tmkEpKRLHjhmJak4ADiFHOSN3PWjYV9fHbpehRANCAAQjHRY29H48S269geVXJets/H9NxTCMtcT6NYAiYqARxQgum9haswET8ZzBjQShdUufD8hPiIMLas6iA7I4LMmt",
-    "device_pub_key": "Ix0WNvR+PEtuvYHlVyXrbPx/TcUwjLXE+jWAImKgEcU=-CC6b2FqzARPxnMGNBKF1S58PyE+IgwtqzqIDsjgsya0=",
+    "device_priv_key": "MIGEAgEAMBAGByqGSM49AgEGBSuBBAAKBG0wawIBAQQgEh+GjsOSE2otO01RqIAXmxUGVIWGnr5EV8+MdCjjkeihRANCAAQBBf632e2nZIAvanr9a7pxZxYzTtW48H3++C6PYvv2zU7/hqZ4BJljzVdW3WPnRbLNZqvvnXsQLpUwdpRfkuaq",
+    "device_pub_key": "AQX+t9ntp2SAL2p6/Wu6cWcWM07VuPB9/vguj2L79s0=-Tv+GpngEmWPNV1bdY+dFss1mq++dexAulTB2lF+S5qo=",
     "device_type": "USER-AGENT-OR-CLOUD-SERVER",
     "has_device_type": true,
-    "owner_pub_key": "Chhi+OQESyyyGZIbpIBTP9weGndIcuiY7VNvtFNuD2c=-tXjopbmjUdlHJrU/VoVqn/DNvuXhukzd13HuHkVd/eM=",
+    "owner_pub_key": "mQdcGhByQadhfCGcOhtaDkwa71g7ICzy6dgS+wl0Y50=-rD1u8/xvf+Y75xDNAqqOiPFI6yxcKfuZvbkeuqU9+18=",
     "ticket_order": 1
 }

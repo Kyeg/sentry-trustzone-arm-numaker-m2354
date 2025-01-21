@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\Nonsecure.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Nonsecure.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6220000: Last Updated: Mon Jan 20 23:06:56 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6220000: Last Updated: Tue Jan 21 15:21:05 2025
 <BR><P>
 <H3>Maximum Stack Usage =        448 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -141,22 +141,6 @@ Function Pointers
 <H3>
 Global Symbols
 </H3>
-<P><STRONG><a name="[e6]"></a>Secure_func</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nsclib_Secure.o(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Execution_Time_Measurement (via Veneer)
-</UL>
-
-<P><STRONG><a name="[fc]"></a>Secure_Free</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nsclib_Secure.o(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
-</UL>
-
-<P><STRONG><a name="[fb]"></a>Secure_BLE_callback</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nsclib_Secure.o(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
-</UL>
-
-<P><STRONG><a name="[fe]"></a>Secure_receive</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nsclib_Secure.o(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
-</UL>
-
 <P><STRONG><a name="[f0]"></a>CLK_GetPCLK0Freq</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nsclib_Secure.o(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_GetModuleClock (via Veneer)
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Open (via Veneer)
@@ -178,6 +162,22 @@ Global Symbols
 
 <P><STRONG><a name="[f6]"></a>CLK_GetModuleClockDivider</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nsclib_Secure.o(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Open (via Veneer)
+</UL>
+
+<P><STRONG><a name="[e6]"></a>Secure_func</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nsclib_Secure.o(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Execution_Time_Measurement (via Veneer)
+</UL>
+
+<P><STRONG><a name="[fc]"></a>Secure_Free</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nsclib_Secure.o(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[fb]"></a>Secure_BLE_callback</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nsclib_Secure.o(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[fe]"></a>Secure_receive</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nsclib_Secure.o(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
 </UL>
 
 <P><STRONG><a name="[60]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
@@ -1477,11 +1477,11 @@ Global Symbols
 <LI>Call Chain = Execution_Time_Measurement &rArr; sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sprintf
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Start
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_GetCounter
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_ResetCounter
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Open
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_func (via Veneer)
-<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Start
-<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_GetCounter
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1582,8 +1582,8 @@ Global Symbols
 <P><STRONG><a name="[f2]"></a>UART1_Interrupt_Enable</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, main_ns.o(.text.UART1_Interrupt_Enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = UART1_Interrupt_Enable &rArr; UART_EnableInt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EnableInt
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EnableInt
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1652,17 +1652,17 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BLE_SendCommand
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_receive (via Veneer)
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Execution_Time_Measurement
-<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_Free (via Veneer)
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_BLE_callback (via Veneer)
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BLE_Init
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART1_Interrupt_Enable
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetTimeoutCnt
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EnableFlowCtrl
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Open
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEBUG_PORT_Init
 <LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReceiveMessage
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetTimeoutCnt
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Open
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EnableFlowCtrl
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_receive (via Veneer)
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_BLE_callback (via Veneer)
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_Free (via Veneer)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
