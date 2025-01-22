@@ -72,7 +72,7 @@ Ureka-NuMaker-M2354
     + [NuMaker-M2354 User Manual (Quick start from P28)](https://www.nuvoton.com/export/resource-files/UM_NuMaker-M2354_EN_Rev1.pdf)
   + #### Build & Load the Code into M2354 board: (all GUI operaions in Keil)
     + $ Enter Device/
-      + ![fig](Doc/Keil_Folder.png)
+      + ![fig](Doc/Keil_folder.png)
     + $ Click to open "TrustZone.uvmpw". Keil uVision will launch. This is a multiple project editor (include both TrustZone Secure project & Nonsecure project). The project configuration should be already set in the repository. You can check the configuration by clicking the "Manage Project Items" & "Configure target options" buttons.
         + ![fig](Doc/uvmpw.png)
         + ![fig](Doc/manage_proj.png)
@@ -92,7 +92,7 @@ Ureka-NuMaker-M2354
     + $ Click the "Download" button to initiate the flashing process and load the nonsecure program into the board.
         + ![fig](Doc/load_nonsecure_project.png)
         + ![fig](Doc/load_nonsecure_result.png)
-    + $ We can moreover use virtual COM port (baud rate = 115200) to verify whether the board is successfully running the secure & nonsecure program.
+    + $ We can moreover use virtual COM port (baud rate = 115200) to verify whether the board is successfully running the secure & nonsecure program. Following logs should be shown in the terminal after reloaded or reset. 
         + ![fig](Doc/putty.png)
 ### Setup Python Agent
   + #### Tutorial
@@ -101,10 +101,12 @@ Ureka-NuMaker-M2354
     ```
     # Build a Python Virtual Environment (Venv) in /Agent
     $ cd Agent
-    $ python -m venv venv
+    $ python -m venv .venv
     $ VSCode may help you set python interpreter through GUI (.venv\Scripts\python.exe)
     ├─ $ OR you can also manually activate the python venv in VSCode Terminal 
     └─ $ .\.venv\Scripts\Activate.ps1 (if your VSCode take PowerShell as default terminal)
+    # Check whether you are in the Python Virtual Environment 
+    $ Get-Command python; Get-Command python3; Get-Command pip; Get-Command pip3;
 
     # Install Required Python Packages
     $ pip install -r requirements_Windows_python3.13.1.txt
