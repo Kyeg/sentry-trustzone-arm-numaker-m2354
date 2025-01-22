@@ -58,14 +58,14 @@ def print_nested_json(json_message):
 
 
 # Open Serial
-file_handler = logging.FileHandler(f"agents.log")
+file_handler = logging.FileHandler(f"voting_emulation.log")
 file_handler.setLevel(logging.DEBUG)
 formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 file_handler.setFormatter(formatter)
-logger = logging.getLogger("agents")
+logger = logging.getLogger("voting_emulation")
 logger.addHandler(file_handler)
 logger.setLevel(logging.DEBUG)
-open(f"agents.log", "w").close()
+open(f"voting_emulation.log", "w").close()
 
 
 def dict_to_jsonstr(dict_obj: Dict[str, str]) -> str:
