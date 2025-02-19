@@ -1,0 +1,22 @@
+# Keil: IDE
+**/*uvguix*
+**/*uvgui*
+
+# Keil: After Build
+**/Listings/
+**/Objects/
+
+# VScode
+**/.vscode/
+
+# Python: Byte-compiled / optimized / DLL files
+**/__pycache__
+
+# Python: Environments
+**/.env
+**/.venv
+**/env/
+**/venv/
+
+# Python: Log
+**/*.log
