@@ -202,6 +202,17 @@ void SYS_Init(void);
 void DEBUG_PORT_Init(void);
 void Boot_Init(uint32_t u32BootBase);
 
+void Timer_Stop(void)
+{
+    int cnt = 0;
+    cnt = TIMER_GetCounter(TIMER2);
+    printf("\nElapsed time : ");
+    char str[10];
+    sprintf(str, "%d", cnt);
+    printf(str);
+    printf(" ms\n$");
+}
+
 void BLE_SendMessage(const char *msg)
 {
     int len = strlen(msg);
@@ -3069,6 +3080,8 @@ void DeviceController::send_xxx_message(const string &message_operation,
                                         const string &message_type,
                                         const RTicket &sent_message)
 {
+    Timer_Stop();
+
     printf("[M2354] info: %s is sending message...\n", shared_data->this_device.device_name.c_str());
     if ((message_operation == message::MESSAGE_RECV_AND_STORE ||
          message_operation == message::MESSAGE_VERIFY_AND_EXECUTE) &&
@@ -3115,6 +3128,8 @@ void DeviceController::send_xxx_message(const string &message_operation,
 
 void DeviceController::self_device_recv_permissionless()
 {
+    Timer_Stop();
+
     BLE_SendMessage("{\"message_operation\":\"PERMISSIONLESS\",");
     BLE_SendMessage("\"message_type\":\"RTICKET\",");
     BLE_SendMessage("\"message_str\":\"");

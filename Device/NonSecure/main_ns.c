@@ -17,7 +17,7 @@ volatile uint32_t g_u32comRtail = 0;
 
 typedef int32_t (*funcptr)(uint32_t);
 
-void Execution_Time_Measurement(int ss);
+void Timer_Start(void);
 
 extern int32_t Secure_Free(int32_t (*)(int));
 extern int32_t Secure_receive(char *msg);
@@ -34,15 +34,18 @@ void UART1_Interrupt_Enable(void);
 int32_t NonSecure_BLE_send(char msg);
 int32_t FreeMSG(int ticket);
 
-void UART1_IRQHandler(void) {
+void UART1_IRQHandler(void)
+{
     // printf("\nUART1_IRQHandler was called\n");
 
     uint8_t u8InChar = 0xFF;
     /* Rx Ready or Time-out INT */
     if (UART_GET_INT_FLAG(UART1,
-                          UART_INTSTS_RDAINT_Msk | UART_INTSTS_RXTOINT_Msk)) {
+                          UART_INTSTS_RDAINT_Msk | UART_INTSTS_RXTOINT_Msk))
+    {
         /* Read data until RX FIFO is empty */
-        while (UART_GET_RX_EMPTY(UART1) == 0 && read_flag) {
+        while (UART_GET_RX_EMPTY(UART1) == 0 && read_flag)
+        {
             u8InChar = (uint8_t)UART_READ(UART1);
             // BLE_SendMessage(u8InChar);
 
@@ -50,17 +53,21 @@ void UART1_IRQHandler(void) {
             receive
                data is probably the part of ticket. Or it is part of large
                amount of data.  */
-            if (received_msg == NULL) {
+            if (received_msg == NULL)
+            {
                 // printf("received_msg is NULL\n");
                 return;
-            } else if (u8InChar == '$') {
+            }
+            else if (u8InChar == '$')
+            {
                 read_flag = 0;
                 received_msg[g_u32comRtail] = '\0';
                 // printf("\nReceived message from agent: %s\n", received_msg);
                 break;
             }
 
-            if (g_u32comRtail < 1000) {
+            if (g_u32comRtail < 1000)
+            {
                 received_msg[g_u32comRtail] = u8InChar;
                 g_u32comRtail++;
                 // g_u32comRbytes++;
@@ -71,18 +78,23 @@ void UART1_IRQHandler(void) {
     }
 
     if (UART1->FIFOSTS & (UART_FIFOSTS_BIF_Msk | UART_FIFOSTS_FEF_Msk |
-                          UART_FIFOSTS_PEF_Msk | UART_FIFOSTS_RXOVIF_Msk)) {
+                          UART_FIFOSTS_PEF_Msk | UART_FIFOSTS_RXOVIF_Msk))
+    {
         UART1->FIFOSTS = (UART_FIFOSTS_BIF_Msk | UART_FIFOSTS_FEF_Msk |
                           UART_FIFOSTS_PEF_Msk | UART_FIFOSTS_RXOVIF_Msk);
     }
 }
 
-int ReceiveMessage(char *buffer, int bufferSize) {
+int ReceiveMessage(char *buffer, int bufferSize)
+{
     int index = 0;
-    while (index < bufferSize - 1) {
-        if (UART_IS_RX_READY(UART0)) {
+    while (index < bufferSize - 1)
+    {
+        if (UART_IS_RX_READY(UART0))
+        {
             char receivedChar = UART_READ(UART0);
-            if (receivedChar == '$') {
+            if (receivedChar == '$')
+            {
                 break;
             }
             buffer[index++] = receivedChar;
@@ -95,7 +107,8 @@ int ReceiveMessage(char *buffer, int bufferSize) {
 /*----------------------------------------------------------------------------
   Main function
  *----------------------------------------------------------------------------*/
-int main(void) {
+int main(void)
+{
     DEBUG_PORT_Init();
     UART_Open(UART1, 9600);
     UART_EnableFlowCtrl(UART1);
@@ -126,26 +139,28 @@ int main(void) {
 
     // printf("Non-secure code is running\n");
 
-    while (1) {
-        // Execution_Time_Measurement(0);
-
+    while (1)
+    {
         ReceiveMessage(received_msg, 1000);
         // BLE_SendCommand(received_msg);
 
-        Execution_Time_Measurement(0);
+        Timer_Start();
         Secure_receive(received_msg);
-        Execution_Time_Measurement(1);
 
-        if (received_msg == NULL) {
+        if (received_msg == NULL)
+        {
             BLE_SendCommand("The message is NULL");
             received_msg = (char *)malloc(1000 * sizeof(char));
-        } else {
+        }
+        else
+        {
             BLE_SendCommand("Hello from M2354!");
         }
     }
 }
 
-void DEBUG_PORT_Init(void) {
+void DEBUG_PORT_Init(void)
+{
     /*---------------------------------------------------------------------------------------------------------*/
     /* Init UART */
     /*---------------------------------------------------------------------------------------------------------*/
@@ -155,7 +170,8 @@ void DEBUG_PORT_Init(void) {
     DEBUG_PORT->LINE = UART_WORD_LEN_8 | UART_PARITY_NONE | UART_STOP_BIT_1;
 }
 
-void App_Init(uint32_t u32BootBase) {
+void App_Init(uint32_t u32BootBase)
+{
     funcptr fp;
     uint32_t u32StackBase;
 
@@ -165,13 +181,16 @@ void App_Init(uint32_t u32BootBase) {
 
     /* Check if the stack is in secure SRAM space */
     u32StackBase = M32(u32BootBase);
-    if ((u32StackBase >= 0x30000000UL) && (u32StackBase < 0x40000000UL)) {
+    if ((u32StackBase >= 0x30000000UL) && (u32StackBase < 0x40000000UL))
+    {
         // printf("Execute non-secure code ...\n");
         /* SCB.VTOR points to the target Secure vector table base address. */
         SCB->VTOR = u32BootBase;
 
         fp(0); /* Non-secure function call */
-    } else {
+    }
+    else
+    {
         /* Something went wrong */
         // printf("No code in non-secure region!\n");
 
@@ -181,11 +200,13 @@ void App_Init(uint32_t u32BootBase) {
 }
 
 #ifdef BLE
-void BLE_SendCommand(const char *cmd) {
+void BLE_SendCommand(const char *cmd)
+{
     // printf("\nSending command: %s\n", cmd);
 
     int i = 0;
-    while (cmd[i] != '\0') {
+    while (cmd[i] != '\0')
+    {
         UART_WRITE(UART1, cmd[i]);
         while (UART_IS_TX_FULL(UART1))
             ;
@@ -202,18 +223,24 @@ void BLE_SendCommand(const char *cmd) {
     CLK_SysTickDelay(500000);
 }
 
-int32_t NonSecure_BLE_send(char msg) {
+int32_t NonSecure_BLE_send(char msg)
+{
     BLE_SendMessage(msg);
     return 1;
 }
 
-int32_t FreeMSG(int ticket) {
-    if (ticket == -1) {
+int32_t FreeMSG(int ticket)
+{
+    if (ticket == -1)
+    {
         BLE_SendCommand("Ticket is permissionless");
-    } else if (ticket == -2) {
+    }
+    else if (ticket == -2)
+    {
         BLE_SendCommand("Something went wrong");
     }
-    if (received_msg != NULL) {
+    if (received_msg != NULL)
+    {
         free(received_msg);
         received_msg = NULL;
         BLE_SendCommand("Memory freed");
@@ -222,7 +249,8 @@ int32_t FreeMSG(int ticket) {
 }
 
 // Simple function to send a message
-void BLE_SendMessage(char msg) {
+void BLE_SendMessage(char msg)
+{
     // printf("%c", msg);
     //  printf("\nSending message: %s", msg);
 
@@ -235,7 +263,8 @@ void BLE_SendMessage(char msg) {
     // }
 }
 
-void BLE_Init(void) {
+void BLE_Init(void)
+{
     // printf("\nInitializing BLE module...\n");
 
     CLK_SysTickDelay(1000000);
@@ -252,47 +281,35 @@ void BLE_Init(void) {
     // printf("BLE initialization completed\n");
 }
 
-void UART1_Interrupt_Disable(void) {
+void UART1_Interrupt_Disable(void)
+{
     /* Disable RDA and RTO Interrupt */
     NVIC_DisableIRQ(UART1_IRQn);
     UART_DisableInt(UART1, (UART_INTEN_RDAIEN_Msk | UART_INTEN_RLSIEN_Msk |
                             UART_INTEN_RXTOIEN_Msk));
 }
 
-void UART1_Interrupt_Enable(void) {
+void UART1_Interrupt_Enable(void)
+{
     /* Enable RDA and RTO Interrupt */
     UART_EnableInt(UART1, (UART_INTEN_RDAIEN_Msk | UART_INTEN_RLSIEN_Msk |
                            UART_INTEN_RXTOIEN_Msk));
     NVIC_EnableIRQ(UART1_IRQn);
 }
 
-void Execution_Time_Measurement(int ss) {
+void Timer_Start(void)
+{
 
-    if (ss) {
-        int cnt = 0;
-        // TIMER_Stop(TIMER1);
-        cnt = TIMER_GetCounter(TIMER2);
-        // printf("\nElapsed time : %d ms", cnt);
-        Secure_func("\nElapsed time : ");
-        char str[10];
-        sprintf(str, "%d", cnt);
-        Secure_func(str);
-        Secure_func(" ms\n$");
-    }
+    TIMER_Open(TIMER2, TIMER_PERIODIC_MODE, 10000);
 
-    else {
+    TIMER_SET_PRESCALE_VALUE(TIMER2, 31);
 
-        TIMER_Open(TIMER2, TIMER_PERIODIC_MODE, 10000);
+    TIMER_SET_CMP_VALUE(TIMER2, 0xFFFFFF);
 
-        TIMER_SET_PRESCALE_VALUE(TIMER2, 31);
+    TIMER_ResetCounter(TIMER2);
 
-        TIMER_SET_CMP_VALUE(TIMER2, 0xFFFFFF);
+    TIMER_Start(TIMER2);
 
-        TIMER_ResetCounter(TIMER2);
-
-        TIMER_Start(TIMER2);
-
-        // printf("\nTimer started!!!");
-    }
+    // printf("\nTimer started!!!");
 }
 #endif
