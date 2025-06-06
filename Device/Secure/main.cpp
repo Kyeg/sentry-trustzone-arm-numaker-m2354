@@ -192,7 +192,7 @@ extern "C"
     __NONSECURE_ENTRY
     int32_t Secure_receive(char *msg)
     {
-        // printf("Secure received: %s\n", msg);
+        // //printf("Secure received: %s\n", msg);
         iot_device.recv_xxx_message_ble(msg);
         return 1;
     }
@@ -206,10 +206,10 @@ void BLE_SendMessage(const char *msg)
 {
     int len = strlen(msg);
     printf("%s", msg);
-    // for (int i = 0; i < len; i++) {
-    //     printf("%c", msg[i]);
-    //     pfNonSecure_BLE_send(msg[i]);
-    // }
+    //  for (int i = 0; i < len; i++) {
+    //      //printf("%c", msg[i]);
+    //      pfNonSecure_BLE_send(msg[i]);
+    //  }
 }
 
 /*----------------------------------------------------------------------------
@@ -288,8 +288,8 @@ int main(void)
     /* Enable UART1 RDA interrupt */
     NVIC_EnableIRQ(UART1_IRQn);
     UART_EnableInt(UART1, UART_INTEN_RDAIEN_Msk);
-    printf("\n\nCPU @ %dHz\n", SystemCoreClock);
-    printf("\nBLE UART Sample Program\n");
+    // printf("\n\nCPU @ %dHz\n", SystemCoreClock);
+    // printf("\nBLE UART Sample Program\n");
     /* Initialize BLE module */
     BLE_Init();
 
@@ -581,7 +581,7 @@ void separate_hex(const string &hex_str, char *out1, char *out2)
 
 int WriteAndVerifyFlash(uint32_t address, uint32_t data)
 {
-    printf("[M2354] M2354 FMC Application Example\n");
+    // printf("[M2354] M2354 FMC Application Example\n");
 
     // 打開 FMC
     FMC_Open();
@@ -590,7 +590,7 @@ int WriteAndVerifyFlash(uint32_t address, uint32_t data)
     int eraseResult = FMC_Erase(address);
     if (eraseResult != 0)
     {
-        printf("[M2354] Erase failed with error code: %d\n", eraseResult);
+        // printf("[M2354] Erase failed with error code: %d\n", eraseResult);
         return -1;
     }
 
@@ -598,23 +598,23 @@ int WriteAndVerifyFlash(uint32_t address, uint32_t data)
     int writeResult = FMC_Write(address, data);
     if (writeResult != 0)
     {
-        printf("[M2354] Write failed with error code: %d\n", writeResult);
+        // printf("[M2354] Write failed with error code: %d\n", writeResult);
         return -2;
     }
-    printf("[M2354] Data written: 0x%08X\n", data);
+    // printf("[M2354] Data written: 0x%08X\n", data);
 
     // 讀取數據進行驗證
     uint32_t readData = FMC_Read(address);
-    printf("[M2354] Data read: 0x%08X\n", readData);
+    // printf("[M2354] Data read: 0x%08X\n", readData);
 
     if (data == readData)
     {
-        printf("[M2354] FMC Write and Read successful!\n");
+        // printf("[M2354] FMC Write and Read successful!\n");
         return 0; // 成功
     }
     else
     {
-        printf("[M2354] FMC Write and Read failed!\n");
+        // printf("[M2354] FMC Write and Read failed!\n");
         return -3; // 驗證失敗
     }
 }
@@ -641,12 +641,12 @@ void storeStringToFlash(uint32_t startAddress, const char *str)
 
         if (WriteAndVerifyFlash(startAddress + i * 4, word) != 0)
         {
-            printf("[M2354](storeStringToFlash) Failed to write word at address 0x%08X\n", startAddress + i * 4);
+            // printf("[M2354](storeStringToFlash) Failed to write word at address 0x%08X\n", startAddress + i * 4);
             return;
         }
     }
 
-    printf("[M2354](storeStringToFlash) Successfully wrote string to Flash\n");
+    // printf("[M2354](storeStringToFlash) Successfully wrote string to Flash\n");
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -654,10 +654,10 @@ void storeStringToFlash(uint32_t startAddress, const char *str)
 
 void DeviceController::self_generate_xxx_r_ticket(RTicket &received_r_ticket)
 {
-    printf("[M2354] info: %s is generating r_ticket\n", shared_data->this_device.device_name.c_str());
-    // RTicketGenerator r_ticket_generator =
-    //     RTicketGenerator(shared_data->this_device, shared_data->this_person,
-    //                      shared_data->device_table);
+    // printf("[M2354] info: %s is generating r_ticket\n", shared_data->this_device.device_name.c_str());
+    //  RTicketGenerator r_ticket_generator =
+    //      RTicketGenerator(shared_data->this_device, shared_data->this_person,
+    //                       shared_data->device_table);
 
     // json generated_r_ticket1;
     // generated_r_ticket1.addValueString("device_id", "no_id");
@@ -699,7 +699,7 @@ DeviceController::generate_arbitrary_r_ticket(RTicket received_r_ticket)
     // }
     else
     {
-        printf("[M2354](generate_arbitrary_r_ticket) Error: Unkown RTicket type\n");
+        // printf("[M2354](generate_arbitrary_r_ticket) Error: Unkown RTicket type\n");
         exit(1);
     }
     // TODO: hash received_r_ticket
@@ -728,12 +728,12 @@ DeviceController::generate_arbitrary_r_ticket(RTicket received_r_ticket)
             received_r_ticket, shared_data->this_device.device_priv_key,
             r_ticket_str);
         //  log ("info", success_msg);
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else if (received_r_ticket.r_ticket_type == r_ticket::TYPE_DATA_RTOKEN)
     {
         // log ("error", failure_msg);
-        printf("[M2354](generate_arbitrary_r_ticket) error: %s\n", failure_msg.c_str());
+        // printf("[M2354](generate_arbitrary_r_ticket) error: %s\n", failure_msg.c_str());
         exit(1);
     }
 
@@ -760,7 +760,7 @@ void DeviceController::self_add_device_signature_on_r_ticket(
     if (sign_message(ticket_hash_str.c_str(), (char *)device_priv_key.c_str(),
                      r, s) < 0)
     {
-        printf("[M2354](self_add_device_signature_on_r_ticket) Error in signing r ticket\n");
+        // printf("[M2354](self_add_device_signature_on_r_ticket) Error in signing r ticket\n");
         exit(1);
     }
 
@@ -784,7 +784,7 @@ void DeviceController::self_add_device_signature_on_r_ticket(
 int DeviceController::self_classify_message_is_defined_type(
     char *arbitrary_json, char *result_message)
 {
-    printf("[M2354] info %s is classifying message...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info %s is classifying message...\n", shared_data->this_device.device_name.c_str());
 
     // MessageVerifier message_verifier(shared_data->this_device);
     // Message message_in;
@@ -815,7 +815,7 @@ int DeviceController::self_classify_message_is_defined_type(
     }
     else
     {
-        printf("-> FAILURE: CLASSIFY_MESSAGE_IS_DEFINED_TYPE\n");
+        // printf("-> FAILURE: CLASSIFY_MESSAGE_IS_DEFINED_TYPE\n");
         throw std::runtime_error(
             "-> FAILURE: CLASSIFY_MESSAGE_IS_DEFINED_TYPE");
     }
@@ -825,13 +825,13 @@ int DeviceController::self_classify_message_is_defined_type(
 void DeviceController::self_classify_u_ticket_is_defined_type(
     UTicket &received_u_ticket)
 {
-    printf("[M2354] info %s is classifying u_ticket...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info %s is classifying u_ticket...\n", shared_data->this_device.device_name.c_str());
 
     // ThisDevice this_device;
     // UTicketVerifier u_ticket_verifier(this_device);
 
     // cout << "info: " << arbitrary_json << "\n";
-    // printf("info: %s\n", arbitrary_json.c_str());
+    // //printf("info: %s\n", arbitrary_json.c_str());
 
     u_ticket_verify_protocol_version(received_u_ticket);
     u_ticket_verify_u_ticket_id(received_u_ticket);
@@ -844,7 +844,7 @@ void DeviceController::self_classify_u_ticket_is_defined_type(
 void DeviceController::self_classify_r_ticket_is_defined_type(
     RTicket &received_r_ticket)
 {
-    printf("[M2354] info %s is classifying r_ticket...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info %s is classifying r_ticket...\n", shared_data->this_device.device_name.c_str());
 
     // RTicketVerifier r_ticket_verifier(shared_data->this_device);
 
@@ -859,7 +859,7 @@ void DeviceController::self_classify_r_ticket_is_defined_type(
 void DeviceController::verify_u_ticket_can_execute(UTicket u_ticket_in)
 {
     // cout << "show me your ass: " << u_ticket_in.to_json_str();
-    printf("[M2354] info %s is verifying u_ticket can execute\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info %s is verifying u_ticket can execute\n", shared_data->this_device.device_name.c_str());
 
     // UTicketVerifier u_ticket_verifier(shared_data->this_device);
 
@@ -877,7 +877,7 @@ void DeviceController::verify_u_ticket_has_executed_through_r_ticket(
     RTicket &r_ticket_in, UTicket &audit_start_ticket,
     UTicket &audit_end_ticket)
 {
-    printf("[M2354] info %s is verifying u_ticket has exectued through r_ticket\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info %s is verifying u_ticket has exectued through r_ticket\n", shared_data->this_device.device_name.c_str());
 
     // RTicketVerifier r_ticket_verifier(
     //     shared_data->this_device, audit_start_ticket, audit_end_ticket,
@@ -912,26 +912,26 @@ void DeviceController::verify_cmd_is_in_task_scope(const string &cmd)
 
     if (idx != -1 && task_scope.get_string(idx) == "allow")
     {
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else if (cmd == "HELLO-1" && idx2 != -1 &&
              (task_scope.get_string(idx2) == "allow"))
     {
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else if (cmd == "HELLO-2" && idx3 != -1 &&
              (task_scope.get_string(idx3) == "allow"))
     {
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else if (cmd == "HELLO-3" && idx4 != -1 &&
              (task_scope.get_string(idx4) == "allow"))
     {
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else
     {
-        printf("[M2354] error: %s\n", failure_msg.c_str());
+        // printf("[M2354] error: %s\n", failure_msg.c_str());
         throw std::runtime_error(failure_msg);
     }
 
@@ -942,21 +942,21 @@ UTicket
 DeviceController::u_ticket_verify_json_schema(const char *arbitrary_json)
 {
     string arbitrary_json_str;
-    // printf("行行好吧 %s\n", arbitrary_json);
+    // //printf("行行好吧 %s\n", arbitrary_json);
     for (int i = 0; i < strlen(arbitrary_json); i++)
     {
-        // printf("%c", arbitrary_json[i]);
+        // //printf("%c", arbitrary_json[i]);
         arbitrary_json_str += arbitrary_json[i];
     }
-    // printf("\n");
+    // //printf("\n");
 
-    // printf("[M2354] info: input json: %s\n", arbitrary_json_str.c_str());
+    // //printf("[M2354] info: input json: %s\n", arbitrary_json_str.c_str());
 
     UTicket u_ticket_in;
     try
     {
         uticket_from_json_str(arbitrary_json_str, u_ticket_in);
-        printf("[M2354] info: -> SUCCESS: VERIFY_JSON_SCHEMA\n");
+        // printf("[M2354] info: -> SUCCESS: VERIFY_JSON_SCHEMA\n");
     }
     catch (const std::exception &e)
     {
@@ -972,7 +972,7 @@ void DeviceController::u_ticket_verify_protocol_version(UTicket &u_ticket_in)
 
     if (u_ticket_in.protocol_version == u_ticket::PROTOCOL_VERSION)
     {
-        printf("%s\n", success_msg.c_str());
+        // printf("%s\n", success_msg.c_str());
     }
     else
     {
@@ -986,7 +986,7 @@ void DeviceController::u_ticket_verify_u_ticket_id(UTicket &u_ticket_in)
 
     string tmp_id = u_ticket_in.u_ticket_id;
     string tmp_sig = u_ticket_in.issuer_signature;
-    // printf("tmp_id: %s\n", tmp_id.c_str());
+    // //printf("tmp_id: %s\n", tmp_id.c_str());
 
     u_ticket_in.u_ticket_id = "";
     u_ticket_in.issuer_signature = "";
@@ -1003,16 +1003,16 @@ void DeviceController::u_ticket_verify_u_ticket_id(UTicket &u_ticket_in)
     u_ticket_in.u_ticket_id = tmp_id;
     u_ticket_in.issuer_signature = tmp_sig;
 
-    // printf("hash: %s\n", hash_str.c_str());
-    // printf("tmp_id: %s\n", tmp_id.c_str());
+    // //printf("hash: %s\n", hash_str.c_str());
+    // //printf("tmp_id: %s\n", tmp_id.c_str());
 
     if (hash_str == tmp_id)
     {
-        printf("-> SUCCESS: VERIFY_U_TICKET_ID\n");
+        // printf("-> SUCCESS: VERIFY_U_TICKET_ID\n");
     }
     else
     {
-        printf("-> FAILURE: VERIFY_U_TICKET_ID\n");
+        // printf("-> FAILURE: VERIFY_U_TICKET_ID\n");
         throw std::runtime_error("-> FAILURE: VERIFY_U_TICKET_ID");
     }
     return;
@@ -1026,7 +1026,7 @@ void DeviceController::u_ticket_verify_u_ticket_type(UTicket &u_ticket_in)
     if (u_ticket::LEGAL_UTICKET_TYPES.find(u_ticket_in.u_ticket_type) !=
         u_ticket::LEGAL_UTICKET_TYPES.end())
     {
-        printf("%s\n", success_msg.c_str());
+        // printf("%s\n", success_msg.c_str());
     }
     else
     {
@@ -1042,7 +1042,7 @@ void DeviceController::u_ticket_has_device_id(UTicket &u_ticket_in)
 
     if (u_ticket_in.device_id != "")
     {
-        printf("%s\n", success_msg.c_str());
+        // printf("%s\n", success_msg.c_str());
     }
     else
     {
@@ -1060,7 +1060,7 @@ void DeviceController::u_ticket_verify_device_id(UTicket &u_ticket_in)
     {
         if (u_ticket_in.device_id == "no_id")
         {
-            printf("%s\n", success_msg.c_str());
+            // printf("%s\n", success_msg.c_str());
         }
         else
         {
@@ -1075,7 +1075,7 @@ void DeviceController::u_ticket_verify_device_id(UTicket &u_ticket_in)
     {
         if (u_ticket_in.device_id == shared_data->this_device.device_pub_key)
         {
-            printf("%s\n", success_msg.c_str());
+            // printf("%s\n", success_msg.c_str());
         }
         else
         {
@@ -1100,7 +1100,7 @@ void DeviceController::u_ticket_verify_ticket_order(UTicket &u_ticket_in)
         {
             if (u_ticket_in.ticket_order == 0)
             {
-                printf("%s\n", success_msg.c_str());
+                // printf("%s\n", success_msg.c_str());
             }
             else
             {
@@ -1109,7 +1109,7 @@ void DeviceController::u_ticket_verify_ticket_order(UTicket &u_ticket_in)
         }
         else if (shared_data->this_device.ticket_order > 0)
         {
-            printf("-> FAILURE: VERIFY_TICKET_ORDER: IOT_DEVICE ALREADY INITIALIZED\n");
+            // printf("-> FAILURE: VERIFY_TICKET_ORDER: IOT_DEVICE ALREADY INITIALIZED\n");
             throw std::runtime_error("-> FAILURE: VERIFY_TICKET_ORDER: "
                                      "IOT_DEVICE ALREADY INITIALIZED");
         }
@@ -1122,7 +1122,7 @@ void DeviceController::u_ticket_verify_ticket_order(UTicket &u_ticket_in)
     {
         if (shared_data->this_device.ticket_order == u_ticket_in.ticket_order)
         {
-            printf("%s\n", success_msg.c_str());
+            // printf("%s\n", success_msg.c_str());
         }
         else
         {
@@ -1143,7 +1143,7 @@ void DeviceController::u_ticket_verify_holder_id(UTicket &u_ticket_in)
     {
         if (u_ticket_in.holder_id != "")
         {
-            printf("%s\n", success_msg.c_str());
+            // printf("%s\n", success_msg.c_str());
         }
         else
         {
@@ -1154,7 +1154,7 @@ void DeviceController::u_ticket_verify_holder_id(UTicket &u_ticket_in)
     {
         if (u_ticket_in.holder_id == shared_data->this_device.owner_pub_key)
         {
-            printf("%s\n", success_msg.c_str());
+            // printf("%s\n", success_msg.c_str());
         }
         else
         {
@@ -1164,7 +1164,7 @@ void DeviceController::u_ticket_verify_holder_id(UTicket &u_ticket_in)
     else if (u_ticket_in.u_ticket_type == u_ticket::TYPE_CMD_UTOKEN ||
              u_ticket_in.u_ticket_type == u_ticket::TYPE_ACCESS_END_UTOKEN)
     {
-        printf("%s\n", success_msg.c_str());
+        // printf("%s\n", success_msg.c_str());
     }
     else
     {
@@ -1183,13 +1183,13 @@ void DeviceController::u_ticket_verify_task_scope(UTicket &u_ticket_in)
         u_ticket_in.u_ticket_type == u_ticket::TYPE_CMD_UTOKEN ||
         u_ticket_in.u_ticket_type == u_ticket::TYPE_ACCESS_END_UTOKEN)
     {
-        printf("%s\n", success_msg.c_str());
+        // printf("%s\n", success_msg.c_str());
     }
     else if (u_ticket_in.u_ticket_type == u_ticket::TYPE_ACCESS_UTICKET)
     {
         if (u_ticket_in.task_scope != "")
         {
-            printf("%s\n", success_msg.c_str());
+            // printf("%s\n", success_msg.c_str());
         }
         else
         {
@@ -1200,7 +1200,7 @@ void DeviceController::u_ticket_verify_task_scope(UTicket &u_ticket_in)
     {
         if (u_ticket_in.task_scope == "{\"ALL\": \"allow\"}")
         {
-            printf("%s\n", success_msg.c_str());
+            // printf("%s\n", success_msg.c_str());
         }
         else
         {
@@ -1224,7 +1224,7 @@ void DeviceController::u_ticket_verify_ps(UTicket &u_ticket_in)
         u_ticket_in.u_ticket_type == u_ticket::TYPE_ACCESS_UTICKET ||
         u_ticket_in.u_ticket_type == u_ticket::TYPE_SELFACCESS_UTICKET)
     {
-        printf("%s\n", success_msg.c_str());
+        // printf("%s\n", success_msg.c_str());
     }
     else if (u_ticket_in.u_ticket_type == u_ticket::TYPE_CMD_UTOKEN ||
              u_ticket_in.u_ticket_type == u_ticket::TYPE_ACCESS_END_UTOKEN)
@@ -1233,7 +1233,7 @@ void DeviceController::u_ticket_verify_ps(UTicket &u_ticket_in)
             u_ticket_in.ciphertext_cmd != "" && u_ticket_in.iv_data != "" &&
             u_ticket_in.gcm_authentication_tag_cmd != "")
         {
-            printf("%s\n", success_msg.c_str());
+            // printf("%s\n", success_msg.c_str());
         }
         else
         {
@@ -1257,7 +1257,7 @@ void DeviceController::u_ticket_verify_issuer_signature(UTicket &u_ticket_in)
         u_ticket_in.u_ticket_type == u_ticket::TYPE_CMD_UTOKEN ||
         u_ticket_in.u_ticket_type == u_ticket::TYPE_ACCESS_END_UTOKEN)
     {
-        printf("%s\n", success_msg.c_str());
+        // printf("%s\n", success_msg.c_str());
     }
     else if (u_ticket_in.u_ticket_type == u_ticket::TYPE_ACCESS_UTICKET ||
              u_ticket_in.u_ticket_type == u_ticket::TYPE_OWNERSHIP_UTICKET)
@@ -1265,7 +1265,7 @@ void DeviceController::u_ticket_verify_issuer_signature(UTicket &u_ticket_in)
         if (self_verify_issuer_signature_on_u_ticket(
                 u_ticket_in, shared_data->this_device.owner_pub_key))
         {
-            printf("%s\n", success_msg.c_str());
+            // printf("%s\n", success_msg.c_str());
         }
         else
         {
@@ -1299,19 +1299,19 @@ bool DeviceController::self_verify_issuer_signature_on_u_ticket(
     memset(R, 0, 65);
     memset(S, 0, 65);
     separate_hex(issuer_signature, R, S);
-    printf("r: %s\n", R);
-    printf("s: %s\n", S);
+    // printf("r: %s\n", R);
+    // printf("s: %s\n", S);
     separate_hex(public_key, Qx, Qy);
     signed_u_ticket.issuer_signature = "";
 
     unsigned char msg_hash[32];
 
-    // printf("驗證的票長怎樣: %s\n", signed_u_ticket.to_json_str().c_str());
+    // //printf("驗證的票長怎樣: %s\n", signed_u_ticket.to_json_str().c_str());
 
     my_sha256((char *)signed_u_ticket.to_json_str().c_str(),
               (uint32_t *)msg_hash);
 
-    // printf("驗證的hash: %s\n", byte_to_hex(msg_hash, 32).c_str());
+    // //printf("驗證的hash: %s\n", byte_to_hex(msg_hash, 32).c_str());
 
     string msg_hash_str = byte_to_hex(msg_hash, 32);
 
@@ -1324,12 +1324,12 @@ bool DeviceController::self_verify_issuer_signature_on_u_ticket(
 
     if (ret < 0)
     {
-        printf("%s\n", fail_msg.c_str());
+        // printf("%s\n", fail_msg.c_str());
         throw std::runtime_error(fail_msg);
     }
     else
     {
-        printf("%s\n", success_msg.c_str());
+        // printf("%s\n", success_msg.c_str());
         return true;
     }
 
@@ -1361,7 +1361,7 @@ void DeviceController::r_ticket_verify_protocol_version(RTicket &r_ticket_in)
     // Verify Protocol Version
     if (r_ticket_in.protocol_version == u_ticket::PROTOCOL_VERSION)
     {
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else
     {
@@ -1390,13 +1390,13 @@ void DeviceController::r_ticket_verify_r_ticket_id(RTicket &r_ticket_in)
 
     if (message == id_str)
     {
-        // printf("info: my hash: %s\n", message.c_str());
-        // printf("info: %s\n", id_str.c_str());
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // //printf("info: my hash: %s\n", message.c_str());
+        // //printf("info: %s\n", id_str.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else
     {
-        printf("[M2354] info: %s\n", failure_msg.c_str());
+        // printf("[M2354] info: %s\n", failure_msg.c_str());
         throw std::runtime_error(failure_msg);
     }
 
@@ -1417,7 +1417,7 @@ void DeviceController::r_ticket_verify_r_ticket_type(RTicket &r_ticket_in)
     if (r_ticket::LEGAL_RTICKET_TYPES.find(r_ticket_in.r_ticket_type) !=
         r_ticket::LEGAL_RTICKET_TYPES.end())
     {
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else
     {
@@ -1433,7 +1433,7 @@ void DeviceController::r_ticket_has_device_id(RTicket &r_ticket_in)
     // Check if R-Ticket has Device ID
     if (r_ticket_in.device_id != "")
     {
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else
     {
@@ -1453,7 +1453,7 @@ void DeviceController::r_ticket_verify_device_id(RTicket &r_ticket_in,
         // u_ticket_device_id = "no_id"
         // r_ticket_device_id = "newly_created_device public key string"
 
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else if (r_ticket_in.r_ticket_type == u_ticket::TYPE_OWNERSHIP_UTICKET ||
              r_ticket_in.r_ticket_type == r_ticket::TYPE_DATA_RTOKEN ||
@@ -1461,7 +1461,7 @@ void DeviceController::r_ticket_verify_device_id(RTicket &r_ticket_in,
     {
         if (r_ticket_in.device_id == audit_start_ticket.device_id)
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1474,7 +1474,7 @@ void DeviceController::r_ticket_verify_device_id(RTicket &r_ticket_in,
         if (r_ticket_in.device_id ==
             shared_data->current_session.current_device_id)
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1495,7 +1495,7 @@ void DeviceController::r_ticket_verify_result(RTicket &r_ticket_in)
     // Verify Result
     if (r_ticket_in.result.find("SUCCESS") != string::npos)
     {
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else
     {
@@ -1514,7 +1514,7 @@ void DeviceController::r_ticket_verify_ticket_order(RTicket &r_ticket_in)
     {
         if (r_ticket_in.ticket_order == 1)
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1525,7 +1525,7 @@ void DeviceController::r_ticket_verify_ticket_order(RTicket &r_ticket_in)
     {
         if (r_ticket_in.ticket_order == shared_data->this_device.ticket_order)
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1555,7 +1555,7 @@ void DeviceController::r_ticket_verify_audit_start(
     {
         if (r_ticket_in.audit_start == audit_start_ticket.u_ticket_id)
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1568,7 +1568,7 @@ void DeviceController::r_ticket_verify_audit_start(
         if (r_ticket_in.audit_start ==
             shared_data->current_session.current_u_ticket_id)
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1591,7 +1591,7 @@ void DeviceController::r_ticket_verify_audit_end(RTicket &r_ticket_in)
     {
         if (r_ticket_in.audit_end == "ACCESS_END")
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1617,7 +1617,7 @@ void DeviceController::r_ticket_verify_cr_key(RTicket &r_ticket_in)
         if (r_ticket_in.challenge_1 != "" &&
             r_ticket_in.key_exchange_salt_1 != "")
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1629,7 +1629,7 @@ void DeviceController::r_ticket_verify_cr_key(RTicket &r_ticket_in)
         if (r_ticket_in.challenge_2 != "" && r_ticket_in.challenge_1 != "" &&
             r_ticket_in.key_exchange_salt_2 != "")
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1640,7 +1640,7 @@ void DeviceController::r_ticket_verify_cr_key(RTicket &r_ticket_in)
     {
         if (r_ticket_in.challenge_2 != "")
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1668,7 +1668,7 @@ void DeviceController::r_ticket_verify_ps(RTicket &r_ticket_in)
     {
         if (r_ticket_in.iv_cmd != "")
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1681,7 +1681,7 @@ void DeviceController::r_ticket_verify_ps(RTicket &r_ticket_in)
             r_ticket_in.ciphertext_cmd != "" && r_ticket_in.iv_data != "" &&
             r_ticket_in.gcm_authentication_tag_cmd != "")
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1694,7 +1694,7 @@ void DeviceController::r_ticket_verify_ps(RTicket &r_ticket_in)
             r_ticket_in.ciphertext_data != "" && r_ticket_in.iv_cmd != "" &&
             r_ticket_in.gcm_authentication_tag_data != "")
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1707,7 +1707,7 @@ void DeviceController::r_ticket_verify_ps(RTicket &r_ticket_in)
             r_ticket_in.ciphertext_data != "" && r_ticket_in.iv_cmd != "" &&
             r_ticket_in.gcm_authentication_tag_data != "")
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1733,7 +1733,7 @@ void DeviceController::r_ticket_verify_device_signature(RTicket &r_ticket_in)
         if (self_verify_device_signature_on_r_ticket(r_ticket_in,
                                                      r_ticket_in.device_id))
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1746,7 +1746,7 @@ void DeviceController::r_ticket_verify_device_signature(RTicket &r_ticket_in)
         if (self_verify_device_signature_on_r_ticket(
                 r_ticket_in, shared_data->current_session.current_holder_id))
         {
-            printf("[M2354] info: %s\n", success_msg.c_str());
+            // printf("[M2354] info: %s\n", success_msg.c_str());
         }
         else
         {
@@ -1756,7 +1756,7 @@ void DeviceController::r_ticket_verify_device_signature(RTicket &r_ticket_in)
     else if (r_ticket_in.r_ticket_type == r_ticket::TYPE_DATA_RTOKEN)
     {
         // no device_signature
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     else
     {
@@ -1801,12 +1801,12 @@ bool DeviceController::self_verify_device_signature_on_r_ticket(
 
     if (ret < 0)
     {
-        printf("[M2354] info: %s\n", failure_msg.c_str());
+        // printf("[M2354] info: %s\n", failure_msg.c_str());
         throw std::runtime_error(failure_msg);
     }
     else
     {
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
 
         return true;
     }
@@ -1823,7 +1823,7 @@ void DeviceController::msg_verify_json_schema(const string &arbitrary_json,
     try
     {
         message_from_json_str(arbitrary_json, message_in);
-        printf("[M2354] info: %s\n", success_msg.c_str());
+        // printf("[M2354] info: %s\n", success_msg.c_str());
     }
     catch (const std::exception &e)
     {
@@ -1862,7 +1862,7 @@ void DeviceController::msg_verify_message_operation(
         message_operation == message::MESSAGE_VERIFY_AND_EXECUTE ||
         message_operation == "PERMISSIONLESS")
     {
-        printf("[M2354] info: %s\n", success_msg);
+        // printf("[M2354] info: %s\n", success_msg);
     }
     else
     {
@@ -1895,12 +1895,12 @@ int DeviceController::msg_verify_message_type(const char *arbitrary_json)
 
     if (message_type == "UTICKET")
     {
-        printf("[M2354] info: %s UTICKET\n", success_msg);
+        // printf("[M2354] info: %s UTICKET\n", success_msg);
         return 1;
     }
     else if (message_type == "RTICKET")
     {
-        printf("[M2354] info: %s RTICKET\n", success_msg);
+        // printf("[M2354] info: %s RTICKET\n", success_msg);
         return 2;
     }
     else if (message_type == "PERMISSIONLESS")
@@ -1948,7 +1948,7 @@ void DeviceController::msg_verify_message_str(const char *arbitrary_json,
 
         if (strlen(msg) > 0)
         {
-            printf("[M2354] info: %s\n", success_msg);
+            // printf("[M2354] info: %s\n", success_msg);
         }
         else
         {
@@ -2070,7 +2070,7 @@ void DeviceController::self_execute_xxx_u_ticket(UTicket u_ticket_in)
             else
             {
                 shared_data->result_message = "-> FAILURE: VERIFY_ACCESS_END";
-                printf("-> FAILURE: VERIFY_ACCESS_END\n");
+                // printf("-> FAILURE: VERIFY_ACCESS_END\n");
             }
         }
     }
@@ -2089,7 +2089,7 @@ void DeviceController::self_execute_xxx_r_ticket(RTicket r_ticket_in,
         }
         else
         {
-            printf("should not be here (self_execute_xxx_r_ticket)\n");
+            // printf("should not be here (self_execute_xxx_r_ticket)\n");
         }
     }
 }
@@ -2099,12 +2099,12 @@ void DeviceController::self_execute_one_time_initialize_iot_device(
 {
     char output[66];
 
-    printf("[M2354] info: %s is initializing...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info: %s is initializing...\n", shared_data->this_device.device_name.c_str());
 
     if (shared_data->this_device.device_type != this_device::IOT_DEVICE)
     {
         // FAILURE: (VRESET)
-        printf("-> FAILURE: ONLY IOT_DEVICE CAN DO THIS INITIALIZATION OPERATION\n");
+        // printf("-> FAILURE: ONLY IOT_DEVICE CAN DO THIS INITIALIZATION OPERATION\n");
         return;
     }
 
@@ -2124,7 +2124,7 @@ void DeviceController::self_execute_one_time_initialize_iot_device(
 
     if (generate_keys(d, Qx, Qy) < 0)
     {
-        printf("-> FAILURE: GENERATE DEVICE KEY PAIR\n");
+        // printf("-> FAILURE: GENERATE DEVICE KEY PAIR\n");
         throw std::runtime_error("-> FAILURE: GENERATE DEVICE KEY PAIR");
         return;
     }
@@ -2148,7 +2148,7 @@ void DeviceController::self_execute_one_time_initialize_iot_device(
 
 void DeviceController::self_execute_ownership_transfer(UTicket u_ticket_in)
 {
-    printf("[M2354] info: %s is transferring ownership...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info: %s is transferring ownership...\n", shared_data->this_device.device_name.c_str());
 
     shared_data->this_device.owner_pub_key = u_ticket_in.holder_id;
 }
@@ -2158,7 +2158,7 @@ void DeviceController::self_execute_cr_ke(int UR, UTicket &u_ticket_in,
                                           const string &comm_end,
                                           const string &cmd)
 {
-    printf("[M2354] info: %s is executing cr_ke...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info: %s is executing cr_ke...\n", shared_data->this_device.device_name.c_str());
 
     UTicket no_use_u_ticket;
     RTicket no_use_r_ticket;
@@ -2220,7 +2220,7 @@ void DeviceController::self_execute_cr_ke(int UR, UTicket &u_ticket_in,
     }
     else
     {
-        printf("should not be here (self_execute_cr_ke)\n");
+        // printf("should not be here (self_execute_cr_ke)\n");
     }
 }
 
@@ -2252,7 +2252,7 @@ string DeviceController::self_execute_generate_session_key(const string &salt_1,
     free(pub_key_hex_y);
     if (ret < 0)
     {
-        printf("-> FAILURE: GENERATE SESSION KEY\n");
+        // printf("-> FAILURE: GENERATE SESSION KEY\n");
         throw std::runtime_error("-> FAILURE: GENERATE SESSION KEY");
     }
     // TODO
@@ -2264,7 +2264,7 @@ string DeviceController::self_execute_generate_session_key(const string &salt_1,
 }
 
 // void DeviceController::self_execute_cmd(const string &cmd) {
-//     printf("info: %s is executing cmd...\n",shared_data->this_device.device_name.c_str());
+//     //printf("info: %s is executing cmd...\n",shared_data->this_device.device_name.c_str());
 
 // }
 
@@ -2273,7 +2273,7 @@ void DeviceController::self_execute_ps(const string &executing_case, int UR,
                                        const string &plaintext,
                                        const string &associated_plaintext)
 {
-    printf("[M2354] info: %s is executing ps...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info: %s is executing ps...\n", shared_data->this_device.device_name.c_str());
 
     if (executing_case == "send-ut")
     {
@@ -2334,7 +2334,7 @@ void DeviceController::self_execute_ps(const string &executing_case, int UR,
         }
         else if (UR == 2)
         {
-            printf("should not be here (self_execute_ps) (send-crke3)\n");
+            // printf("should not be here (self_execute_ps) (send-crke3)\n");
             shared_data->current_session.iv_data = r_ticket_in.iv_data;
         }
 
@@ -2417,7 +2417,7 @@ void DeviceController::self_execute_ps(const string &executing_case, int UR,
         }
         else
         {
-            printf("should not be here (self_execute_ps) (recv-utoken)\n");
+            // printf("should not be here (self_execute_ps) (recv-utoken)\n");
         }
 
         // Update Session: PS-Cmd (Output: plaintext)
@@ -2454,7 +2454,7 @@ void DeviceController::self_execute_ps(const string &executing_case, int UR,
     }
     else
     {
-        printf("%s\n", executing_case.c_str());
+        // printf("%s\n", executing_case.c_str());
         throw std::runtime_error("should not be here (self_execute_ps)");
     }
 
@@ -2470,7 +2470,7 @@ void DeviceController::self_execute_encrypt_plaintext(
     const string &session_key, string &ciphertext,
     string &gcm_authentication_tag, const string &iv)
 {
-    printf("[M2354] info: %s is encrypting plaintext...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info: %s is encrypting plaintext...\n", shared_data->this_device.device_name.c_str());
 
     char *ciphertext_byte = (char *)malloc(100);
     memset(ciphertext_byte, 0, 100);
@@ -2491,7 +2491,7 @@ void DeviceController::self_execute_encrypt_plaintext(
     {
         free(ciphertext_byte);
         free(decrypted_plaintext);
-        printf("-> FAILURE: VERIFY_IV_AND_HMAC\n");
+        // printf("-> FAILURE: VERIFY_IV_AND_HMAC\n");
         throw std::runtime_error("-> FAILURE: VERIFY_IV_AND_HMAC");
     }
     else
@@ -2515,7 +2515,7 @@ void DeviceController::self_execute_decrypt_ciphertext(
     const string &gcm_authentication_tag, const string &session_key,
     const string &iv, char *decrypted_plaintext)
 {
-    printf("[M2354] info: %s is decrypting ciphertext...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info: %s is decrypting ciphertext...\n", shared_data->this_device.device_name.c_str());
 
     try
     {
@@ -2540,12 +2540,12 @@ void DeviceController::self_execute_decrypt_ciphertext(
 
         if (ret < 0)
         {
-            printf("-> FAILURE: VERIFY_IV_AND_HMAC\n");
+            // printf("-> FAILURE: VERIFY_IV_AND_HMAC\n");
             throw std::runtime_error("-> FAILURE: VERIFY_IV_AND_HMAC");
         }
         else
         {
-            printf("[M2354] 解密完畢: %s\n", decrypted_plaintext);
+            // printf("[M2354] 解密完畢: %s\n", decrypted_plaintext);
         }
 
         return;
@@ -2554,7 +2554,7 @@ void DeviceController::self_execute_decrypt_ciphertext(
     {
         string error_message = e.what();
         shared_data->result_message = "-> FAILURE: VERIFY_IV_AND_HMAC";
-        printf("error: %s\n", error_message.c_str());
+        // printf("error: %s\n", error_message.c_str());
         throw;
     }
     catch (...)
@@ -2567,12 +2567,12 @@ void DeviceController::self_execute_decrypt_ciphertext(
 void DeviceController::self_execute_data_processing(
     string &plaintext_cmd, string &associated_plaintext_cmd)
 {
-    printf("[M2354] info: %s is executing application...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info: %s is executing application...\n", shared_data->this_device.device_name.c_str());
     associated_plaintext_cmd = "DATA: " + associated_plaintext_cmd;
 
     if (plaintext_cmd.empty())
     {
-        printf("-> FAILURE: EMPTY CMD\n");
+        // printf("-> FAILURE: EMPTY CMD\n");
         throw std::runtime_error("-> FAILURE: EMPTY CMD");
     }
     else if (plaintext_cmd == "ACCESS_END")
@@ -2604,7 +2604,7 @@ void DeviceController::self_execute_data_processing(
                         make_pair(plaintext_cmd.substr(2), 0));
 
                 candidate_num++;
-                printf("add candidate: %s\n", plaintext_cmd.substr(2).c_str());
+                // printf("add candidate: %s\n", plaintext_cmd.substr(2).c_str());
                 plaintext_cmd = "CandidateAdded";
             }
             else if (plaintext_cmd[1] == '-')
@@ -2619,9 +2619,9 @@ void DeviceController::self_execute_data_processing(
                 //     voting_voters.push_back(
                 //         make_pair(plaintext_cmd.substr(2), false));
 
-                printf("add voter: %s\n", voting_voters[voter_num].first.c_str());
+                // printf("add voter: %s\n", voting_voters[voter_num].first.c_str());
                 voter_num++;
-                // printf("add voter: %s\n", plaintext_cmd.substr(2).c_str());
+                // //printf("add voter: %s\n", plaintext_cmd.substr(2).c_str());
                 plaintext_cmd = "VoterAdded";
             }
             else
@@ -2633,7 +2633,7 @@ void DeviceController::self_execute_data_processing(
         }
         else
         {
-            printf("-> FAILURE: INVALID CMD\n");
+            // printf("-> FAILURE: INVALID CMD\n");
             throw std::runtime_error("-> FAILURE: INVALID CMD");
         }
     }
@@ -2665,13 +2665,13 @@ void DeviceController::self_execute_data_processing(
             // find the voter and set the vote to true
             for (int i = 0; i < voter_num; i++)
             {
-                printf("voter: %s, and expected %s\n", voting_voters[i].first.c_str(), shared_data->current_session.current_holder_id.c_str());
+                // printf("voter: %s, and expected %s\n", voting_voters[i].first.c_str(), shared_data->current_session.current_holder_id.c_str());
                 if (voting_voters[i].first ==
                     shared_data->current_session.current_holder_id)
                 {
                     if (voting_voters[i].second)
                     {
-                        printf("-> FAILURE: VOTER ALREADY VOTED\n");
+                        // printf("-> FAILURE: VOTER ALREADY VOTED\n");
                         throw std::runtime_error(
                             "-> FAILURE: VOTER ALREADY VOTED");
                     }
@@ -2715,13 +2715,13 @@ void DeviceController::self_execute_data_processing(
         }
         else
         {
-            printf("-> FAILURE: INVALID CMD\n");
+            // printf("-> FAILURE: INVALID CMD\n");
             throw std::runtime_error("-> FAILURE: INVALID CMD");
         }
     }
     else
     {
-        printf("-> FAILURE: INVALID VOTING STATE\n");
+        // printf("-> FAILURE: INVALID VOTING STATE\n");
         throw std::runtime_error("-> FAILURE: INVALID VOTING STATE");
     }
 
@@ -2734,7 +2734,7 @@ void DeviceController::self_execute_update_ticket_order(
     const string &updating_case, int UR, UTicket u_ticket_in,
     RTicket r_ticket_in)
 {
-    printf("[M2354] info: %s is updating ticket order...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info: %s is updating ticket order...\n", shared_data->this_device.device_name.c_str());
 
     if (updating_case == "has-type")
     {
@@ -2754,16 +2754,16 @@ void DeviceController::self_execute_update_ticket_order(
              u_ticket_in.u_ticket_type == u_ticket::TYPE_ACCESS_END_UTOKEN))
         {
             shared_data->this_device.ticket_order += 1;
-            printf("[M2354] info: %s is updating ticket order...\n", shared_data->this_device.device_name.c_str());
+            // printf("[M2354] info: %s is updating ticket order...\n", shared_data->this_device.device_name.c_str());
         }
         else
         {
-            printf("should not be here (self_execute_update_ticket_order)\n");
+            // printf("should not be here (self_execute_update_ticket_order)\n");
         }
     }
     else
     {
-        printf("should not be here (self_execute_update_ticket_order)\n");
+        // printf("should not be here (self_execute_update_ticket_order)\n");
     }
 
     /*############################################
@@ -3069,7 +3069,6 @@ void DeviceController::send_xxx_message(const string &message_operation,
                                         const string &message_type,
                                         const RTicket &sent_message)
 {
-    // ????
     printf("[M2354] info: %s is sending message...\n", shared_data->this_device.device_name.c_str());
     if ((message_operation == message::MESSAGE_RECV_AND_STORE ||
          message_operation == message::MESSAGE_VERIFY_AND_EXECUTE) &&
@@ -3078,7 +3077,6 @@ void DeviceController::send_xxx_message(const string &message_operation,
     {
         try
         {
-
             BLE_SendMessage("{\"message_operation\":\"");
             BLE_SendMessage(add_that_json(message_operation).c_str());
             BLE_SendMessage("\",\"message_type\":\"");
@@ -3089,7 +3087,7 @@ void DeviceController::send_xxx_message(const string &message_operation,
         }
         catch (const std::exception &error)
         {
-            printf("error: %s\n", error.what());
+            // printf("error: %s\n", error.what());
             throw std::runtime_error("Weird M-Request: " +
                                      string(error.what()));
         }
@@ -3192,7 +3190,7 @@ void DeviceController::recv_xxx_message_ble(char *received_msg)
             if (Environment::DEPLOYMENT_ENV == "TEST")
             {
                 // received_msg = (char *)SIMULATED_GLOBAL_CHANNEL.c_str();
-                // printf("This is What I Want\\n%s\n", received_msg);
+                // //printf("This is What I Want\\n%s\n", received_msg);
                 // SIMULATED_GLOBAL_CHANNEL = "";
                 // shared_data->simulated_comm_channel.receiver_queue.pop();
             }
@@ -3210,9 +3208,9 @@ void DeviceController::recv_xxx_message_ble(char *received_msg)
         }
         else if (Environment::COMMUNICATION_CHANNEL == "UART")
         {
-            // printf("\n\nWaiting PC Sending Ticket\n\n");
+            // //printf("\n\nWaiting PC Sending Ticket\n\n");
             // if (ReceiveMessage(received_message_with_header, 1000)) {
-            //     printf("[M2354] Received: %s\n\n",received_message_with_header);
+            //     //printf("[M2354] Received: %s\n\n",received_message_with_header);
             // }
         }
         if (received_msg == NULL)
@@ -3222,15 +3220,15 @@ void DeviceController::recv_xxx_message_ble(char *received_msg)
 
         printf("[M2354] iot_device Received Message\n");
 
-        // printf("cli Received Message: %s\n\n",
+        // //printf("cli Received Message: %s\n\n",
         // received_message_with_header);
         char *received_without_header = (char *)malloc(900);
         memset(received_without_header, 0, 900);
-        // printf("有沒有來這\n");
+        // //printf("有沒有來這\n");
         int which_ticket = self_classify_message_is_defined_type(
             received_msg, received_without_header);
 
-        printf("[M2354] Received: %s\n", received_without_header);
+        // printf("[M2354] Received: %s\n", received_without_header);
 
         // free(received_msg);
         received_msg = NULL;
@@ -3239,7 +3237,7 @@ void DeviceController::recv_xxx_message_ble(char *received_msg)
         if (which_ticket == 1)
         {
 
-            // printf("[M2354] Received: %s\n", received_without_header);
+            // //printf("[M2354] Received: %s\n", received_without_header);
             UTicket received_u_ticket = u_ticket_verify_json_schema(
                 (const char *)received_without_header);
             free(received_without_header);
@@ -3290,7 +3288,7 @@ void DeviceController::recv_xxx_message_ble(char *received_msg)
     }
 
     // IOT device
-    // printf("device_type: %s state: %s\n",  shared_data->this_device.device_type.c_str(), shared_data->state.c_str());
+    // //printf("device_type: %s state: %s\n",  shared_data->this_device.device_type.c_str(), shared_data->state.c_str());
 
     catch (const std::runtime_error &error)
     {
@@ -3327,7 +3325,7 @@ void DeviceController::self_device_recv_u_ticket(UTicket &received_u_ticket)
         // [STAGE: (VUT)]
         verify_u_ticket_can_execute(received_u_ticket);
         shared_data->result_message = " -> SUCCESS: VERIFY_UT_CAN_EXECUTE";
-        // printf("info: start %s\n", shared_data->result_message.c_str());
+        // //printf("info: start %s\n", shared_data->result_message.c_str());
 
         // UT-RT
         if (received_u_ticket.u_ticket_type ==
@@ -3479,7 +3477,7 @@ void DeviceController::self_device_send_r_ticket(const string &u_ticket_type,
     RTicket received_r_ticket = self_device_send_r_ticket_generate_request(
         u_ticket_type, u_ticket_id, result_message);
     self_generate_xxx_r_ticket(received_r_ticket);
-    // printf("generated_r_ticket_json: %s\n", generated_r_ticket_json.c_str());
+    // //printf("generated_r_ticket_json: %s\n", generated_r_ticket_json.c_str());
     //  cout << "debug: generated_r_ticket_json: " <<
     //  generated_r_ticket_json <<
     //  "\n";
@@ -3730,19 +3728,19 @@ DeviceController::DeviceController(const string &device_type,
     {
         self_execute_one_time_set_time_device_type_and_name(device_type,
                                                             device_name);
-        printf("[M2354] info: Set device type and name to %s, %s\n", device_type.c_str(), device_name.c_str());
+        // printf("[M2354] info: Set device type and name to %s, %s\n", device_type.c_str(), device_name.c_str());
     }
 
     self_initialize_state();
 
-    printf("[M2354] info: Here is a %s...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info: Here is a %s...\n", shared_data->this_device.device_name.c_str());
 }
 
 DeviceController::~DeviceController() { cleanup(); }
 
 void DeviceController::reboot_device()
 {
-    printf("[M2354] info: Reboot %s...\n", shared_data->this_device.device_name.c_str());
+    // printf("[M2354] info: Reboot %s...\n", shared_data->this_device.device_name.c_str());
     cleanup();
     initialize();
 }
@@ -4008,7 +4006,7 @@ string RTicket::to_json_str()
         json_str.pop_back();
     json_str += "}";
 
-    // printf("她媽有沒有變小: %s\n", json_str.c_str());
+    // //printf("她媽有沒有變小: %s\n", json_str.c_str());
 
     return json_str; // Indentation of 4 spaces
 }
@@ -4016,7 +4014,7 @@ string RTicket::to_json_str()
 void rticket_from_json_str(const string &json_str, RTicket &ticket)
 {
 
-    // printf("rticket_from_json_str: %s\n", json_str.c_str());
+    // //printf("rticket_from_json_str: %s\n", json_str.c_str());
     json j;
     j.parse(json_str);
     int idx = -1;
@@ -4085,7 +4083,7 @@ void rticket_from_json_str(const string &json_str, RTicket &ticket)
     if (idx != -1)
         ticket.device_signature = j.get_string(idx);
 
-    // printf("rticket_from_json_str: %s\n", ticket.to_json_str().c_str());
+    // //printf("rticket_from_json_str: %s\n", ticket.to_json_str().c_str());
 }
 
 void RTicket::validate_json(const json &j)
@@ -4132,7 +4130,7 @@ string UTicket::to_json_str()
 
     json_str += "}";
 
-    // printf("她媽有沒有變小 u: %s\n", json_str.c_str());
+    // //printf("她媽有沒有變小 u: %s\n", json_str.c_str());
 
     return json_str;
 }
@@ -4141,7 +4139,7 @@ void DeviceController::uticket_from_json_str(const string &json_str,
                                              UTicket &ticket)
 {
     // json j;
-    // printf("uticket_from_json_str: %s\n", json_str.c_str());
+    // //printf("uticket_from_json_str: %s\n", json_str.c_str());
     parse_uticket(json_str, ticket);
 }
 
@@ -4155,9 +4153,9 @@ string Message::to_json_str()
     if (message_str != "")
         j.addValueString("message_str", message_str);
 
-    /* printf("message_operation: %s\n", message_operation.c_str());
-    printf("message_type: %s\n", message_type.c_str());
-    printf("message_str: %s\n", message_str.c_str()); */
+    /* //printf("message_operation: %s\n", message_operation.c_str());
+    //printf("message_type: %s\n", message_type.c_str());
+    //printf("message_str: %s\n", message_str.c_str()); */
 
     return j.dump();
 }
@@ -4193,7 +4191,7 @@ void remove_something(char *msg)
 
 void message_from_json_str(const string &json_str, Message &msg)
 {
-    printf("[M2354] info: inside message_from_json_str %s\n", json_str.c_str());
+    // printf("[M2354] info: inside message_from_json_str %s\n", json_str.c_str());
 
     // json j;
     // j.parse(json_str);
@@ -4276,7 +4274,7 @@ string generate_random_str(int bytes_num)
     // cout << "random string: " << ret_str.size() << " and the size of byte
     // is"
     // << bytes_num << endl;
-    printf("[M2354] random string: %d and the size of byte is %d\n", ret_base.size(), bytes_num);
+    // printf("[M2354] random string: %d and the size of byte is %d\n", ret_base.size(), bytes_num);
     return ret_base;
 }
 
@@ -4308,7 +4306,7 @@ void DeviceController::addStringToUTicket(const string &key,
         u_ticket.iv_data = value;
     else
     {
-        printf("Invalid key: %s\n", key.c_str());
+        // printf("Invalid key: %s\n", key.c_str());
         throw std::runtime_error("Invalid key.");
     }
 }
@@ -4316,7 +4314,7 @@ void DeviceController::addStringToUTicket(const string &key,
 void DeviceController::parse_uticket(const string &jsonString,
                                      UTicket &u_ticket_in)
 {
-    // printf("Parsing JSON string: %s\n", jsonString.c_str());
+    // //printf("Parsing JSON string: %s\n", jsonString.c_str());
     string key, value;
     bool isKey = true, inString = false, isEscaping = false, isBool = false,
          isInt = false;
@@ -4325,7 +4323,7 @@ void DeviceController::parse_uticket(const string &jsonString,
     if (jsonString.empty() || jsonString[0] != '{' ||
         jsonString.back() != '}')
     {
-        printf("Invalid JSON format: JSON object must start with '{' and end with '}'.\n");
+        // printf("Invalid JSON format: JSON object must start with '{' and end with '}'.\n");
         throw std::runtime_error("Invalid JSON format: JSON object must start "
                                  "with '{' and end with '}'.");
     }
@@ -4349,7 +4347,7 @@ void DeviceController::parse_uticket(const string &jsonString,
                     (isKey) ? (key += '\n') : (value += '\n');
                     break;
                 default:
-                    printf("Invalid escape sequence\n");
+                    // printf("Invalid escape sequence\n");
                     throw std::runtime_error(
                         "Invalid JSON format: Invalid escape sequence.");
                     break;
@@ -4376,7 +4374,7 @@ void DeviceController::parse_uticket(const string &jsonString,
             if (c == '0' && jsonString[i + 1] >= '0' &&
                 jsonString[i + 1] <= '9')
             {
-                printf("Invalid JSON format: Leading zeros are not allowed.\n");
+                // printf("Invalid JSON format: Leading zeros are not allowed.\n");
                 throw std::runtime_error(
                     "Invalid JSON format: Leading zeros are not allowed.");
             }
@@ -4394,7 +4392,7 @@ void DeviceController::parse_uticket(const string &jsonString,
 
             if (j >= jsonString.size())
             {
-                printf("Invalid JSON format: Missing comma or closing brace.\n");
+                // printf("Invalid JSON format: Missing comma or closing brace.\n");
                 throw std::runtime_error(
                     "Invalid JSON format: Missing comma or closing brace.");
             }
@@ -4413,7 +4411,7 @@ void DeviceController::parse_uticket(const string &jsonString,
                 braceCount--;
                 if (braceCount < 0)
                 {
-                    printf("Invalid JSON format: Unmatched closing brace.\n");
+                    // printf("Invalid JSON format: Unmatched closing brace.\n");
                     throw std::runtime_error(
                         "Invalid JSON format: Unmatched closing brace.");
                 }
@@ -4432,7 +4430,7 @@ void DeviceController::parse_uticket(const string &jsonString,
                 }
                 else
                 {
-                    printf("Invalid JSON format: Invalid boolean value.\n");
+                    // printf("Invalid JSON format: Invalid boolean value.\n");
                     throw std::runtime_error(
                         "Invalid JSON format: Invalid boolean value.");
                 }
@@ -4446,7 +4444,7 @@ void DeviceController::parse_uticket(const string &jsonString,
                 }
                 else
                 {
-                    printf("Invalid JSON format: Invalid boolean value.\n");
+                    // printf("Invalid JSON format: Invalid boolean value.\n");
                     throw std::runtime_error(
                         "Invalid JSON format: Invalid boolean value.");
                 }
@@ -4471,7 +4469,7 @@ void DeviceController::parse_uticket(const string &jsonString,
             {
                 if (!isKey || key.empty())
                 {
-                    printf("Invalid JSON format: Missing key or misplaced colon.\n");
+                    // printf("Invalid JSON format: Missing key or misplaced colon.\n");
                     throw std::runtime_error("Invalid JSON format: Missing "
                                              "key or misplaced colon.");
                 }
@@ -4498,7 +4496,7 @@ void DeviceController::parse_uticket(const string &jsonString,
                 }
                 else
                 {
-                    printf("Invalid JSON format: Missing key or value.\n");
+                    // printf("Invalid JSON format: Missing key or value.\n");
                     throw std::runtime_error(
                         "Invalid JSON format: Missing key or value.");
                 }
@@ -4512,7 +4510,7 @@ void DeviceController::parse_uticket(const string &jsonString,
                     braceCount--;
                     if (braceCount < 0)
                     {
-                        printf("Invalid JSON format: Unmatched closing brace.\n");
+                        // printf("Invalid JSON format: Unmatched closing brace.\n");
                         throw std::runtime_error(
                             "Invalid JSON format: Unmatched closing "
                             "brace.");
@@ -4525,14 +4523,14 @@ void DeviceController::parse_uticket(const string &jsonString,
 
     if (braceCount != 0)
     {
-        printf("Invalid JSON format: Unmatched opening brace.\n");
+        // printf("Invalid JSON format: Unmatched opening brace.\n");
         throw std::runtime_error(
             "Invalid JSON format: Unmatched opening brace.");
     }
 
     if (inString)
     {
-        printf("Invalid JSON format: Unclosed string.\n");
+        // printf("Invalid JSON format: Unclosed string.\n");
         throw std::runtime_error("Invalid JSON format: Unclosed string.");
     }
 
